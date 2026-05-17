@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package p2p;
+
+option go_package = "go-api/proto;p2p";
+
+service P2PService {
+  rpc Ping(PingRequest) returns (PingResponse);
+  rpc GetPeers(GetPeersRequest) returns (GetPeersResponse);
+}
+
+message PingRequest {}
+
+message PingResponse {
+  string message = 1;
+}
+
+message GetPeersRequest {}
+
+message PeerInfo {
+  string id = 1;
+  string host = 2;
+  int32 port = 3;
+  int64 last_seen = 4;
+  int64 heartbeat = 5;
+  bool alive = 6;
+}
+
+message GetPeersResponse {
+  repeated PeerInfo peers = 1;
+}
