@@ -1,31 +1,55 @@
 syntax = "proto3";
-
 package p2p;
-
-option go_package = "go-api/proto;p2p";
+option go_package = "go-api/proto/p2p";
 
 service P2PService {
-  rpc Ping(PingRequest) returns (PingResponse);
-  rpc GetPeers(GetPeersRequest) returns (GetPeersResponse);
+  rpc Ping(PingRequest)                   returns (PingResponse);
+  rpc RegisterPeer(RegisterPeerRequest)   returns (RegisterPeerResponse);
+  rpc GetPeers(GetPeersRequest)           returns (GetPeersResponse);
+  rpc ListFiles(ListFilesRequest)         returns (ListFilesResponse);
+  rpc GetFileIndex(GetFileIndexRequest)   returns (GetFileIndexResponse);
+  rpc DownloadFile(DownloadFileRequest)   returns (stream FileChunk);
 }
 
-message PingRequest {}
-
-message PingResponse {
-  string message = 1;
-}
-
-message GetPeersRequest {}
+message PingRequest  {}
+message PingResponse { string message = 1; }
 
 message PeerInfo {
-  string id = 1;
-  string host = 2;
-  int32 port = 3;
-  int64 last_seen = 4;
-  int64 heartbeat = 5;
-  bool alive = 6;
+  string id        = 1;
+  string host      = 2;
+  int32  port      = 3;
+  int64  lastseen  = 4;
+  int64  heartbeat = 5;
+  bool   alive     = 6;
 }
 
-message GetPeersResponse {
-  repeated PeerInfo peers = 1;
+message RegisterPeerRequest  { PeerInfo peer = 1; }
+message RegisterPeerResponse { bool ok = 1; string message = 2; PeerInfo self = 3; }
+
+message GetPeersRequest  {}
+message GetPeersResponse { repeated PeerInfo peers = 1; }
+
+message ListFilesRequest  {}
+message FileInfo {
+  string name     = 1;
+  int64  size     = 2;
+  string checksum = 3;
+}
+message ListFilesResponse { repeated FileInfo files = 1; }
+
+message IndexedFile {
+  string            name     = 1;
+  int64             size     = 2;
+  string            checksum = 3;
+  repeated PeerInfo peers    = 4;
+}
+message GetFileIndexRequest  {}
+message GetFileIndexResponse { repeated IndexedFile files = 1; }
+
+message DownloadFileRequest { string filename = 1; }
+message FileChunk {
+  string filename    = 1;
+  bytes  content     = 2;
+  int64  chunk_index = 3;
+  bool   eof         = 4;
 }
