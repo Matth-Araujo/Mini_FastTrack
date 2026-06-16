@@ -19,8 +19,12 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	P2PService_Ping_FullMethodName     = "/p2p.P2PService/Ping"
-	P2PService_GetPeers_FullMethodName = "/p2p.P2PService/GetPeers"
+	P2PService_Ping_FullMethodName         = "/p2p.P2PService/Ping"
+	P2PService_RegisterPeer_FullMethodName = "/p2p.P2PService/RegisterPeer"
+	P2PService_GetPeers_FullMethodName     = "/p2p.P2PService/GetPeers"
+	P2PService_ListFiles_FullMethodName    = "/p2p.P2PService/ListFiles"
+	P2PService_GetFileIndex_FullMethodName = "/p2p.P2PService/GetFileIndex"
+	P2PService_DownloadFile_FullMethodName = "/p2p.P2PService/DownloadFile"
 )
 
 // P2PServiceClient is the client API for P2PService service.
@@ -28,7 +32,11 @@ const (
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type P2PServiceClient interface {
 	Ping(ctx context.Context, in *PingRequest, opts ...grpc.CallOption) (*PingResponse, error)
+	RegisterPeer(ctx context.Context, in *RegisterPeerRequest, opts ...grpc.CallOption) (*RegisterPeerResponse, error)
 	GetPeers(ctx context.Context, in *GetPeersRequest, opts ...grpc.CallOption) (*GetPeersResponse, error)
+	ListFiles(ctx context.Context, in *ListFilesRequest, opts ...grpc.CallOption) (*ListFilesResponse, error)
+	GetFileIndex(ctx context.Context, in *GetFileIndexRequest, opts ...grpc.CallOption) (*GetFileIndexResponse, error)
+	DownloadFile(ctx context.Context, in *DownloadFileRequest, opts ...grpc.CallOption) (grpc.ServerStreamingClient[FileChunk], error)
 }
 
 type p2PServiceClient struct {
@@ -49,6 +57,16 @@ func (c *p2PServiceClient) Ping(ctx context.Context, in *PingRequest, opts ...gr
 	return out, nil
 }
 
+func (c *p2PServiceClient) RegisterPeer(ctx context.Context, in *RegisterPeerRequest, opts ...grpc.CallOption) (*RegisterPeerResponse, error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	out := new(RegisterPeerResponse)
+	err := c.cc.Invoke(ctx, P2PService_RegisterPeer_FullMethodName, in, out, cOpts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 func (c *p2PServiceClient) GetPeers(ctx context.Context, in *GetPeersRequest, opts ...grpc.CallOption) (*GetPeersResponse, error) {
 	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
 	out := new(GetPeersResponse)
@@ -59,12 +77,55 @@ func (c *p2PServiceClient) GetPeers(ctx context.Context, in *GetPeersRequest, op
 	return out, nil
 }
 
+func (c *p2PServiceClient) ListFiles(ctx context.Context, in *ListFilesRequest, opts ...grpc.CallOption) (*ListFilesResponse, error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	out := new(ListFilesResponse)
+	err := c.cc.Invoke(ctx, P2PService_ListFiles_FullMethodName, in, out, cOpts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *p2PServiceClient) GetFileIndex(ctx context.Context, in *GetFileIndexRequest, opts ...grpc.CallOption) (*GetFileIndexResponse, error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	out := new(GetFileIndexResponse)
+	err := c.cc.Invoke(ctx, P2PService_GetFileIndex_FullMethodName, in, out, cOpts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *p2PServiceClient) DownloadFile(ctx context.Context, in *DownloadFileRequest, opts ...grpc.CallOption) (grpc.ServerStreamingClient[FileChunk], error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	stream, err := c.cc.NewStream(ctx, &P2PService_ServiceDesc.Streams[0], P2PService_DownloadFile_FullMethodName, cOpts...)
+	if err != nil {
+		return nil, err
+	}
+	x := &grpc.GenericClientStream[DownloadFileRequest, FileChunk]{ClientStream: stream}
+	if err := x.ClientStream.SendMsg(in); err != nil {
+		return nil, err
+	}
+	if err := x.ClientStream.CloseSend(); err != nil {
+		return nil, err
+	}
+	return x, nil
+}
+
+// This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
+type P2PService_DownloadFileClient = grpc.ServerStreamingClient[FileChunk]
+
 // P2PServiceServer is the server API for P2PService service.
 // All implementations must embed UnimplementedP2PServiceServer
 // for forward compatibility.
 type P2PServiceServer interface {
 	Ping(context.Context, *PingRequest) (*PingResponse, error)
+	RegisterPeer(context.Context, *RegisterPeerRequest) (*RegisterPeerResponse, error)
 	GetPeers(context.Context, *GetPeersRequest) (*GetPeersResponse, error)
+	ListFiles(context.Context, *ListFilesRequest) (*ListFilesResponse, error)
+	GetFileIndex(context.Context, *GetFileIndexRequest) (*GetFileIndexResponse, error)
+	DownloadFile(*DownloadFileRequest, grpc.ServerStreamingServer[FileChunk]) error
 	mustEmbedUnimplementedP2PServiceServer()
 }
 
@@ -78,8 +139,20 @@ type UnimplementedP2PServiceServer struct{}
 func (UnimplementedP2PServiceServer) Ping(context.Context, *PingRequest) (*PingResponse, error) {
 	return nil, status.Error(codes.Unimplemented, "method Ping not implemented")
 }
+func (UnimplementedP2PServiceServer) RegisterPeer(context.Context, *RegisterPeerRequest) (*RegisterPeerResponse, error) {
+	return nil, status.Error(codes.Unimplemented, "method RegisterPeer not implemented")
+}
 func (UnimplementedP2PServiceServer) GetPeers(context.Context, *GetPeersRequest) (*GetPeersResponse, error) {
 	return nil, status.Error(codes.Unimplemented, "method GetPeers not implemented")
+}
+func (UnimplementedP2PServiceServer) ListFiles(context.Context, *ListFilesRequest) (*ListFilesResponse, error) {
+	return nil, status.Error(codes.Unimplemented, "method ListFiles not implemented")
+}
+func (UnimplementedP2PServiceServer) GetFileIndex(context.Context, *GetFileIndexRequest) (*GetFileIndexResponse, error) {
+	return nil, status.Error(codes.Unimplemented, "method GetFileIndex not implemented")
+}
+func (UnimplementedP2PServiceServer) DownloadFile(*DownloadFileRequest, grpc.ServerStreamingServer[FileChunk]) error {
+	return status.Error(codes.Unimplemented, "method DownloadFile not implemented")
 }
 func (UnimplementedP2PServiceServer) mustEmbedUnimplementedP2PServiceServer() {}
 func (UnimplementedP2PServiceServer) testEmbeddedByValue()                    {}
@@ -120,6 +193,24 @@ func _P2PService_Ping_Handler(srv interface{}, ctx context.Context, dec func(int
 	return interceptor(ctx, in, info, handler)
 }
 
+func _P2PService_RegisterPeer_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(RegisterPeerRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(P2PServiceServer).RegisterPeer(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: P2PService_RegisterPeer_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(P2PServiceServer).RegisterPeer(ctx, req.(*RegisterPeerRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 func _P2PService_GetPeers_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(GetPeersRequest)
 	if err := dec(in); err != nil {
@@ -138,6 +229,53 @@ func _P2PService_GetPeers_Handler(srv interface{}, ctx context.Context, dec func
 	return interceptor(ctx, in, info, handler)
 }
 
+func _P2PService_ListFiles_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(ListFilesRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(P2PServiceServer).ListFiles(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: P2PService_ListFiles_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(P2PServiceServer).ListFiles(ctx, req.(*ListFilesRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _P2PService_GetFileIndex_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetFileIndexRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(P2PServiceServer).GetFileIndex(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: P2PService_GetFileIndex_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(P2PServiceServer).GetFileIndex(ctx, req.(*GetFileIndexRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _P2PService_DownloadFile_Handler(srv interface{}, stream grpc.ServerStream) error {
+	m := new(DownloadFileRequest)
+	if err := stream.RecvMsg(m); err != nil {
+		return err
+	}
+	return srv.(P2PServiceServer).DownloadFile(m, &grpc.GenericServerStream[DownloadFileRequest, FileChunk]{ServerStream: stream})
+}
+
+// This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
+type P2PService_DownloadFileServer = grpc.ServerStreamingServer[FileChunk]
+
 // P2PService_ServiceDesc is the grpc.ServiceDesc for P2PService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -150,10 +288,28 @@ var P2PService_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _P2PService_Ping_Handler,
 		},
 		{
+			MethodName: "RegisterPeer",
+			Handler:    _P2PService_RegisterPeer_Handler,
+		},
+		{
 			MethodName: "GetPeers",
 			Handler:    _P2PService_GetPeers_Handler,
 		},
+		{
+			MethodName: "ListFiles",
+			Handler:    _P2PService_ListFiles_Handler,
+		},
+		{
+			MethodName: "GetFileIndex",
+			Handler:    _P2PService_GetFileIndex_Handler,
+		},
 	},
-	Streams:  []grpc.StreamDesc{},
+	Streams: []grpc.StreamDesc{
+		{
+			StreamName:    "DownloadFile",
+			Handler:       _P2PService_DownloadFile_Handler,
+			ServerStreams: true,
+		},
+	},
 	Metadata: "proto/p2p.proto",
 }

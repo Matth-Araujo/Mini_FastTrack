@@ -101,48 +101,12 @@ func (x *PingResponse) GetMessage() string {
 	return ""
 }
 
-type GetPeersRequest struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *GetPeersRequest) Reset() {
-	*x = GetPeersRequest{}
-	mi := &file_proto_p2p_proto_msgTypes[2]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *GetPeersRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*GetPeersRequest) ProtoMessage() {}
-
-func (x *GetPeersRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_p2p_proto_msgTypes[2]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use GetPeersRequest.ProtoReflect.Descriptor instead.
-func (*GetPeersRequest) Descriptor() ([]byte, []int) {
-	return file_proto_p2p_proto_rawDescGZIP(), []int{2}
-}
-
 type PeerInfo struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Id            string                 `protobuf:"bytes,1,opt,name=id,proto3" json:"id,omitempty"`
 	Host          string                 `protobuf:"bytes,2,opt,name=host,proto3" json:"host,omitempty"`
 	Port          int32                  `protobuf:"varint,3,opt,name=port,proto3" json:"port,omitempty"`
-	LastSeen      int64                  `protobuf:"varint,4,opt,name=last_seen,json=lastSeen,proto3" json:"last_seen,omitempty"`
+	Lastseen      int64                  `protobuf:"varint,4,opt,name=lastseen,proto3" json:"lastseen,omitempty"`
 	Heartbeat     int64                  `protobuf:"varint,5,opt,name=heartbeat,proto3" json:"heartbeat,omitempty"`
 	Alive         bool                   `protobuf:"varint,6,opt,name=alive,proto3" json:"alive,omitempty"`
 	unknownFields protoimpl.UnknownFields
@@ -151,7 +115,7 @@ type PeerInfo struct {
 
 func (x *PeerInfo) Reset() {
 	*x = PeerInfo{}
-	mi := &file_proto_p2p_proto_msgTypes[3]
+	mi := &file_proto_p2p_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -163,7 +127,7 @@ func (x *PeerInfo) String() string {
 func (*PeerInfo) ProtoMessage() {}
 
 func (x *PeerInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_p2p_proto_msgTypes[3]
+	mi := &file_proto_p2p_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -176,7 +140,7 @@ func (x *PeerInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PeerInfo.ProtoReflect.Descriptor instead.
 func (*PeerInfo) Descriptor() ([]byte, []int) {
-	return file_proto_p2p_proto_rawDescGZIP(), []int{3}
+	return file_proto_p2p_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *PeerInfo) GetId() string {
@@ -200,9 +164,9 @@ func (x *PeerInfo) GetPort() int32 {
 	return 0
 }
 
-func (x *PeerInfo) GetLastSeen() int64 {
+func (x *PeerInfo) GetLastseen() int64 {
 	if x != nil {
-		return x.LastSeen
+		return x.Lastseen
 	}
 	return 0
 }
@@ -221,6 +185,146 @@ func (x *PeerInfo) GetAlive() bool {
 	return false
 }
 
+type RegisterPeerRequest struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Peer          *PeerInfo              `protobuf:"bytes,1,opt,name=peer,proto3" json:"peer,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *RegisterPeerRequest) Reset() {
+	*x = RegisterPeerRequest{}
+	mi := &file_proto_p2p_proto_msgTypes[3]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *RegisterPeerRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*RegisterPeerRequest) ProtoMessage() {}
+
+func (x *RegisterPeerRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_p2p_proto_msgTypes[3]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use RegisterPeerRequest.ProtoReflect.Descriptor instead.
+func (*RegisterPeerRequest) Descriptor() ([]byte, []int) {
+	return file_proto_p2p_proto_rawDescGZIP(), []int{3}
+}
+
+func (x *RegisterPeerRequest) GetPeer() *PeerInfo {
+	if x != nil {
+		return x.Peer
+	}
+	return nil
+}
+
+type RegisterPeerResponse struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Ok            bool                   `protobuf:"varint,1,opt,name=ok,proto3" json:"ok,omitempty"`
+	Message       string                 `protobuf:"bytes,2,opt,name=message,proto3" json:"message,omitempty"`
+	Self          *PeerInfo              `protobuf:"bytes,3,opt,name=self,proto3" json:"self,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *RegisterPeerResponse) Reset() {
+	*x = RegisterPeerResponse{}
+	mi := &file_proto_p2p_proto_msgTypes[4]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *RegisterPeerResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*RegisterPeerResponse) ProtoMessage() {}
+
+func (x *RegisterPeerResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_p2p_proto_msgTypes[4]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use RegisterPeerResponse.ProtoReflect.Descriptor instead.
+func (*RegisterPeerResponse) Descriptor() ([]byte, []int) {
+	return file_proto_p2p_proto_rawDescGZIP(), []int{4}
+}
+
+func (x *RegisterPeerResponse) GetOk() bool {
+	if x != nil {
+		return x.Ok
+	}
+	return false
+}
+
+func (x *RegisterPeerResponse) GetMessage() string {
+	if x != nil {
+		return x.Message
+	}
+	return ""
+}
+
+func (x *RegisterPeerResponse) GetSelf() *PeerInfo {
+	if x != nil {
+		return x.Self
+	}
+	return nil
+}
+
+type GetPeersRequest struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *GetPeersRequest) Reset() {
+	*x = GetPeersRequest{}
+	mi := &file_proto_p2p_proto_msgTypes[5]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *GetPeersRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*GetPeersRequest) ProtoMessage() {}
+
+func (x *GetPeersRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_p2p_proto_msgTypes[5]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use GetPeersRequest.ProtoReflect.Descriptor instead.
+func (*GetPeersRequest) Descriptor() ([]byte, []int) {
+	return file_proto_p2p_proto_rawDescGZIP(), []int{5}
+}
+
 type GetPeersResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Peers         []*PeerInfo            `protobuf:"bytes,1,rep,name=peers,proto3" json:"peers,omitempty"`
@@ -230,7 +334,7 @@ type GetPeersResponse struct {
 
 func (x *GetPeersResponse) Reset() {
 	*x = GetPeersResponse{}
-	mi := &file_proto_p2p_proto_msgTypes[4]
+	mi := &file_proto_p2p_proto_msgTypes[6]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -242,7 +346,7 @@ func (x *GetPeersResponse) String() string {
 func (*GetPeersResponse) ProtoMessage() {}
 
 func (x *GetPeersResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_p2p_proto_msgTypes[4]
+	mi := &file_proto_p2p_proto_msgTypes[6]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -255,7 +359,7 @@ func (x *GetPeersResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetPeersResponse.ProtoReflect.Descriptor instead.
 func (*GetPeersResponse) Descriptor() ([]byte, []int) {
-	return file_proto_p2p_proto_rawDescGZIP(), []int{4}
+	return file_proto_p2p_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *GetPeersResponse) GetPeers() []*PeerInfo {
@@ -265,6 +369,406 @@ func (x *GetPeersResponse) GetPeers() []*PeerInfo {
 	return nil
 }
 
+type ListFilesRequest struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *ListFilesRequest) Reset() {
+	*x = ListFilesRequest{}
+	mi := &file_proto_p2p_proto_msgTypes[7]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *ListFilesRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*ListFilesRequest) ProtoMessage() {}
+
+func (x *ListFilesRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_p2p_proto_msgTypes[7]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use ListFilesRequest.ProtoReflect.Descriptor instead.
+func (*ListFilesRequest) Descriptor() ([]byte, []int) {
+	return file_proto_p2p_proto_rawDescGZIP(), []int{7}
+}
+
+type FileInfo struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Name          string                 `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
+	Size          int64                  `protobuf:"varint,2,opt,name=size,proto3" json:"size,omitempty"`
+	Checksum      string                 `protobuf:"bytes,3,opt,name=checksum,proto3" json:"checksum,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *FileInfo) Reset() {
+	*x = FileInfo{}
+	mi := &file_proto_p2p_proto_msgTypes[8]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *FileInfo) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*FileInfo) ProtoMessage() {}
+
+func (x *FileInfo) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_p2p_proto_msgTypes[8]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use FileInfo.ProtoReflect.Descriptor instead.
+func (*FileInfo) Descriptor() ([]byte, []int) {
+	return file_proto_p2p_proto_rawDescGZIP(), []int{8}
+}
+
+func (x *FileInfo) GetName() string {
+	if x != nil {
+		return x.Name
+	}
+	return ""
+}
+
+func (x *FileInfo) GetSize() int64 {
+	if x != nil {
+		return x.Size
+	}
+	return 0
+}
+
+func (x *FileInfo) GetChecksum() string {
+	if x != nil {
+		return x.Checksum
+	}
+	return ""
+}
+
+type ListFilesResponse struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Files         []*FileInfo            `protobuf:"bytes,1,rep,name=files,proto3" json:"files,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *ListFilesResponse) Reset() {
+	*x = ListFilesResponse{}
+	mi := &file_proto_p2p_proto_msgTypes[9]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *ListFilesResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*ListFilesResponse) ProtoMessage() {}
+
+func (x *ListFilesResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_p2p_proto_msgTypes[9]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use ListFilesResponse.ProtoReflect.Descriptor instead.
+func (*ListFilesResponse) Descriptor() ([]byte, []int) {
+	return file_proto_p2p_proto_rawDescGZIP(), []int{9}
+}
+
+func (x *ListFilesResponse) GetFiles() []*FileInfo {
+	if x != nil {
+		return x.Files
+	}
+	return nil
+}
+
+type IndexedFile struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Name          string                 `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
+	Size          int64                  `protobuf:"varint,2,opt,name=size,proto3" json:"size,omitempty"`
+	Checksum      string                 `protobuf:"bytes,3,opt,name=checksum,proto3" json:"checksum,omitempty"`
+	Peers         []*PeerInfo            `protobuf:"bytes,4,rep,name=peers,proto3" json:"peers,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *IndexedFile) Reset() {
+	*x = IndexedFile{}
+	mi := &file_proto_p2p_proto_msgTypes[10]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *IndexedFile) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*IndexedFile) ProtoMessage() {}
+
+func (x *IndexedFile) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_p2p_proto_msgTypes[10]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use IndexedFile.ProtoReflect.Descriptor instead.
+func (*IndexedFile) Descriptor() ([]byte, []int) {
+	return file_proto_p2p_proto_rawDescGZIP(), []int{10}
+}
+
+func (x *IndexedFile) GetName() string {
+	if x != nil {
+		return x.Name
+	}
+	return ""
+}
+
+func (x *IndexedFile) GetSize() int64 {
+	if x != nil {
+		return x.Size
+	}
+	return 0
+}
+
+func (x *IndexedFile) GetChecksum() string {
+	if x != nil {
+		return x.Checksum
+	}
+	return ""
+}
+
+func (x *IndexedFile) GetPeers() []*PeerInfo {
+	if x != nil {
+		return x.Peers
+	}
+	return nil
+}
+
+type GetFileIndexRequest struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *GetFileIndexRequest) Reset() {
+	*x = GetFileIndexRequest{}
+	mi := &file_proto_p2p_proto_msgTypes[11]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *GetFileIndexRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*GetFileIndexRequest) ProtoMessage() {}
+
+func (x *GetFileIndexRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_p2p_proto_msgTypes[11]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use GetFileIndexRequest.ProtoReflect.Descriptor instead.
+func (*GetFileIndexRequest) Descriptor() ([]byte, []int) {
+	return file_proto_p2p_proto_rawDescGZIP(), []int{11}
+}
+
+type GetFileIndexResponse struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Files         []*IndexedFile         `protobuf:"bytes,1,rep,name=files,proto3" json:"files,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *GetFileIndexResponse) Reset() {
+	*x = GetFileIndexResponse{}
+	mi := &file_proto_p2p_proto_msgTypes[12]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *GetFileIndexResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*GetFileIndexResponse) ProtoMessage() {}
+
+func (x *GetFileIndexResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_p2p_proto_msgTypes[12]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use GetFileIndexResponse.ProtoReflect.Descriptor instead.
+func (*GetFileIndexResponse) Descriptor() ([]byte, []int) {
+	return file_proto_p2p_proto_rawDescGZIP(), []int{12}
+}
+
+func (x *GetFileIndexResponse) GetFiles() []*IndexedFile {
+	if x != nil {
+		return x.Files
+	}
+	return nil
+}
+
+type DownloadFileRequest struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Filename      string                 `protobuf:"bytes,1,opt,name=filename,proto3" json:"filename,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *DownloadFileRequest) Reset() {
+	*x = DownloadFileRequest{}
+	mi := &file_proto_p2p_proto_msgTypes[13]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *DownloadFileRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*DownloadFileRequest) ProtoMessage() {}
+
+func (x *DownloadFileRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_p2p_proto_msgTypes[13]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use DownloadFileRequest.ProtoReflect.Descriptor instead.
+func (*DownloadFileRequest) Descriptor() ([]byte, []int) {
+	return file_proto_p2p_proto_rawDescGZIP(), []int{13}
+}
+
+func (x *DownloadFileRequest) GetFilename() string {
+	if x != nil {
+		return x.Filename
+	}
+	return ""
+}
+
+type FileChunk struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Filename      string                 `protobuf:"bytes,1,opt,name=filename,proto3" json:"filename,omitempty"`
+	Content       []byte                 `protobuf:"bytes,2,opt,name=content,proto3" json:"content,omitempty"`
+	ChunkIndex    int64                  `protobuf:"varint,3,opt,name=chunk_index,json=chunkIndex,proto3" json:"chunk_index,omitempty"`
+	Eof           bool                   `protobuf:"varint,4,opt,name=eof,proto3" json:"eof,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *FileChunk) Reset() {
+	*x = FileChunk{}
+	mi := &file_proto_p2p_proto_msgTypes[14]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *FileChunk) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*FileChunk) ProtoMessage() {}
+
+func (x *FileChunk) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_p2p_proto_msgTypes[14]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use FileChunk.ProtoReflect.Descriptor instead.
+func (*FileChunk) Descriptor() ([]byte, []int) {
+	return file_proto_p2p_proto_rawDescGZIP(), []int{14}
+}
+
+func (x *FileChunk) GetFilename() string {
+	if x != nil {
+		return x.Filename
+	}
+	return ""
+}
+
+func (x *FileChunk) GetContent() []byte {
+	if x != nil {
+		return x.Content
+	}
+	return nil
+}
+
+func (x *FileChunk) GetChunkIndex() int64 {
+	if x != nil {
+		return x.ChunkIndex
+	}
+	return 0
+}
+
+func (x *FileChunk) GetEof() bool {
+	if x != nil {
+		return x.Eof
+	}
+	return false
+}
+
 var File_proto_p2p_proto protoreflect.FileDescriptor
 
 const file_proto_p2p_proto_rawDesc = "" +
@@ -272,21 +776,54 @@ const file_proto_p2p_proto_rawDesc = "" +
 	"\x0fproto/p2p.proto\x12\x03p2p\"\r\n" +
 	"\vPingRequest\"(\n" +
 	"\fPingResponse\x12\x18\n" +
-	"\amessage\x18\x01 \x01(\tR\amessage\"\x11\n" +
-	"\x0fGetPeersRequest\"\x93\x01\n" +
+	"\amessage\x18\x01 \x01(\tR\amessage\"\x92\x01\n" +
 	"\bPeerInfo\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\tR\x02id\x12\x12\n" +
 	"\x04host\x18\x02 \x01(\tR\x04host\x12\x12\n" +
-	"\x04port\x18\x03 \x01(\x05R\x04port\x12\x1b\n" +
-	"\tlast_seen\x18\x04 \x01(\x03R\blastSeen\x12\x1c\n" +
+	"\x04port\x18\x03 \x01(\x05R\x04port\x12\x1a\n" +
+	"\blastseen\x18\x04 \x01(\x03R\blastseen\x12\x1c\n" +
 	"\theartbeat\x18\x05 \x01(\x03R\theartbeat\x12\x14\n" +
-	"\x05alive\x18\x06 \x01(\bR\x05alive\"7\n" +
+	"\x05alive\x18\x06 \x01(\bR\x05alive\"8\n" +
+	"\x13RegisterPeerRequest\x12!\n" +
+	"\x04peer\x18\x01 \x01(\v2\r.p2p.PeerInfoR\x04peer\"c\n" +
+	"\x14RegisterPeerResponse\x12\x0e\n" +
+	"\x02ok\x18\x01 \x01(\bR\x02ok\x12\x18\n" +
+	"\amessage\x18\x02 \x01(\tR\amessage\x12!\n" +
+	"\x04self\x18\x03 \x01(\v2\r.p2p.PeerInfoR\x04self\"\x11\n" +
+	"\x0fGetPeersRequest\"7\n" +
 	"\x10GetPeersResponse\x12#\n" +
-	"\x05peers\x18\x01 \x03(\v2\r.p2p.PeerInfoR\x05peers2r\n" +
+	"\x05peers\x18\x01 \x03(\v2\r.p2p.PeerInfoR\x05peers\"\x12\n" +
+	"\x10ListFilesRequest\"N\n" +
+	"\bFileInfo\x12\x12\n" +
+	"\x04name\x18\x01 \x01(\tR\x04name\x12\x12\n" +
+	"\x04size\x18\x02 \x01(\x03R\x04size\x12\x1a\n" +
+	"\bchecksum\x18\x03 \x01(\tR\bchecksum\"8\n" +
+	"\x11ListFilesResponse\x12#\n" +
+	"\x05files\x18\x01 \x03(\v2\r.p2p.FileInfoR\x05files\"v\n" +
+	"\vIndexedFile\x12\x12\n" +
+	"\x04name\x18\x01 \x01(\tR\x04name\x12\x12\n" +
+	"\x04size\x18\x02 \x01(\x03R\x04size\x12\x1a\n" +
+	"\bchecksum\x18\x03 \x01(\tR\bchecksum\x12#\n" +
+	"\x05peers\x18\x04 \x03(\v2\r.p2p.PeerInfoR\x05peers\"\x15\n" +
+	"\x13GetFileIndexRequest\">\n" +
+	"\x14GetFileIndexResponse\x12&\n" +
+	"\x05files\x18\x01 \x03(\v2\x10.p2p.IndexedFileR\x05files\"1\n" +
+	"\x13DownloadFileRequest\x12\x1a\n" +
+	"\bfilename\x18\x01 \x01(\tR\bfilename\"t\n" +
+	"\tFileChunk\x12\x1a\n" +
+	"\bfilename\x18\x01 \x01(\tR\bfilename\x12\x18\n" +
+	"\acontent\x18\x02 \x01(\fR\acontent\x12\x1f\n" +
+	"\vchunk_index\x18\x03 \x01(\x03R\n" +
+	"chunkIndex\x12\x10\n" +
+	"\x03eof\x18\x04 \x01(\bR\x03eof2\xf4\x02\n" +
 	"\n" +
 	"P2PService\x12+\n" +
-	"\x04Ping\x12\x10.p2p.PingRequest\x1a\x11.p2p.PingResponse\x127\n" +
-	"\bGetPeers\x12\x14.p2p.GetPeersRequest\x1a\x15.p2p.GetPeersResponseB\x12Z\x10go-api/proto;p2pb\x06proto3"
+	"\x04Ping\x12\x10.p2p.PingRequest\x1a\x11.p2p.PingResponse\x12C\n" +
+	"\fRegisterPeer\x12\x18.p2p.RegisterPeerRequest\x1a\x19.p2p.RegisterPeerResponse\x127\n" +
+	"\bGetPeers\x12\x14.p2p.GetPeersRequest\x1a\x15.p2p.GetPeersResponse\x12:\n" +
+	"\tListFiles\x12\x15.p2p.ListFilesRequest\x1a\x16.p2p.ListFilesResponse\x12C\n" +
+	"\fGetFileIndex\x12\x18.p2p.GetFileIndexRequest\x1a\x19.p2p.GetFileIndexResponse\x12:\n" +
+	"\fDownloadFile\x12\x18.p2p.DownloadFileRequest\x1a\x0e.p2p.FileChunk0\x01B\x12Z\x10go-api/proto/p2pb\x06proto3"
 
 var (
 	file_proto_p2p_proto_rawDescOnce sync.Once
@@ -300,25 +837,48 @@ func file_proto_p2p_proto_rawDescGZIP() []byte {
 	return file_proto_p2p_proto_rawDescData
 }
 
-var file_proto_p2p_proto_msgTypes = make([]protoimpl.MessageInfo, 5)
+var file_proto_p2p_proto_msgTypes = make([]protoimpl.MessageInfo, 15)
 var file_proto_p2p_proto_goTypes = []any{
-	(*PingRequest)(nil),      // 0: p2p.PingRequest
-	(*PingResponse)(nil),     // 1: p2p.PingResponse
-	(*GetPeersRequest)(nil),  // 2: p2p.GetPeersRequest
-	(*PeerInfo)(nil),         // 3: p2p.PeerInfo
-	(*GetPeersResponse)(nil), // 4: p2p.GetPeersResponse
+	(*PingRequest)(nil),          // 0: p2p.PingRequest
+	(*PingResponse)(nil),         // 1: p2p.PingResponse
+	(*PeerInfo)(nil),             // 2: p2p.PeerInfo
+	(*RegisterPeerRequest)(nil),  // 3: p2p.RegisterPeerRequest
+	(*RegisterPeerResponse)(nil), // 4: p2p.RegisterPeerResponse
+	(*GetPeersRequest)(nil),      // 5: p2p.GetPeersRequest
+	(*GetPeersResponse)(nil),     // 6: p2p.GetPeersResponse
+	(*ListFilesRequest)(nil),     // 7: p2p.ListFilesRequest
+	(*FileInfo)(nil),             // 8: p2p.FileInfo
+	(*ListFilesResponse)(nil),    // 9: p2p.ListFilesResponse
+	(*IndexedFile)(nil),          // 10: p2p.IndexedFile
+	(*GetFileIndexRequest)(nil),  // 11: p2p.GetFileIndexRequest
+	(*GetFileIndexResponse)(nil), // 12: p2p.GetFileIndexResponse
+	(*DownloadFileRequest)(nil),  // 13: p2p.DownloadFileRequest
+	(*FileChunk)(nil),            // 14: p2p.FileChunk
 }
 var file_proto_p2p_proto_depIdxs = []int32{
-	3, // 0: p2p.GetPeersResponse.peers:type_name -> p2p.PeerInfo
-	0, // 1: p2p.P2PService.Ping:input_type -> p2p.PingRequest
-	2, // 2: p2p.P2PService.GetPeers:input_type -> p2p.GetPeersRequest
-	1, // 3: p2p.P2PService.Ping:output_type -> p2p.PingResponse
-	4, // 4: p2p.P2PService.GetPeers:output_type -> p2p.GetPeersResponse
-	3, // [3:5] is the sub-list for method output_type
-	1, // [1:3] is the sub-list for method input_type
-	1, // [1:1] is the sub-list for extension type_name
-	1, // [1:1] is the sub-list for extension extendee
-	0, // [0:1] is the sub-list for field type_name
+	2,  // 0: p2p.RegisterPeerRequest.peer:type_name -> p2p.PeerInfo
+	2,  // 1: p2p.RegisterPeerResponse.self:type_name -> p2p.PeerInfo
+	2,  // 2: p2p.GetPeersResponse.peers:type_name -> p2p.PeerInfo
+	8,  // 3: p2p.ListFilesResponse.files:type_name -> p2p.FileInfo
+	2,  // 4: p2p.IndexedFile.peers:type_name -> p2p.PeerInfo
+	10, // 5: p2p.GetFileIndexResponse.files:type_name -> p2p.IndexedFile
+	0,  // 6: p2p.P2PService.Ping:input_type -> p2p.PingRequest
+	3,  // 7: p2p.P2PService.RegisterPeer:input_type -> p2p.RegisterPeerRequest
+	5,  // 8: p2p.P2PService.GetPeers:input_type -> p2p.GetPeersRequest
+	7,  // 9: p2p.P2PService.ListFiles:input_type -> p2p.ListFilesRequest
+	11, // 10: p2p.P2PService.GetFileIndex:input_type -> p2p.GetFileIndexRequest
+	13, // 11: p2p.P2PService.DownloadFile:input_type -> p2p.DownloadFileRequest
+	1,  // 12: p2p.P2PService.Ping:output_type -> p2p.PingResponse
+	4,  // 13: p2p.P2PService.RegisterPeer:output_type -> p2p.RegisterPeerResponse
+	6,  // 14: p2p.P2PService.GetPeers:output_type -> p2p.GetPeersResponse
+	9,  // 15: p2p.P2PService.ListFiles:output_type -> p2p.ListFilesResponse
+	12, // 16: p2p.P2PService.GetFileIndex:output_type -> p2p.GetFileIndexResponse
+	14, // 17: p2p.P2PService.DownloadFile:output_type -> p2p.FileChunk
+	12, // [12:18] is the sub-list for method output_type
+	6,  // [6:12] is the sub-list for method input_type
+	6,  // [6:6] is the sub-list for extension type_name
+	6,  // [6:6] is the sub-list for extension extendee
+	0,  // [0:6] is the sub-list for field type_name
 }
 
 func init() { file_proto_p2p_proto_init() }
@@ -332,7 +892,7 @@ func file_proto_p2p_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: unsafe.Slice(unsafe.StringData(file_proto_p2p_proto_rawDesc), len(file_proto_p2p_proto_rawDesc)),
 			NumEnums:      0,
-			NumMessages:   5,
+			NumMessages:   15,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
