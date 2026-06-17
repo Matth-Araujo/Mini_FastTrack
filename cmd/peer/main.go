@@ -1,9 +1,12 @@
 package main
 
 import (
+	"bufio"
+	"fmt"
 	"log"
 	"os"
 	"os/signal"
+	"path/filepath"
 	"strconv"
 	"strings"
 	"syscall"
@@ -27,6 +30,17 @@ func main() {
 	if err != nil {
 		log.Fatalf("porta inválida: %v", err)
 	}
+
+	// Configuração de log para não sujar o terminal
+	os.MkdirAll("logs", 0755)
+	logPath := filepath.Join("logs", peerID+".log")
+	logFile, err := os.OpenFile(logPath, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
+	if err != nil {
+		fmt.Printf("erro ao abrir arquivo de log: %v\n", err)
+		os.Exit(1)
+	}
+	defer logFile.Close()
+	log.SetOutput(logFile)
 
 	var bootstrapPeers []domain.Peer
 	if len(os.Args) >= 5 && strings.TrimSpace(os.Args[4]) != "" {
@@ -160,6 +174,149 @@ func main() {
 			for _, p := range alivePeers {
 				log.Printf("[%s] -> %s %s:%d heartbeat=%d alive=%v last_seen=%d",
 					self.ID, p.ID, p.Host, p.Port, p.Heartbeat, p.Alive, p.LastSeen)
+			}
+		}
+	}()
+
+	go func() {
+		reader := bufio.NewReader(os.Stdin)
+		time.Sleep(2 * time.Second)
+		fmt.Println("\n==========================================")
+		fmt.Printf("  Go FastTrack — %s\n", self.ID)
+		fmt.Printf("  IP: %s  Porta: %d\n", self.Host, self.Port)
+		fmt.Println("==========================================")
+		fmt.Println("  Digite 'help' para ver os comandos.")
+
+		for {
+			fmt.Print("\nfasttrack> ")
+			input, _ := reader.ReadString('\n')
+			input = strings.TrimSpace(input)
+			if input == "" {
+				continue
+			}
+
+			parts := strings.Split(input, " ")
+			cmd := strings.ToLower(parts[0])
+			args := parts[1:]
+
+			switch cmd {
+			case "help":
+				fmt.Println("  peers                               -> lista peers ativos na rede")
+				fmt.Println("  myfiles                             -> lista os seus arquivos locais")
+				fmt.Println("  files <peer_id>                     -> lista arquivos de um peer específico")
+				fmt.Println("  search <nome>                       -> busca arquivo por nome")
+				fmt.Println("  download <host:porta> <arquivo>     -> baixa um arquivo de um peer")
+				fmt.Println("  exit                                -> sai da rede")
+
+			case "peers":
+				ativos := table.GetAlive()
+				fmt.Printf("\n  %-10s %-15s %-6s\n", "ID", "HOST", "PORTA")
+				fmt.Println("  " + strings.Repeat("-", 35))
+				for _, p := range ativos {
+					fmt.Printf("  %-10s %-15s %-6d\n", p.ID, p.Host, p.Port)
+				}
+
+			case "myfiles":
+				localAddr := client.Address(self.Host, self.Port)
+				arquivos, err := grpcClient.ListFiles(localAddr)
+				if err != nil {
+					fmt.Printf("  Erro ao listar arquivos locais: %v\n", err)
+					continue
+				}
+				if len(arquivos) == 0 {
+					fmt.Println("  Nenhum arquivo encontrado na sua pasta local.")
+					continue
+				}
+				fmt.Printf("\n  %-25s %-10s %-30s\n", "NOME", "TAMANHO", "CHECKSUM")
+				fmt.Println("  " + strings.Repeat("-", 70))
+				for _, f := range arquivos {
+					fmt.Printf("  %-25s %-10d %s...\n", f.Name, f.Size, f.Checksum[:16])
+				}
+
+			case "files":
+				if len(args) == 0 {
+					fmt.Println("  Uso: files <peer_id>")
+					continue
+				}
+				targetID := args[0]
+				allFiles := fileIndex.All()
+				var found []domain.FileInfo
+
+				for _, f := range allFiles {
+					for _, pid := range fileIndex.GetPeers(f.Checksum) {
+						if pid == targetID {
+							found = append(found, f)
+							break
+						}
+					}
+				}
+
+				if len(found) == 0 {
+					fmt.Printf("  Nenhum arquivo conhecido para o peer '%s'.\n", targetID)
+					continue
+				}
+
+				fmt.Printf("\n  Arquivos de '%s':\n", targetID)
+				fmt.Printf("  %-25s %-10s %-30s\n", "NOME", "TAMANHO", "CHECKSUM")
+				fmt.Println("  " + strings.Repeat("-", 70))
+				for _, f := range found {
+					fmt.Printf("  %-25s %-10d %s...\n", f.Name, f.Size, f.Checksum[:16])
+				}
+
+			case "search":
+				if len(args) == 0 {
+					fmt.Println("  Uso: search <nome_do_arquivo>")
+					continue
+				}
+				query := strings.Join(args, " ")
+				localAddr := client.Address(self.Host, self.Port)
+
+				resultados, err := grpcClient.SearchFiles(localAddr, query)
+				if err != nil {
+					fmt.Printf("  Erro na busca: %v\n", err)
+					continue
+				}
+
+				if len(resultados) == 0 {
+					fmt.Printf("  Nenhum arquivo encontrado para '%s'.\n", query)
+					continue
+				}
+
+				fmt.Printf("\n  %-25s %-10s %-20s\n", "NOME", "TAMANHO", "PEERS (ID)")
+				fmt.Println("  " + strings.Repeat("-", 60))
+				for _, r := range resultados {
+					peerIDs := []string{}
+					for _, p := range r.Peers {
+						peerIDs = append(peerIDs, p.ID)
+					}
+					fmt.Printf("  %-25s %-10d %v\n", r.Name, r.Size, peerIDs)
+				}
+
+			case "download":
+				if len(args) < 2 {
+					fmt.Println("  Uso: download <host:porta> <nome_do_arquivo>")
+					continue
+				}
+				target := args[0]
+				filename := strings.Join(args[1:], " ")
+
+				destDir := filepath.Join("downloads", self.ID)
+
+				fmt.Printf("  Iniciando download de '%s' vindo de %s...\n", filename, target)
+
+				err := grpcClient.DownloadFile(target, filename, destDir, "")
+				if err != nil {
+					fmt.Printf("  Falha no download: %v\n", err)
+				} else {
+					fmt.Printf("  Download concluído! Salvo na pasta '%s'.\n", destDir)
+				}
+
+			case "exit", "quit":
+				fmt.Println("  Saindo da rede...")
+				os.Exit(0)
+
+			default:
+				fmt.Printf("  Comando desconhecido: '%s'. Digite 'help'.\n", cmd)
 			}
 		}
 	}()

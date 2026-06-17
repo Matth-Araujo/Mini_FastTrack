@@ -1,0 +1,759 @@
+2026/06/16 21:06:44 gRPC server escutando em 127.0.0.1:5003
+2026/06/16 21:06:46 [p3] bootstrap inicial com 127.0.0.1:5001 trouxe 3 peers
+2026/06/16 21:06:46 [p3] peer iniciado em 127.0.0.1:5003
+2026/06/16 21:06:51 [p3][gossip] self heartbeat=2
+2026/06/16 21:06:51 [p3] peers ativos conhecidos: 4
+2026/06/16 21:06:51 [p3][gossip] targets=2
+2026/06/16 21:06:51 [p3] -> p4 127.0.0.1:5004 heartbeat=1 alive=true last_seen=1781654806
+2026/06/16 21:06:51 [p3][gossip] consultando p1 (127.0.0.1:5001) hb=7
+2026/06/16 21:06:51 [p3] -> p3 127.0.0.1:5003 heartbeat=2 alive=true last_seen=1781654811
+2026/06/16 21:06:51 [p3] -> p1 127.0.0.1:5001 heartbeat=7 alive=true last_seen=1781654807
+2026/06/16 21:06:51 [p3] -> p2 127.0.0.1:5002 heartbeat=6 alive=true last_seen=1781654806
+2026/06/16 21:06:51 [p3][gossip] recebeu 3 peers de p1
+2026/06/16 21:06:51 [p3][gossip] merge peer=p2 hb=7 alive=true
+2026/06/16 21:06:51 [p3][gossip] merge peer=p4 hb=2 alive=true
+2026/06/16 21:06:51 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=6
+2026/06/16 21:06:51 [p3][gossip] recebeu 3 peers de p2
+2026/06/16 21:06:51 [p3][gossip] merge peer=p1 hb=7 alive=true
+2026/06/16 21:06:51 [p3][gossip] merge peer=p4 hb=2 alive=true
+2026/06/16 21:06:56 [p3][gossip] self heartbeat=3
+2026/06/16 21:06:56 [p3][gossip] targets=2
+2026/06/16 21:06:56 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=8
+2026/06/16 21:06:56 [p3] peers ativos conhecidos: 4
+2026/06/16 21:06:56 [p3] -> p3 127.0.0.1:5003 heartbeat=2 alive=true last_seen=1781654811
+2026/06/16 21:06:56 [p3] -> p1 127.0.0.1:5001 heartbeat=8 alive=true last_seen=1781654812
+2026/06/16 21:06:56 [p3] -> p2 127.0.0.1:5002 heartbeat=8 alive=true last_seen=1781654815
+2026/06/16 21:06:56 [p3] -> p4 127.0.0.1:5004 heartbeat=2 alive=true last_seen=1781654811
+2026/06/16 21:06:56 [p3] erro ao atualizar índice de p1: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:5001: connect: connection refused"
+2026/06/16 21:06:56 [p3][gossip] recebeu 3 peers de p2
+2026/06/16 21:06:56 [p3][gossip] merge peer=p1 hb=8 alive=true
+2026/06/16 21:06:56 [p3][gossip] merge peer=p4 hb=3 alive=true
+2026/06/16 21:06:56 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=2
+2026/06/16 21:06:56 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:06:56 [p3][gossip] merge peer=p2 hb=7 alive=true
+2026/06/16 21:07:01 [p3][gossip] self heartbeat=4
+2026/06/16 21:07:01 [p3] peers ativos conhecidos: 4
+2026/06/16 21:07:01 [p3] -> p3 127.0.0.1:5003 heartbeat=4 alive=true last_seen=1781654821
+2026/06/16 21:07:01 [p3] -> p1 127.0.0.1:5001 heartbeat=8 alive=true last_seen=1781654816
+2026/06/16 21:07:01 [p3] -> p2 127.0.0.1:5002 heartbeat=8 alive=true last_seen=1781654815
+2026/06/16 21:07:01 [p3] -> p4 127.0.0.1:5004 heartbeat=4 alive=true last_seen=1781654819
+2026/06/16 21:07:01 [p3][gossip] targets=2
+2026/06/16 21:07:01 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=8
+2026/06/16 21:07:01 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:07:01 [p3][gossip] merge peer=p4 hb=4 alive=true
+2026/06/16 21:07:01 [p3][gossip] consultando p1 (127.0.0.1:5001) hb=8
+2026/06/16 21:07:01 [p3][gossip] peer p1 (127.0.0.1:5001) indisponível: conexão recusada ou serviço não está ativo
+2026/06/16 21:07:01 [p3][gossip] detalhe técnico: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:5001: connect: connection refused"
+2026/06/16 21:07:06 [p3] peers ativos conhecidos: 3
+2026/06/16 21:07:06 [p3] -> p2 127.0.0.1:5002 heartbeat=10 alive=true last_seen=1781654825
+2026/06/16 21:07:06 [p3] -> p4 127.0.0.1:5004 heartbeat=5 alive=true last_seen=1781654824
+2026/06/16 21:07:06 [p3] -> p3 127.0.0.1:5003 heartbeat=4 alive=true last_seen=1781654821
+2026/06/16 21:07:06 [p3][gossip] self heartbeat=5
+2026/06/16 21:07:06 [p3][gossip] targets=2
+2026/06/16 21:07:06 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=10
+2026/06/16 21:07:06 [p3][gossip] recebeu 3 peers de p2
+2026/06/16 21:07:06 [p3][gossip] merge peer=p1 hb=8 alive=true
+2026/06/16 21:07:06 [p3][gossip] merge peer=p4 hb=5 alive=true
+2026/06/16 21:07:06 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=5
+2026/06/16 21:07:06 [p3][gossip] recebeu 3 peers de p4
+2026/06/16 21:07:06 [p3][gossip] merge peer=p1 hb=8 alive=true
+2026/06/16 21:07:06 [p3][gossip] merge peer=p2 hb=10 alive=true
+2026/06/16 21:07:11 [p3][gossip] self heartbeat=6
+2026/06/16 21:07:11 [p3] peers ativos conhecidos: 4
+2026/06/16 21:07:11 [p3] -> p2 127.0.0.1:5002 heartbeat=11 alive=true last_seen=1781654830
+2026/06/16 21:07:11 [p3] -> p4 127.0.0.1:5004 heartbeat=6 alive=true last_seen=1781654829
+2026/06/16 21:07:11 [p3] -> p3 127.0.0.1:5003 heartbeat=6 alive=true last_seen=1781654831
+2026/06/16 21:07:11 [p3] -> p1 127.0.0.1:5001 heartbeat=8 alive=true last_seen=1781654826
+2026/06/16 21:07:11 [p3][gossip] targets=2
+2026/06/16 21:07:11 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=11
+2026/06/16 21:07:11 [p3][gossip] recebeu 3 peers de p2
+2026/06/16 21:07:11 [p3][gossip] merge peer=p1 hb=8 alive=true
+2026/06/16 21:07:11 [p3][gossip] merge peer=p4 hb=6 alive=true
+2026/06/16 21:07:11 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=6
+2026/06/16 21:07:11 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:07:11 [p3][gossip] merge peer=p2 hb=11 alive=true
+2026/06/16 21:07:16 [p3] peers ativos conhecidos: 4
+2026/06/16 21:07:16 [p3] -> p3 127.0.0.1:5003 heartbeat=6 alive=true last_seen=1781654831
+2026/06/16 21:07:16 [p3] -> p1 127.0.0.1:5001 heartbeat=8 alive=true last_seen=1781654831
+2026/06/16 21:07:16 [p3] -> p2 127.0.0.1:5002 heartbeat=11 alive=true last_seen=1781654831
+2026/06/16 21:07:16 [p3] -> p4 127.0.0.1:5004 heartbeat=7 alive=true last_seen=1781654834
+2026/06/16 21:07:16 [p3][gossip] self heartbeat=7
+2026/06/16 21:07:16 [p3][gossip] targets=2
+2026/06/16 21:07:16 [p3][gossip] consultando p1 (127.0.0.1:5001) hb=8
+2026/06/16 21:07:16 [p3][gossip] peer p1 (127.0.0.1:5001) indisponível: conexão recusada ou serviço não está ativo
+2026/06/16 21:07:16 [p3][gossip] detalhe técnico: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:5001: connect: connection refused"
+2026/06/16 21:07:16 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=11
+2026/06/16 21:07:16 [p3] erro ao atualizar índice de p1: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:5001: connect: connection refused"
+2026/06/16 21:07:16 [p3][gossip] recebeu 3 peers de p2
+2026/06/16 21:07:16 [p3][gossip] merge peer=p1 hb=8 alive=true
+2026/06/16 21:07:16 [p3][gossip] merge peer=p4 hb=7 alive=true
+2026/06/16 21:07:21 [p3] peers ativos conhecidos: 4
+2026/06/16 21:07:21 [p3] -> p4 127.0.0.1:5004 heartbeat=8 alive=true last_seen=1781654839
+2026/06/16 21:07:21 [p3][gossip] self heartbeat=8
+2026/06/16 21:07:21 [p3][gossip] targets=2
+2026/06/16 21:07:21 [p3][gossip] consultando p1 (127.0.0.1:5001) hb=8
+2026/06/16 21:07:21 [p3] -> p3 127.0.0.1:5003 heartbeat=7 alive=true last_seen=1781654836
+2026/06/16 21:07:21 [p3] -> p1 127.0.0.1:5001 heartbeat=8 alive=true last_seen=1781654836
+2026/06/16 21:07:21 [p3] -> p2 127.0.0.1:5002 heartbeat=13 alive=true last_seen=1781654840
+2026/06/16 21:07:21 [p3][gossip] peer p1 (127.0.0.1:5001) indisponível: conexão recusada ou serviço não está ativo
+2026/06/16 21:07:21 [p3][gossip] detalhe técnico: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:5001: connect: connection refused"
+2026/06/16 21:07:21 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=8
+2026/06/16 21:07:21 [p3][gossip] recebeu 3 peers de p4
+2026/06/16 21:07:21 [p3][gossip] merge peer=p1 hb=8 alive=true
+2026/06/16 21:07:21 [p3][gossip] merge peer=p2 hb=13 alive=true
+2026/06/16 21:07:26 [p3][gossip] self heartbeat=9
+2026/06/16 21:07:26 [p3] peers ativos conhecidos: 4
+2026/06/16 21:07:26 [p3] -> p2 127.0.0.1:5002 heartbeat=14 alive=true last_seen=1781654845
+2026/06/16 21:07:26 [p3] -> p4 127.0.0.1:5004 heartbeat=8 alive=true last_seen=1781654839
+2026/06/16 21:07:26 [p3] -> p3 127.0.0.1:5003 heartbeat=9 alive=true last_seen=1781654846
+2026/06/16 21:07:26 [p3] -> p1 127.0.0.1:5001 heartbeat=8 alive=true last_seen=1781654841
+2026/06/16 21:07:26 [p3][gossip] targets=2
+2026/06/16 21:07:26 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=14
+2026/06/16 21:07:26 [p3] erro ao atualizar índice de p1: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:5001: connect: connection refused"
+2026/06/16 21:07:26 [p3][gossip] recebeu 3 peers de p2
+2026/06/16 21:07:26 [p3][gossip] merge peer=p1 hb=8 alive=true
+2026/06/16 21:07:26 [p3][gossip] merge peer=p4 hb=9 alive=true
+2026/06/16 21:07:26 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=8
+2026/06/16 21:07:26 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:07:26 [p3][gossip] merge peer=p2 hb=14 alive=true
+2026/06/16 21:07:31 [p3] peers ativos conhecidos: 4
+2026/06/16 21:07:31 [p3][gossip] self heartbeat=10
+2026/06/16 21:07:31 [p3][gossip] targets=2
+2026/06/16 21:07:31 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=10
+2026/06/16 21:07:31 [p3] -> p1 127.0.0.1:5001 heartbeat=8 alive=true last_seen=1781654846
+2026/06/16 21:07:31 [p3] -> p2 127.0.0.1:5002 heartbeat=15 alive=true last_seen=1781654850
+2026/06/16 21:07:31 [p3] -> p4 127.0.0.1:5004 heartbeat=10 alive=true last_seen=1781654849
+2026/06/16 21:07:31 [p3] -> p3 127.0.0.1:5003 heartbeat=9 alive=true last_seen=1781654846
+2026/06/16 21:07:31 [p3][gossip] recebeu 3 peers de p4
+2026/06/16 21:07:31 [p3][gossip] merge peer=p1 hb=8 alive=true
+2026/06/16 21:07:31 [p3][gossip] merge peer=p2 hb=14 alive=true
+2026/06/16 21:07:31 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=15
+2026/06/16 21:07:31 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:07:31 [p3][gossip] merge peer=p4 hb=10 alive=true
+2026/06/16 21:07:36 [p3] peers ativos conhecidos: 4
+2026/06/16 21:07:36 [p3][gossip] self heartbeat=11
+2026/06/16 21:07:36 [p3] -> p1 127.0.0.1:5001 heartbeat=8 alive=true last_seen=1781654851
+2026/06/16 21:07:36 [p3] -> p2 127.0.0.1:5002 heartbeat=16 alive=true last_seen=1781654855
+2026/06/16 21:07:36 [p3] -> p4 127.0.0.1:5004 heartbeat=11 alive=true last_seen=1781654854
+2026/06/16 21:07:36 [p3] -> p3 127.0.0.1:5003 heartbeat=10 alive=true last_seen=1781654851
+2026/06/16 21:07:36 [p3][gossip] targets=2
+2026/06/16 21:07:36 [p3][gossip] consultando p1 (127.0.0.1:5001) hb=8
+2026/06/16 21:07:36 [p3] erro ao atualizar índice de p1: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:5001: connect: connection refused"
+2026/06/16 21:07:36 [p3][gossip] peer p1 (127.0.0.1:5001) indisponível: conexão recusada ou serviço não está ativo
+2026/06/16 21:07:36 [p3][gossip] detalhe técnico: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:5001: connect: connection refused"
+2026/06/16 21:07:36 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=11
+2026/06/16 21:07:36 [p3][gossip] recebeu 3 peers de p4
+2026/06/16 21:07:36 [p3][gossip] merge peer=p1 hb=8 alive=true
+2026/06/16 21:07:36 [p3][gossip] merge peer=p2 hb=16 alive=true
+2026/06/16 21:07:41 [p3][gossip] self heartbeat=12
+2026/06/16 21:07:41 [p3][gossip] targets=2
+2026/06/16 21:07:41 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=12
+2026/06/16 21:07:41 [p3] peers ativos conhecidos: 4
+2026/06/16 21:07:41 [p3] -> p3 127.0.0.1:5003 heartbeat=12 alive=true last_seen=1781654861
+2026/06/16 21:07:41 [p3] -> p1 127.0.0.1:5001 heartbeat=8 alive=true last_seen=1781654856
+2026/06/16 21:07:41 [p3] -> p2 127.0.0.1:5002 heartbeat=17 alive=true last_seen=1781654860
+2026/06/16 21:07:41 [p3] -> p4 127.0.0.1:5004 heartbeat=12 alive=true last_seen=1781654859
+2026/06/16 21:07:41 [p3][gossip] recebeu 3 peers de p4
+2026/06/16 21:07:41 [p3][gossip] merge peer=p1 hb=8 alive=true
+2026/06/16 21:07:41 [p3][gossip] merge peer=p2 hb=16 alive=true
+2026/06/16 21:07:41 [p3][gossip] consultando p1 (127.0.0.1:5001) hb=8
+2026/06/16 21:07:41 [p3][gossip] peer p1 (127.0.0.1:5001) indisponível: conexão recusada ou serviço não está ativo
+2026/06/16 21:07:41 [p3][gossip] detalhe técnico: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:5001: connect: connection refused"
+2026/06/16 21:07:46 [p3] peers ativos conhecidos: 3
+2026/06/16 21:07:46 [p3] -> p3 127.0.0.1:5003 heartbeat=12 alive=true last_seen=1781654861
+2026/06/16 21:07:46 [p3] -> p2 127.0.0.1:5002 heartbeat=18 alive=true last_seen=1781654865
+2026/06/16 21:07:46 [p3] -> p4 127.0.0.1:5004 heartbeat=13 alive=true last_seen=1781654864
+2026/06/16 21:07:46 [p3][gossip] self heartbeat=13
+2026/06/16 21:07:46 [p3][gossip] targets=2
+2026/06/16 21:07:46 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=13
+2026/06/16 21:07:46 [p3][gossip] recebeu 3 peers de p4
+2026/06/16 21:07:46 [p3][gossip] merge peer=p1 hb=8 alive=true
+2026/06/16 21:07:46 [p3][gossip] merge peer=p2 hb=17 alive=true
+2026/06/16 21:07:46 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=18
+2026/06/16 21:07:46 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:07:46 [p3][gossip] merge peer=p4 hb=13 alive=true
+2026/06/16 21:07:51 [p3] peers ativos conhecidos: 4
+2026/06/16 21:07:51 [p3] -> p3 127.0.0.1:5003 heartbeat=13 alive=true last_seen=1781654866
+2026/06/16 21:07:51 [p3] -> p1 127.0.0.1:5001 heartbeat=8 alive=true last_seen=1781654866
+2026/06/16 21:07:51 [p3] -> p2 127.0.0.1:5002 heartbeat=19 alive=true last_seen=1781654870
+2026/06/16 21:07:51 [p3] -> p4 127.0.0.1:5004 heartbeat=14 alive=true last_seen=1781654869
+2026/06/16 21:07:51 [p3][gossip] self heartbeat=14
+2026/06/16 21:07:51 [p3][gossip] targets=2
+2026/06/16 21:07:51 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=14
+2026/06/16 21:07:51 [p3][gossip] recebeu 3 peers de p4
+2026/06/16 21:07:51 [p3][gossip] merge peer=p1 hb=8 alive=true
+2026/06/16 21:07:51 [p3][gossip] merge peer=p2 hb=19 alive=true
+2026/06/16 21:07:51 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=19
+2026/06/16 21:07:51 [p3][gossip] recebeu 3 peers de p2
+2026/06/16 21:07:51 [p3][gossip] merge peer=p1 hb=8 alive=true
+2026/06/16 21:07:51 [p3][gossip] merge peer=p4 hb=14 alive=true
+2026/06/16 21:07:56 [p3] peers ativos conhecidos: 4
+2026/06/16 21:07:56 [p3] -> p3 127.0.0.1:5003 heartbeat=14 alive=true last_seen=1781654871
+2026/06/16 21:07:56 [p3] -> p1 127.0.0.1:5001 heartbeat=8 alive=true last_seen=1781654871
+2026/06/16 21:07:56 [p3] -> p2 127.0.0.1:5002 heartbeat=20 alive=true last_seen=1781654875
+2026/06/16 21:07:56 [p3] -> p4 127.0.0.1:5004 heartbeat=14 alive=true last_seen=1781654871
+2026/06/16 21:07:56 [p3][gossip] self heartbeat=15
+2026/06/16 21:07:56 [p3][gossip] targets=2
+2026/06/16 21:07:56 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=20
+2026/06/16 21:07:56 [p3] erro ao atualizar índice de p1: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:5001: connect: connection refused"
+2026/06/16 21:07:56 [p3][gossip] recebeu 3 peers de p2
+2026/06/16 21:07:56 [p3][gossip] merge peer=p1 hb=8 alive=true
+2026/06/16 21:07:56 [p3][gossip] merge peer=p4 hb=15 alive=true
+2026/06/16 21:07:56 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=14
+2026/06/16 21:07:56 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:07:56 [p3][gossip] merge peer=p2 hb=19 alive=true
+2026/06/16 21:08:01 [p3] peers ativos conhecidos: 4
+2026/06/16 21:08:01 [p3][gossip] self heartbeat=16
+2026/06/16 21:08:01 [p3][gossip] targets=2
+2026/06/16 21:08:01 [p3] -> p1 127.0.0.1:5001 heartbeat=8 alive=true last_seen=1781654876
+2026/06/16 21:08:01 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=20
+2026/06/16 21:08:01 [p3] -> p2 127.0.0.1:5002 heartbeat=20 alive=true last_seen=1781654875
+2026/06/16 21:08:01 [p3] -> p4 127.0.0.1:5004 heartbeat=16 alive=true last_seen=1781654879
+2026/06/16 21:08:01 [p3] -> p3 127.0.0.1:5003 heartbeat=15 alive=true last_seen=1781654876
+2026/06/16 21:08:01 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:08:01 [p3][gossip] merge peer=p4 hb=16 alive=true
+2026/06/16 21:08:01 [p3][gossip] consultando p1 (127.0.0.1:5001) hb=8
+2026/06/16 21:08:01 [p3][gossip] peer p1 (127.0.0.1:5001) indisponível: conexão recusada ou serviço não está ativo
+2026/06/16 21:08:01 [p3][gossip] detalhe técnico: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:5001: connect: connection refused"
+2026/06/16 21:08:06 [p3][gossip] self heartbeat=17
+2026/06/16 21:08:06 [p3][gossip] targets=2
+2026/06/16 21:08:06 [p3] peers ativos conhecidos: 3
+2026/06/16 21:08:06 [p3] -> p4 127.0.0.1:5004 heartbeat=16 alive=true last_seen=1781654881
+2026/06/16 21:08:06 [p3] -> p3 127.0.0.1:5003 heartbeat=17 alive=true last_seen=1781654886
+2026/06/16 21:08:06 [p3] -> p2 127.0.0.1:5002 heartbeat=22 alive=true last_seen=1781654885
+2026/06/16 21:08:06 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=16
+2026/06/16 21:08:06 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:08:06 [p3][gossip] merge peer=p2 hb=22 alive=true
+2026/06/16 21:08:06 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=22
+2026/06/16 21:08:06 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:08:06 [p3][gossip] merge peer=p4 hb=17 alive=true
+2026/06/16 21:08:11 [p3][gossip] self heartbeat=18
+2026/06/16 21:08:11 [p3][gossip] targets=2
+2026/06/16 21:08:11 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=23
+2026/06/16 21:08:11 [p3] peers ativos conhecidos: 3
+2026/06/16 21:08:11 [p3] -> p2 127.0.0.1:5002 heartbeat=23 alive=true last_seen=1781654890
+2026/06/16 21:08:11 [p3] -> p4 127.0.0.1:5004 heartbeat=18 alive=true last_seen=1781654889
+2026/06/16 21:08:11 [p3] -> p3 127.0.0.1:5003 heartbeat=18 alive=true last_seen=1781654891
+2026/06/16 21:08:11 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:08:11 [p3][gossip] merge peer=p4 hb=18 alive=true
+2026/06/16 21:08:11 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=18
+2026/06/16 21:08:11 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:08:11 [p3][gossip] merge peer=p2 hb=23 alive=true
+2026/06/16 21:08:16 [p3] peers ativos conhecidos: 3
+2026/06/16 21:08:16 [p3] -> p3 127.0.0.1:5003 heartbeat=18 alive=true last_seen=1781654891
+2026/06/16 21:08:16 [p3] -> p2 127.0.0.1:5002 heartbeat=24 alive=true last_seen=1781654895
+2026/06/16 21:08:16 [p3] -> p4 127.0.0.1:5004 heartbeat=19 alive=true last_seen=1781654894
+2026/06/16 21:08:16 [p3][gossip] self heartbeat=19
+2026/06/16 21:08:16 [p3][gossip] targets=2
+2026/06/16 21:08:16 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=24
+2026/06/16 21:08:16 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:08:16 [p3][gossip] merge peer=p4 hb=19 alive=true
+2026/06/16 21:08:16 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=19
+2026/06/16 21:08:16 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:08:16 [p3][gossip] merge peer=p2 hb=24 alive=true
+2026/06/16 21:08:21 [p3] peers ativos conhecidos: 3
+2026/06/16 21:08:21 [p3] -> p3 127.0.0.1:5003 heartbeat=19 alive=true last_seen=1781654896
+2026/06/16 21:08:21 [p3] -> p2 127.0.0.1:5002 heartbeat=25 alive=true last_seen=1781654900
+2026/06/16 21:08:21 [p3] -> p4 127.0.0.1:5004 heartbeat=20 alive=true last_seen=1781654899
+2026/06/16 21:08:21 [p3][gossip] self heartbeat=20
+2026/06/16 21:08:21 [p3][gossip] targets=2
+2026/06/16 21:08:21 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=25
+2026/06/16 21:08:21 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:08:21 [p3][gossip] merge peer=p4 hb=20 alive=true
+2026/06/16 21:08:21 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=20
+2026/06/16 21:08:21 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:08:21 [p3][gossip] merge peer=p2 hb=25 alive=true
+2026/06/16 21:08:26 [p3] peers ativos conhecidos: 3
+2026/06/16 21:08:26 [p3] -> p3 127.0.0.1:5003 heartbeat=20 alive=true last_seen=1781654901
+2026/06/16 21:08:26 [p3] -> p2 127.0.0.1:5002 heartbeat=26 alive=true last_seen=1781654905
+2026/06/16 21:08:26 [p3] -> p4 127.0.0.1:5004 heartbeat=21 alive=true last_seen=1781654904
+2026/06/16 21:08:26 [p3][gossip] self heartbeat=21
+2026/06/16 21:08:26 [p3][gossip] targets=2
+2026/06/16 21:08:26 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=26
+2026/06/16 21:08:26 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:08:26 [p3][gossip] merge peer=p4 hb=21 alive=true
+2026/06/16 21:08:26 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=21
+2026/06/16 21:08:26 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:08:26 [p3][gossip] merge peer=p2 hb=26 alive=true
+2026/06/16 21:08:31 [p3][gossip] self heartbeat=22
+2026/06/16 21:08:31 [p3][gossip] targets=2
+2026/06/16 21:08:31 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=27
+2026/06/16 21:08:31 [p3] peers ativos conhecidos: 3
+2026/06/16 21:08:31 [p3] -> p3 127.0.0.1:5003 heartbeat=22 alive=true last_seen=1781654911
+2026/06/16 21:08:31 [p3] -> p2 127.0.0.1:5002 heartbeat=27 alive=true last_seen=1781654910
+2026/06/16 21:08:31 [p3] -> p4 127.0.0.1:5004 heartbeat=22 alive=true last_seen=1781654909
+2026/06/16 21:08:31 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:08:31 [p3][gossip] merge peer=p4 hb=22 alive=true
+2026/06/16 21:08:31 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=22
+2026/06/16 21:08:31 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:08:31 [p3][gossip] merge peer=p2 hb=27 alive=true
+2026/06/16 21:08:36 [p3][gossip] self heartbeat=23
+2026/06/16 21:08:36 [p3][gossip] targets=2
+2026/06/16 21:08:36 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=28
+2026/06/16 21:08:36 [p3] peers ativos conhecidos: 3
+2026/06/16 21:08:36 [p3] -> p3 127.0.0.1:5003 heartbeat=23 alive=true last_seen=1781654916
+2026/06/16 21:08:36 [p3] -> p2 127.0.0.1:5002 heartbeat=28 alive=true last_seen=1781654915
+2026/06/16 21:08:36 [p3] -> p4 127.0.0.1:5004 heartbeat=23 alive=true last_seen=1781654914
+2026/06/16 21:08:36 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:08:36 [p3][gossip] merge peer=p4 hb=23 alive=true
+2026/06/16 21:08:36 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=23
+2026/06/16 21:08:36 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:08:36 [p3][gossip] merge peer=p2 hb=28 alive=true
+2026/06/16 21:08:41 [p3][gossip] self heartbeat=24
+2026/06/16 21:08:41 [p3][gossip] targets=2
+2026/06/16 21:08:41 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=29
+2026/06/16 21:08:41 [p3] peers ativos conhecidos: 3
+2026/06/16 21:08:41 [p3] -> p2 127.0.0.1:5002 heartbeat=29 alive=true last_seen=1781654920
+2026/06/16 21:08:41 [p3] -> p4 127.0.0.1:5004 heartbeat=24 alive=true last_seen=1781654919
+2026/06/16 21:08:41 [p3] -> p3 127.0.0.1:5003 heartbeat=24 alive=true last_seen=1781654921
+2026/06/16 21:08:41 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:08:41 [p3][gossip] merge peer=p4 hb=24 alive=true
+2026/06/16 21:08:41 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=24
+2026/06/16 21:08:41 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:08:41 [p3][gossip] merge peer=p2 hb=29 alive=true
+2026/06/16 21:08:46 [p3][gossip] self heartbeat=25
+2026/06/16 21:08:46 [p3][gossip] targets=2
+2026/06/16 21:08:46 [p3] peers ativos conhecidos: 3
+2026/06/16 21:08:46 [p3] -> p4 127.0.0.1:5004 heartbeat=25 alive=true last_seen=1781654924
+2026/06/16 21:08:46 [p3] -> p3 127.0.0.1:5003 heartbeat=25 alive=true last_seen=1781654926
+2026/06/16 21:08:46 [p3] -> p2 127.0.0.1:5002 heartbeat=30 alive=true last_seen=1781654925
+2026/06/16 21:08:46 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=30
+2026/06/16 21:08:46 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:08:46 [p3][gossip] merge peer=p4 hb=25 alive=true
+2026/06/16 21:08:46 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=25
+2026/06/16 21:08:46 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:08:46 [p3][gossip] merge peer=p2 hb=30 alive=true
+2026/06/16 21:08:51 [p3][gossip] self heartbeat=26
+2026/06/16 21:08:51 [p3][gossip] targets=2
+2026/06/16 21:08:51 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=31
+2026/06/16 21:08:51 [p3] peers ativos conhecidos: 3
+2026/06/16 21:08:51 [p3] -> p4 127.0.0.1:5004 heartbeat=26 alive=true last_seen=1781654929
+2026/06/16 21:08:51 [p3] -> p3 127.0.0.1:5003 heartbeat=26 alive=true last_seen=1781654931
+2026/06/16 21:08:51 [p3] -> p2 127.0.0.1:5002 heartbeat=31 alive=true last_seen=1781654930
+2026/06/16 21:08:51 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:08:51 [p3][gossip] merge peer=p4 hb=26 alive=true
+2026/06/16 21:08:51 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=26
+2026/06/16 21:08:51 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:08:51 [p3][gossip] merge peer=p2 hb=31 alive=true
+2026/06/16 21:08:56 [p3][gossip] self heartbeat=27
+2026/06/16 21:08:56 [p3][gossip] targets=2
+2026/06/16 21:08:56 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=32
+2026/06/16 21:08:56 [p3] peers ativos conhecidos: 3
+2026/06/16 21:08:56 [p3] -> p4 127.0.0.1:5004 heartbeat=27 alive=true last_seen=1781654934
+2026/06/16 21:08:56 [p3] -> p3 127.0.0.1:5003 heartbeat=27 alive=true last_seen=1781654936
+2026/06/16 21:08:56 [p3] -> p2 127.0.0.1:5002 heartbeat=32 alive=true last_seen=1781654935
+2026/06/16 21:08:56 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:08:56 [p3][gossip] merge peer=p4 hb=27 alive=true
+2026/06/16 21:08:56 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=27
+2026/06/16 21:08:56 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:08:56 [p3][gossip] merge peer=p2 hb=32 alive=true
+2026/06/16 21:09:01 [p3][gossip] self heartbeat=28
+2026/06/16 21:09:01 [p3][gossip] targets=2
+2026/06/16 21:09:01 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=33
+2026/06/16 21:09:01 [p3] peers ativos conhecidos: 3
+2026/06/16 21:09:01 [p3] -> p3 127.0.0.1:5003 heartbeat=28 alive=true last_seen=1781654941
+2026/06/16 21:09:01 [p3] -> p2 127.0.0.1:5002 heartbeat=33 alive=true last_seen=1781654940
+2026/06/16 21:09:01 [p3] -> p4 127.0.0.1:5004 heartbeat=28 alive=true last_seen=1781654939
+2026/06/16 21:09:01 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:09:01 [p3][gossip] merge peer=p4 hb=28 alive=true
+2026/06/16 21:09:01 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=28
+2026/06/16 21:09:01 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:09:01 [p3][gossip] merge peer=p2 hb=33 alive=true
+2026/06/16 21:09:06 [p3] peers ativos conhecidos: 3
+2026/06/16 21:09:06 [p3] -> p3 127.0.0.1:5003 heartbeat=28 alive=true last_seen=1781654941
+2026/06/16 21:09:06 [p3] -> p2 127.0.0.1:5002 heartbeat=34 alive=true last_seen=1781654945
+2026/06/16 21:09:06 [p3] -> p4 127.0.0.1:5004 heartbeat=29 alive=true last_seen=1781654944
+2026/06/16 21:09:06 [p3][gossip] self heartbeat=29
+2026/06/16 21:09:06 [p3][gossip] targets=2
+2026/06/16 21:09:06 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=34
+2026/06/16 21:09:06 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:09:06 [p3][gossip] merge peer=p4 hb=29 alive=true
+2026/06/16 21:09:06 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=29
+2026/06/16 21:09:06 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:09:06 [p3][gossip] merge peer=p2 hb=34 alive=true
+2026/06/16 21:09:11 [p3] peers ativos conhecidos: 3
+2026/06/16 21:09:11 [p3] -> p4 127.0.0.1:5004 heartbeat=30 alive=true last_seen=1781654949
+2026/06/16 21:09:11 [p3] -> p3 127.0.0.1:5003 heartbeat=29 alive=true last_seen=1781654946
+2026/06/16 21:09:11 [p3] -> p2 127.0.0.1:5002 heartbeat=35 alive=true last_seen=1781654950
+2026/06/16 21:09:11 [p3][gossip] self heartbeat=30
+2026/06/16 21:09:11 [p3][gossip] targets=2
+2026/06/16 21:09:11 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=35
+2026/06/16 21:09:11 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:09:11 [p3][gossip] merge peer=p4 hb=30 alive=true
+2026/06/16 21:09:11 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=30
+2026/06/16 21:09:11 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:09:11 [p3][gossip] merge peer=p2 hb=35 alive=true
+2026/06/16 21:09:16 [p3][gossip] self heartbeat=31
+2026/06/16 21:09:16 [p3] peers ativos conhecidos: 3
+2026/06/16 21:09:16 [p3] -> p3 127.0.0.1:5003 heartbeat=31 alive=true last_seen=1781654956
+2026/06/16 21:09:16 [p3] -> p2 127.0.0.1:5002 heartbeat=36 alive=true last_seen=1781654955
+2026/06/16 21:09:16 [p3] -> p4 127.0.0.1:5004 heartbeat=31 alive=true last_seen=1781654954
+2026/06/16 21:09:16 [p3][gossip] targets=2
+2026/06/16 21:09:16 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=36
+2026/06/16 21:09:16 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:09:16 [p3][gossip] merge peer=p4 hb=31 alive=true
+2026/06/16 21:09:16 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=31
+2026/06/16 21:09:16 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:09:16 [p3][gossip] merge peer=p2 hb=36 alive=true
+2026/06/16 21:09:21 [p3] peers ativos conhecidos: 3
+2026/06/16 21:09:21 [p3] -> p3 127.0.0.1:5003 heartbeat=31 alive=true last_seen=1781654956
+2026/06/16 21:09:21 [p3] -> p2 127.0.0.1:5002 heartbeat=37 alive=true last_seen=1781654960
+2026/06/16 21:09:21 [p3] -> p4 127.0.0.1:5004 heartbeat=32 alive=true last_seen=1781654959
+2026/06/16 21:09:21 [p3][gossip] self heartbeat=32
+2026/06/16 21:09:21 [p3][gossip] targets=2
+2026/06/16 21:09:21 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=37
+2026/06/16 21:09:21 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:09:21 [p3][gossip] merge peer=p4 hb=32 alive=true
+2026/06/16 21:09:21 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=32
+2026/06/16 21:09:21 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:09:21 [p3][gossip] merge peer=p2 hb=37 alive=true
+2026/06/16 21:09:26 [p3][gossip] self heartbeat=33
+2026/06/16 21:09:26 [p3][gossip] targets=2
+2026/06/16 21:09:26 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=38
+2026/06/16 21:09:26 [p3] peers ativos conhecidos: 3
+2026/06/16 21:09:26 [p3] -> p3 127.0.0.1:5003 heartbeat=33 alive=true last_seen=1781654966
+2026/06/16 21:09:26 [p3] -> p2 127.0.0.1:5002 heartbeat=38 alive=true last_seen=1781654965
+2026/06/16 21:09:26 [p3] -> p4 127.0.0.1:5004 heartbeat=33 alive=true last_seen=1781654964
+2026/06/16 21:09:26 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:09:26 [p3][gossip] merge peer=p4 hb=33 alive=true
+2026/06/16 21:09:26 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=33
+2026/06/16 21:09:26 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:09:26 [p3][gossip] merge peer=p2 hb=38 alive=true
+2026/06/16 21:09:31 [p3][gossip] self heartbeat=34
+2026/06/16 21:09:31 [p3] peers ativos conhecidos: 3
+2026/06/16 21:09:31 [p3] -> p3 127.0.0.1:5003 heartbeat=34 alive=true last_seen=1781654971
+2026/06/16 21:09:31 [p3] -> p2 127.0.0.1:5002 heartbeat=39 alive=true last_seen=1781654970
+2026/06/16 21:09:31 [p3] -> p4 127.0.0.1:5004 heartbeat=34 alive=true last_seen=1781654969
+2026/06/16 21:09:31 [p3][gossip] targets=2
+2026/06/16 21:09:31 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=39
+2026/06/16 21:09:31 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:09:31 [p3][gossip] merge peer=p4 hb=34 alive=true
+2026/06/16 21:09:31 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=34
+2026/06/16 21:09:31 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:09:31 [p3][gossip] merge peer=p2 hb=39 alive=true
+2026/06/16 21:09:36 [p3] peers ativos conhecidos: 3
+2026/06/16 21:09:36 [p3] -> p2 127.0.0.1:5002 heartbeat=40 alive=true last_seen=1781654975
+2026/06/16 21:09:36 [p3] -> p4 127.0.0.1:5004 heartbeat=35 alive=true last_seen=1781654974
+2026/06/16 21:09:36 [p3][gossip] self heartbeat=35
+2026/06/16 21:09:36 [p3][gossip] targets=2
+2026/06/16 21:09:36 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=40
+2026/06/16 21:09:36 [p3] -> p3 127.0.0.1:5003 heartbeat=34 alive=true last_seen=1781654971
+2026/06/16 21:09:36 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:09:36 [p3][gossip] merge peer=p4 hb=35 alive=true
+2026/06/16 21:09:36 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=35
+2026/06/16 21:09:36 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:09:36 [p3][gossip] merge peer=p2 hb=40 alive=true
+2026/06/16 21:09:41 [p3][gossip] self heartbeat=36
+2026/06/16 21:09:41 [p3] peers ativos conhecidos: 3
+2026/06/16 21:09:41 [p3][gossip] targets=2
+2026/06/16 21:09:41 [p3] -> p3 127.0.0.1:5003 heartbeat=36 alive=true last_seen=1781654981
+2026/06/16 21:09:41 [p3] -> p2 127.0.0.1:5002 heartbeat=41 alive=true last_seen=1781654980
+2026/06/16 21:09:41 [p3] -> p4 127.0.0.1:5004 heartbeat=36 alive=true last_seen=1781654979
+2026/06/16 21:09:41 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=41
+2026/06/16 21:09:41 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:09:41 [p3][gossip] merge peer=p4 hb=36 alive=true
+2026/06/16 21:09:41 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=36
+2026/06/16 21:09:41 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:09:41 [p3][gossip] merge peer=p2 hb=41 alive=true
+2026/06/16 21:09:46 [p3] peers ativos conhecidos: 3
+2026/06/16 21:09:46 [p3] -> p3 127.0.0.1:5003 heartbeat=36 alive=true last_seen=1781654981
+2026/06/16 21:09:46 [p3][gossip] self heartbeat=37
+2026/06/16 21:09:46 [p3][gossip] targets=2
+2026/06/16 21:09:46 [p3] -> p2 127.0.0.1:5002 heartbeat=42 alive=true last_seen=1781654985
+2026/06/16 21:09:46 [p3] -> p4 127.0.0.1:5004 heartbeat=37 alive=true last_seen=1781654984
+2026/06/16 21:09:46 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=42
+2026/06/16 21:09:46 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:09:46 [p3][gossip] merge peer=p4 hb=37 alive=true
+2026/06/16 21:09:46 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=37
+2026/06/16 21:09:46 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:09:46 [p3][gossip] merge peer=p2 hb=42 alive=true
+2026/06/16 21:09:51 [p3] peers ativos conhecidos: 3
+2026/06/16 21:09:51 [p3] -> p2 127.0.0.1:5002 heartbeat=43 alive=true last_seen=1781654990
+2026/06/16 21:09:51 [p3] -> p4 127.0.0.1:5004 heartbeat=38 alive=true last_seen=1781654989
+2026/06/16 21:09:51 [p3] -> p3 127.0.0.1:5003 heartbeat=37 alive=true last_seen=1781654986
+2026/06/16 21:09:51 [p3][gossip] self heartbeat=38
+2026/06/16 21:09:51 [p3][gossip] targets=2
+2026/06/16 21:09:51 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=38
+2026/06/16 21:09:51 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:09:51 [p3][gossip] merge peer=p2 hb=43 alive=true
+2026/06/16 21:09:51 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=43
+2026/06/16 21:09:51 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:09:51 [p3][gossip] merge peer=p4 hb=38 alive=true
+2026/06/16 21:09:56 [p3][gossip] self heartbeat=39
+2026/06/16 21:09:56 [p3][gossip] targets=2
+2026/06/16 21:09:56 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=44
+2026/06/16 21:09:56 [p3] peers ativos conhecidos: 3
+2026/06/16 21:09:56 [p3] -> p3 127.0.0.1:5003 heartbeat=39 alive=true last_seen=1781654996
+2026/06/16 21:09:56 [p3] -> p2 127.0.0.1:5002 heartbeat=44 alive=true last_seen=1781654995
+2026/06/16 21:09:56 [p3] -> p4 127.0.0.1:5004 heartbeat=39 alive=true last_seen=1781654994
+2026/06/16 21:09:56 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:09:56 [p3][gossip] merge peer=p4 hb=39 alive=true
+2026/06/16 21:09:56 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=39
+2026/06/16 21:09:56 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:09:56 [p3][gossip] merge peer=p2 hb=44 alive=true
+2026/06/16 21:10:01 [p3][gossip] self heartbeat=40
+2026/06/16 21:10:01 [p3][gossip] targets=2
+2026/06/16 21:10:01 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=45
+2026/06/16 21:10:01 [p3] peers ativos conhecidos: 3
+2026/06/16 21:10:01 [p3] -> p3 127.0.0.1:5003 heartbeat=40 alive=true last_seen=1781655001
+2026/06/16 21:10:01 [p3] -> p2 127.0.0.1:5002 heartbeat=45 alive=true last_seen=1781655000
+2026/06/16 21:10:01 [p3] -> p4 127.0.0.1:5004 heartbeat=40 alive=true last_seen=1781654999
+2026/06/16 21:10:01 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:10:01 [p3][gossip] merge peer=p4 hb=40 alive=true
+2026/06/16 21:10:01 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=40
+2026/06/16 21:10:01 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:10:01 [p3][gossip] merge peer=p2 hb=45 alive=true
+2026/06/16 21:10:06 [p3][gossip] self heartbeat=41
+2026/06/16 21:10:06 [p3][gossip] targets=2
+2026/06/16 21:10:06 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=46
+2026/06/16 21:10:06 [p3] peers ativos conhecidos: 3
+2026/06/16 21:10:06 [p3] -> p3 127.0.0.1:5003 heartbeat=41 alive=true last_seen=1781655006
+2026/06/16 21:10:06 [p3] -> p2 127.0.0.1:5002 heartbeat=46 alive=true last_seen=1781655005
+2026/06/16 21:10:06 [p3] -> p4 127.0.0.1:5004 heartbeat=41 alive=true last_seen=1781655004
+2026/06/16 21:10:06 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:10:06 [p3][gossip] merge peer=p4 hb=41 alive=true
+2026/06/16 21:10:06 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=41
+2026/06/16 21:10:06 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:10:06 [p3][gossip] merge peer=p2 hb=46 alive=true
+2026/06/16 21:10:11 [p3][gossip] self heartbeat=42
+2026/06/16 21:10:11 [p3] peers ativos conhecidos: 3
+2026/06/16 21:10:11 [p3][gossip] targets=2
+2026/06/16 21:10:11 [p3] -> p3 127.0.0.1:5003 heartbeat=42 alive=true last_seen=1781655011
+2026/06/16 21:10:11 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=47
+2026/06/16 21:10:11 [p3] -> p2 127.0.0.1:5002 heartbeat=47 alive=true last_seen=1781655010
+2026/06/16 21:10:11 [p3] -> p4 127.0.0.1:5004 heartbeat=42 alive=true last_seen=1781655009
+2026/06/16 21:10:11 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:10:11 [p3][gossip] merge peer=p4 hb=42 alive=true
+2026/06/16 21:10:11 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=42
+2026/06/16 21:10:11 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:10:11 [p3][gossip] merge peer=p2 hb=47 alive=true
+2026/06/16 21:10:16 [p3][gossip] self heartbeat=43
+2026/06/16 21:10:16 [p3][gossip] targets=2
+2026/06/16 21:10:16 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=48
+2026/06/16 21:10:16 [p3] peers ativos conhecidos: 3
+2026/06/16 21:10:16 [p3] -> p4 127.0.0.1:5004 heartbeat=43 alive=true last_seen=1781655014
+2026/06/16 21:10:16 [p3] -> p3 127.0.0.1:5003 heartbeat=43 alive=true last_seen=1781655016
+2026/06/16 21:10:16 [p3] -> p2 127.0.0.1:5002 heartbeat=48 alive=true last_seen=1781655015
+2026/06/16 21:10:16 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:10:16 [p3][gossip] merge peer=p4 hb=43 alive=true
+2026/06/16 21:10:16 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=43
+2026/06/16 21:10:16 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:10:16 [p3][gossip] merge peer=p2 hb=48 alive=true
+2026/06/16 21:10:21 [p3] peers ativos conhecidos: 3
+2026/06/16 21:10:21 [p3] -> p3 127.0.0.1:5003 heartbeat=43 alive=true last_seen=1781655016
+2026/06/16 21:10:21 [p3] -> p2 127.0.0.1:5002 heartbeat=49 alive=true last_seen=1781655020
+2026/06/16 21:10:21 [p3] -> p4 127.0.0.1:5004 heartbeat=44 alive=true last_seen=1781655019
+2026/06/16 21:10:21 [p3][gossip] self heartbeat=44
+2026/06/16 21:10:21 [p3][gossip] targets=2
+2026/06/16 21:10:21 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=49
+2026/06/16 21:10:21 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:10:21 [p3][gossip] merge peer=p4 hb=44 alive=true
+2026/06/16 21:10:21 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=44
+2026/06/16 21:10:21 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:10:21 [p3][gossip] merge peer=p2 hb=49 alive=true
+2026/06/16 21:10:26 [p3] peers ativos conhecidos: 3
+2026/06/16 21:10:26 [p3] -> p3 127.0.0.1:5003 heartbeat=44 alive=true last_seen=1781655021
+2026/06/16 21:10:26 [p3] -> p2 127.0.0.1:5002 heartbeat=50 alive=true last_seen=1781655025
+2026/06/16 21:10:26 [p3] -> p4 127.0.0.1:5004 heartbeat=45 alive=true last_seen=1781655024
+2026/06/16 21:10:26 [p3][gossip] self heartbeat=45
+2026/06/16 21:10:26 [p3][gossip] targets=2
+2026/06/16 21:10:26 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=50
+2026/06/16 21:10:26 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:10:26 [p3][gossip] merge peer=p4 hb=45 alive=true
+2026/06/16 21:10:26 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=45
+2026/06/16 21:10:26 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:10:26 [p3][gossip] merge peer=p2 hb=50 alive=true
+2026/06/16 21:10:31 [p3][gossip] self heartbeat=46
+2026/06/16 21:10:31 [p3][gossip] targets=2
+2026/06/16 21:10:31 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=51
+2026/06/16 21:10:31 [p3] peers ativos conhecidos: 3
+2026/06/16 21:10:31 [p3] -> p3 127.0.0.1:5003 heartbeat=46 alive=true last_seen=1781655031
+2026/06/16 21:10:31 [p3] -> p2 127.0.0.1:5002 heartbeat=51 alive=true last_seen=1781655030
+2026/06/16 21:10:31 [p3] -> p4 127.0.0.1:5004 heartbeat=46 alive=true last_seen=1781655029
+2026/06/16 21:10:31 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:10:31 [p3][gossip] merge peer=p4 hb=46 alive=true
+2026/06/16 21:10:31 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=46
+2026/06/16 21:10:31 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:10:31 [p3][gossip] merge peer=p2 hb=51 alive=true
+2026/06/16 21:10:36 [p3][gossip] self heartbeat=47
+2026/06/16 21:10:36 [p3] peers ativos conhecidos: 3
+2026/06/16 21:10:36 [p3] -> p3 127.0.0.1:5003 heartbeat=47 alive=true last_seen=1781655036
+2026/06/16 21:10:36 [p3] -> p2 127.0.0.1:5002 heartbeat=52 alive=true last_seen=1781655035
+2026/06/16 21:10:36 [p3] -> p4 127.0.0.1:5004 heartbeat=47 alive=true last_seen=1781655034
+2026/06/16 21:10:36 [p3][gossip] targets=2
+2026/06/16 21:10:36 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=52
+2026/06/16 21:10:36 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:10:36 [p3][gossip] merge peer=p4 hb=47 alive=true
+2026/06/16 21:10:36 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=47
+2026/06/16 21:10:36 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:10:36 [p3][gossip] merge peer=p2 hb=52 alive=true
+2026/06/16 21:10:41 [p3][gossip] self heartbeat=48
+2026/06/16 21:10:41 [p3] peers ativos conhecidos: 3
+2026/06/16 21:10:41 [p3] -> p3 127.0.0.1:5003 heartbeat=48 alive=true last_seen=1781655041
+2026/06/16 21:10:41 [p3] -> p2 127.0.0.1:5002 heartbeat=53 alive=true last_seen=1781655040
+2026/06/16 21:10:41 [p3] -> p4 127.0.0.1:5004 heartbeat=48 alive=true last_seen=1781655039
+2026/06/16 21:10:41 [p3][gossip] targets=2
+2026/06/16 21:10:41 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=53
+2026/06/16 21:10:41 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:10:41 [p3][gossip] merge peer=p4 hb=48 alive=true
+2026/06/16 21:10:41 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=48
+2026/06/16 21:10:41 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:10:41 [p3][gossip] merge peer=p2 hb=53 alive=true
+2026/06/16 21:10:46 [p3][gossip] self heartbeat=49
+2026/06/16 21:10:46 [p3][gossip] targets=2
+2026/06/16 21:10:46 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=49
+2026/06/16 21:10:46 [p3] peers ativos conhecidos: 3
+2026/06/16 21:10:46 [p3] -> p3 127.0.0.1:5003 heartbeat=49 alive=true last_seen=1781655046
+2026/06/16 21:10:46 [p3] -> p2 127.0.0.1:5002 heartbeat=54 alive=true last_seen=1781655045
+2026/06/16 21:10:46 [p3] -> p4 127.0.0.1:5004 heartbeat=49 alive=true last_seen=1781655044
+2026/06/16 21:10:46 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:10:46 [p3][gossip] merge peer=p2 hb=54 alive=true
+2026/06/16 21:10:46 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=54
+2026/06/16 21:10:46 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:10:46 [p3][gossip] merge peer=p4 hb=49 alive=true
+2026/06/16 21:10:51 [p3][gossip] self heartbeat=50
+2026/06/16 21:10:51 [p3] peers ativos conhecidos: 3
+2026/06/16 21:10:51 [p3] -> p3 127.0.0.1:5003 heartbeat=50 alive=true last_seen=1781655051
+2026/06/16 21:10:51 [p3] -> p2 127.0.0.1:5002 heartbeat=55 alive=true last_seen=1781655050
+2026/06/16 21:10:51 [p3] -> p4 127.0.0.1:5004 heartbeat=50 alive=true last_seen=1781655049
+2026/06/16 21:10:51 [p3][gossip] targets=2
+2026/06/16 21:10:51 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=55
+2026/06/16 21:10:51 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:10:51 [p3][gossip] merge peer=p4 hb=50 alive=true
+2026/06/16 21:10:51 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=50
+2026/06/16 21:10:51 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:10:51 [p3][gossip] merge peer=p2 hb=55 alive=true
+2026/06/16 21:10:56 [p3][gossip] self heartbeat=51
+2026/06/16 21:10:56 [p3][gossip] targets=2
+2026/06/16 21:10:56 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=56
+2026/06/16 21:10:56 [p3] peers ativos conhecidos: 3
+2026/06/16 21:10:56 [p3] -> p3 127.0.0.1:5003 heartbeat=51 alive=true last_seen=1781655056
+2026/06/16 21:10:56 [p3] -> p2 127.0.0.1:5002 heartbeat=56 alive=true last_seen=1781655055
+2026/06/16 21:10:56 [p3] -> p4 127.0.0.1:5004 heartbeat=51 alive=true last_seen=1781655054
+2026/06/16 21:10:56 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:10:56 [p3][gossip] merge peer=p4 hb=51 alive=true
+2026/06/16 21:10:56 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=51
+2026/06/16 21:10:56 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:10:56 [p3][gossip] merge peer=p2 hb=56 alive=true
+2026/06/16 21:11:01 [p3] peers ativos conhecidos: 3
+2026/06/16 21:11:01 [p3] -> p3 127.0.0.1:5003 heartbeat=51 alive=true last_seen=1781655056
+2026/06/16 21:11:01 [p3][gossip] self heartbeat=52
+2026/06/16 21:11:01 [peer_table] peer p1 removido da tabela
+2026/06/16 21:11:01 [p3][gossip] targets=2
+2026/06/16 21:11:01 [p3] -> p2 127.0.0.1:5002 heartbeat=57 alive=true last_seen=1781655060
+2026/06/16 21:11:01 [p3] -> p4 127.0.0.1:5004 heartbeat=52 alive=true last_seen=1781655059
+2026/06/16 21:11:01 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=57
+2026/06/16 21:11:01 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:11:01 [p3][gossip] merge peer=p4 hb=52 alive=true
+2026/06/16 21:11:01 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=52
+2026/06/16 21:11:01 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:11:01 [p3][gossip] merge peer=p2 hb=57 alive=true
+2026/06/16 21:11:06 [p3][gossip] self heartbeat=53
+2026/06/16 21:11:06 [p3][gossip] targets=2
+2026/06/16 21:11:06 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=58
+2026/06/16 21:11:06 [p3] peers ativos conhecidos: 3
+2026/06/16 21:11:06 [p3] -> p3 127.0.0.1:5003 heartbeat=53 alive=true last_seen=1781655066
+2026/06/16 21:11:06 [p3] -> p2 127.0.0.1:5002 heartbeat=58 alive=true last_seen=1781655065
+2026/06/16 21:11:06 [p3] -> p4 127.0.0.1:5004 heartbeat=53 alive=true last_seen=1781655064
+2026/06/16 21:11:06 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:11:06 [p3][gossip] merge peer=p4 hb=53 alive=true
+2026/06/16 21:11:06 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=53
+2026/06/16 21:11:06 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:11:06 [p3][gossip] merge peer=p2 hb=58 alive=true
+2026/06/16 21:11:11 [p3] peers ativos conhecidos: 3
+2026/06/16 21:11:11 [p3][gossip] self heartbeat=54
+2026/06/16 21:11:11 [p3][gossip] targets=2
+2026/06/16 21:11:11 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=59
+2026/06/16 21:11:11 [p3] -> p3 127.0.0.1:5003 heartbeat=53 alive=true last_seen=1781655066
+2026/06/16 21:11:11 [p3] -> p2 127.0.0.1:5002 heartbeat=59 alive=true last_seen=1781655070
+2026/06/16 21:11:11 [p3] -> p4 127.0.0.1:5004 heartbeat=54 alive=true last_seen=1781655069
+2026/06/16 21:11:11 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:11:11 [p3][gossip] merge peer=p4 hb=54 alive=true
+2026/06/16 21:11:11 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=54
+2026/06/16 21:11:11 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:11:11 [p3][gossip] merge peer=p2 hb=59 alive=true
+2026/06/16 21:11:16 [p3] peers ativos conhecidos: 3
+2026/06/16 21:11:16 [p3] -> p3 127.0.0.1:5003 heartbeat=54 alive=true last_seen=1781655071
+2026/06/16 21:11:16 [p3] -> p2 127.0.0.1:5002 heartbeat=60 alive=true last_seen=1781655075
+2026/06/16 21:11:16 [p3] -> p4 127.0.0.1:5004 heartbeat=55 alive=true last_seen=1781655074
+2026/06/16 21:11:16 [p3][gossip] self heartbeat=55
+2026/06/16 21:11:16 [p3][gossip] targets=2
+2026/06/16 21:11:16 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=60
+2026/06/16 21:11:16 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:11:16 [p3][gossip] merge peer=p4 hb=55 alive=true
+2026/06/16 21:11:16 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=55
+2026/06/16 21:11:16 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:11:16 [p3][gossip] merge peer=p2 hb=60 alive=true
+2026/06/16 21:11:21 [p3][gossip] self heartbeat=56
+2026/06/16 21:11:21 [p3][gossip] targets=2
+2026/06/16 21:11:21 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=61
+2026/06/16 21:11:21 [p3] peers ativos conhecidos: 3
+2026/06/16 21:11:21 [p3] -> p3 127.0.0.1:5003 heartbeat=56 alive=true last_seen=1781655081
+2026/06/16 21:11:21 [p3] -> p2 127.0.0.1:5002 heartbeat=61 alive=true last_seen=1781655080
+2026/06/16 21:11:21 [p3] -> p4 127.0.0.1:5004 heartbeat=56 alive=true last_seen=1781655079
+2026/06/16 21:11:21 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:11:21 [p3][gossip] merge peer=p4 hb=56 alive=true
+2026/06/16 21:11:21 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=56
+2026/06/16 21:11:21 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:11:21 [p3][gossip] merge peer=p2 hb=61 alive=true
+2026/06/16 21:11:26 [p3][gossip] self heartbeat=57
+2026/06/16 21:11:26 [p3][gossip] targets=2
+2026/06/16 21:11:26 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=62
+2026/06/16 21:11:26 [p3] peers ativos conhecidos: 3
+2026/06/16 21:11:26 [p3] -> p3 127.0.0.1:5003 heartbeat=57 alive=true last_seen=1781655086
+2026/06/16 21:11:26 [p3] -> p2 127.0.0.1:5002 heartbeat=62 alive=true last_seen=1781655085
+2026/06/16 21:11:26 [p3] -> p4 127.0.0.1:5004 heartbeat=57 alive=true last_seen=1781655084
+2026/06/16 21:11:26 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:11:26 [p3][gossip] merge peer=p4 hb=57 alive=true
+2026/06/16 21:11:26 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=57
+2026/06/16 21:11:26 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:11:26 [p3][gossip] merge peer=p2 hb=62 alive=true
+2026/06/16 21:11:31 [p3] peers ativos conhecidos: 3
+2026/06/16 21:11:31 [p3] -> p3 127.0.0.1:5003 heartbeat=57 alive=true last_seen=1781655086
+2026/06/16 21:11:31 [p3] -> p2 127.0.0.1:5002 heartbeat=63 alive=true last_seen=1781655090
+2026/06/16 21:11:31 [p3] -> p4 127.0.0.1:5004 heartbeat=58 alive=true last_seen=1781655089
+2026/06/16 21:11:31 [p3][gossip] self heartbeat=58
+2026/06/16 21:11:31 [p3][gossip] targets=2
+2026/06/16 21:11:31 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=63
+2026/06/16 21:11:31 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:11:31 [p3][gossip] merge peer=p4 hb=58 alive=true
+2026/06/16 21:11:31 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=58
+2026/06/16 21:11:31 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:11:31 [p3][gossip] merge peer=p2 hb=63 alive=true
+2026/06/16 21:11:36 [p3][gossip] self heartbeat=59
+2026/06/16 21:11:36 [p3] peers ativos conhecidos: 3
+2026/06/16 21:11:36 [p3] -> p3 127.0.0.1:5003 heartbeat=59 alive=true last_seen=1781655096
+2026/06/16 21:11:36 [p3] -> p2 127.0.0.1:5002 heartbeat=64 alive=true last_seen=1781655095
+2026/06/16 21:11:36 [p3] -> p4 127.0.0.1:5004 heartbeat=59 alive=true last_seen=1781655094
+2026/06/16 21:11:36 [p3][gossip] targets=2
+2026/06/16 21:11:36 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=64
+2026/06/16 21:11:36 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:11:36 [p3][gossip] merge peer=p4 hb=59 alive=true
+2026/06/16 21:11:36 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=59
+2026/06/16 21:11:36 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:11:36 [p3][gossip] merge peer=p2 hb=64 alive=true
+2026/06/16 21:11:41 [p3][gossip] self heartbeat=60
+2026/06/16 21:11:41 [p3][gossip] targets=2
+2026/06/16 21:11:41 [p3] peers ativos conhecidos: 3
+2026/06/16 21:11:41 [p3] -> p3 127.0.0.1:5003 heartbeat=60 alive=true last_seen=1781655101
+2026/06/16 21:11:41 [p3] -> p2 127.0.0.1:5002 heartbeat=65 alive=true last_seen=1781655100
+2026/06/16 21:11:41 [p3] -> p4 127.0.0.1:5004 heartbeat=60 alive=true last_seen=1781655099
+2026/06/16 21:11:41 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=65
+2026/06/16 21:11:41 [p3][gossip] recebeu 2 peers de p2
+2026/06/16 21:11:41 [p3][gossip] merge peer=p4 hb=60 alive=true
+2026/06/16 21:11:41 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=60
+2026/06/16 21:11:41 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:11:41 [p3][gossip] merge peer=p2 hb=65 alive=true
+2026/06/16 21:11:46 [p3][gossip] self heartbeat=61
+2026/06/16 21:11:46 [p3][gossip] targets=2
+2026/06/16 21:11:46 [p3] peers ativos conhecidos: 3
+2026/06/16 21:11:46 [p3] -> p3 127.0.0.1:5003 heartbeat=61 alive=true last_seen=1781655106
+2026/06/16 21:11:46 [p3][gossip] consultando p2 (127.0.0.1:5002) hb=66
+2026/06/16 21:11:46 [p3] -> p2 127.0.0.1:5002 heartbeat=66 alive=true last_seen=1781655105
+2026/06/16 21:11:46 [p3] -> p4 127.0.0.1:5004 heartbeat=61 alive=true last_seen=1781655104
+2026/06/16 21:11:46 [p3][gossip] peer p2 (127.0.0.1:5002) indisponível: conexão recusada ou serviço não está ativo
+2026/06/16 21:11:46 [p3][gossip] detalhe técnico: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:5002: connect: connection refused"
+2026/06/16 21:11:46 [p3][gossip] consultando p4 (127.0.0.1:5004) hb=61
+2026/06/16 21:11:46 [p3] erro ao atualizar índice de p2: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:5002: connect: connection refused"
+2026/06/16 21:11:46 [p3][gossip] recebeu 2 peers de p4
+2026/06/16 21:11:46 [p3][gossip] merge peer=p2 hb=66 alive=true

@@ -10,6 +10,7 @@ import (
 	"net"
 	"os"
 	"path/filepath"
+	"strings"
 	"time"
 
 	"go-api/internal/discovery"
@@ -247,4 +248,43 @@ func StartGRPCServer(table *discovery.PeerTable, fileIndex *discovery.FileIndex,
 
 	log.Printf("gRPC server escutando em %s", addr)
 	return grpcServer.Serve(lis)
+}
+
+func (s *P2PServer) SearchFiles(ctx context.Context, req *p2p.SearchFilesRequest) (*p2p.SearchFilesResponse, error) {
+	query := strings.ToLower(req.GetQuery())
+	allFiles := s.fileIndex.All()
+	knownPeers := s.fileIndex.KnownPeers()
+
+	peerMap := make(map[string]domain.Peer, len(knownPeers))
+	for _, p := range knownPeers {
+		peerMap[p.ID] = p
+	}
+
+	resp := &p2p.SearchFilesResponse{}
+
+	for _, f := range allFiles {
+		if strings.Contains(strings.ToLower(f.Name), query) {
+			peerIDs := s.fileIndex.GetPeers(f.Checksum)
+			peers := make([]*p2p.PeerInfo, 0, len(peerIDs))
+
+			for _, pid := range peerIDs {
+				if p, ok := peerMap[pid]; ok {
+					peers = append(peers, &p2p.PeerInfo{
+						Id:   p.ID,
+						Host: p.Host,
+						Port: int32(p.Port),
+					})
+				}
+			}
+
+			resp.Results = append(resp.Results, &p2p.IndexedFile{
+				Name:     f.Name,
+				Size:     f.Size,
+				Checksum: f.Checksum,
+				Peers:    peers,
+			})
+		}
+	}
+
+	return resp, nil
 }

@@ -9,6 +9,7 @@ service P2PService {
   rpc ListFiles(ListFilesRequest)         returns (ListFilesResponse);
   rpc GetFileIndex(GetFileIndexRequest)   returns (GetFileIndexResponse);
   rpc DownloadFile(DownloadFileRequest)   returns (stream FileChunk);
+  rpc SearchFiles(SearchFilesRequest)     returns (SearchFilesResponse);
 }
 
 message PingRequest  {}
@@ -52,4 +53,12 @@ message FileChunk {
   bytes  content     = 2;
   int64  chunk_index = 3;
   bool   eof         = 4;
+}
+
+message SearchFilesRequest { 
+  string query = 1; 
+}
+
+message SearchFilesResponse { 
+  repeated IndexedFile results = 1; 
 }

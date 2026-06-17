@@ -25,6 +25,7 @@ const (
 	P2PService_ListFiles_FullMethodName    = "/p2p.P2PService/ListFiles"
 	P2PService_GetFileIndex_FullMethodName = "/p2p.P2PService/GetFileIndex"
 	P2PService_DownloadFile_FullMethodName = "/p2p.P2PService/DownloadFile"
+	P2PService_SearchFiles_FullMethodName  = "/p2p.P2PService/SearchFiles"
 )
 
 // P2PServiceClient is the client API for P2PService service.
@@ -37,6 +38,7 @@ type P2PServiceClient interface {
 	ListFiles(ctx context.Context, in *ListFilesRequest, opts ...grpc.CallOption) (*ListFilesResponse, error)
 	GetFileIndex(ctx context.Context, in *GetFileIndexRequest, opts ...grpc.CallOption) (*GetFileIndexResponse, error)
 	DownloadFile(ctx context.Context, in *DownloadFileRequest, opts ...grpc.CallOption) (grpc.ServerStreamingClient[FileChunk], error)
+	SearchFiles(ctx context.Context, in *SearchFilesRequest, opts ...grpc.CallOption) (*SearchFilesResponse, error)
 }
 
 type p2PServiceClient struct {
@@ -116,6 +118,16 @@ func (c *p2PServiceClient) DownloadFile(ctx context.Context, in *DownloadFileReq
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type P2PService_DownloadFileClient = grpc.ServerStreamingClient[FileChunk]
 
+func (c *p2PServiceClient) SearchFiles(ctx context.Context, in *SearchFilesRequest, opts ...grpc.CallOption) (*SearchFilesResponse, error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	out := new(SearchFilesResponse)
+	err := c.cc.Invoke(ctx, P2PService_SearchFiles_FullMethodName, in, out, cOpts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // P2PServiceServer is the server API for P2PService service.
 // All implementations must embed UnimplementedP2PServiceServer
 // for forward compatibility.
@@ -126,6 +138,7 @@ type P2PServiceServer interface {
 	ListFiles(context.Context, *ListFilesRequest) (*ListFilesResponse, error)
 	GetFileIndex(context.Context, *GetFileIndexRequest) (*GetFileIndexResponse, error)
 	DownloadFile(*DownloadFileRequest, grpc.ServerStreamingServer[FileChunk]) error
+	SearchFiles(context.Context, *SearchFilesRequest) (*SearchFilesResponse, error)
 	mustEmbedUnimplementedP2PServiceServer()
 }
 
@@ -153,6 +166,9 @@ func (UnimplementedP2PServiceServer) GetFileIndex(context.Context, *GetFileIndex
 }
 func (UnimplementedP2PServiceServer) DownloadFile(*DownloadFileRequest, grpc.ServerStreamingServer[FileChunk]) error {
 	return status.Error(codes.Unimplemented, "method DownloadFile not implemented")
+}
+func (UnimplementedP2PServiceServer) SearchFiles(context.Context, *SearchFilesRequest) (*SearchFilesResponse, error) {
+	return nil, status.Error(codes.Unimplemented, "method SearchFiles not implemented")
 }
 func (UnimplementedP2PServiceServer) mustEmbedUnimplementedP2PServiceServer() {}
 func (UnimplementedP2PServiceServer) testEmbeddedByValue()                    {}
@@ -276,6 +292,24 @@ func _P2PService_DownloadFile_Handler(srv interface{}, stream grpc.ServerStream)
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type P2PService_DownloadFileServer = grpc.ServerStreamingServer[FileChunk]
 
+func _P2PService_SearchFiles_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(SearchFilesRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(P2PServiceServer).SearchFiles(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: P2PService_SearchFiles_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(P2PServiceServer).SearchFiles(ctx, req.(*SearchFilesRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // P2PService_ServiceDesc is the grpc.ServiceDesc for P2PService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -302,6 +336,10 @@ var P2PService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetFileIndex",
 			Handler:    _P2PService_GetFileIndex_Handler,
+		},
+		{
+			MethodName: "SearchFiles",
+			Handler:    _P2PService_SearchFiles_Handler,
 		},
 	},
 	Streams: []grpc.StreamDesc{

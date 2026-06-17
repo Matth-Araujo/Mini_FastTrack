@@ -769,6 +769,94 @@ func (x *FileChunk) GetEof() bool {
 	return false
 }
 
+type SearchFilesRequest struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Query         string                 `protobuf:"bytes,1,opt,name=query,proto3" json:"query,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *SearchFilesRequest) Reset() {
+	*x = SearchFilesRequest{}
+	mi := &file_proto_p2p_proto_msgTypes[15]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *SearchFilesRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*SearchFilesRequest) ProtoMessage() {}
+
+func (x *SearchFilesRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_p2p_proto_msgTypes[15]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use SearchFilesRequest.ProtoReflect.Descriptor instead.
+func (*SearchFilesRequest) Descriptor() ([]byte, []int) {
+	return file_proto_p2p_proto_rawDescGZIP(), []int{15}
+}
+
+func (x *SearchFilesRequest) GetQuery() string {
+	if x != nil {
+		return x.Query
+	}
+	return ""
+}
+
+type SearchFilesResponse struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Results       []*IndexedFile         `protobuf:"bytes,1,rep,name=results,proto3" json:"results,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *SearchFilesResponse) Reset() {
+	*x = SearchFilesResponse{}
+	mi := &file_proto_p2p_proto_msgTypes[16]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *SearchFilesResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*SearchFilesResponse) ProtoMessage() {}
+
+func (x *SearchFilesResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_p2p_proto_msgTypes[16]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use SearchFilesResponse.ProtoReflect.Descriptor instead.
+func (*SearchFilesResponse) Descriptor() ([]byte, []int) {
+	return file_proto_p2p_proto_rawDescGZIP(), []int{16}
+}
+
+func (x *SearchFilesResponse) GetResults() []*IndexedFile {
+	if x != nil {
+		return x.Results
+	}
+	return nil
+}
+
 var File_proto_p2p_proto protoreflect.FileDescriptor
 
 const file_proto_p2p_proto_rawDesc = "" +
@@ -815,7 +903,11 @@ const file_proto_p2p_proto_rawDesc = "" +
 	"\acontent\x18\x02 \x01(\fR\acontent\x12\x1f\n" +
 	"\vchunk_index\x18\x03 \x01(\x03R\n" +
 	"chunkIndex\x12\x10\n" +
-	"\x03eof\x18\x04 \x01(\bR\x03eof2\xf4\x02\n" +
+	"\x03eof\x18\x04 \x01(\bR\x03eof\"*\n" +
+	"\x12SearchFilesRequest\x12\x14\n" +
+	"\x05query\x18\x01 \x01(\tR\x05query\"A\n" +
+	"\x13SearchFilesResponse\x12*\n" +
+	"\aresults\x18\x01 \x03(\v2\x10.p2p.IndexedFileR\aresults2\xb6\x03\n" +
 	"\n" +
 	"P2PService\x12+\n" +
 	"\x04Ping\x12\x10.p2p.PingRequest\x1a\x11.p2p.PingResponse\x12C\n" +
@@ -823,7 +915,8 @@ const file_proto_p2p_proto_rawDesc = "" +
 	"\bGetPeers\x12\x14.p2p.GetPeersRequest\x1a\x15.p2p.GetPeersResponse\x12:\n" +
 	"\tListFiles\x12\x15.p2p.ListFilesRequest\x1a\x16.p2p.ListFilesResponse\x12C\n" +
 	"\fGetFileIndex\x12\x18.p2p.GetFileIndexRequest\x1a\x19.p2p.GetFileIndexResponse\x12:\n" +
-	"\fDownloadFile\x12\x18.p2p.DownloadFileRequest\x1a\x0e.p2p.FileChunk0\x01B\x12Z\x10go-api/proto/p2pb\x06proto3"
+	"\fDownloadFile\x12\x18.p2p.DownloadFileRequest\x1a\x0e.p2p.FileChunk0\x01\x12@\n" +
+	"\vSearchFiles\x12\x17.p2p.SearchFilesRequest\x1a\x18.p2p.SearchFilesResponseB\x12Z\x10go-api/proto/p2pb\x06proto3"
 
 var (
 	file_proto_p2p_proto_rawDescOnce sync.Once
@@ -837,7 +930,7 @@ func file_proto_p2p_proto_rawDescGZIP() []byte {
 	return file_proto_p2p_proto_rawDescData
 }
 
-var file_proto_p2p_proto_msgTypes = make([]protoimpl.MessageInfo, 15)
+var file_proto_p2p_proto_msgTypes = make([]protoimpl.MessageInfo, 17)
 var file_proto_p2p_proto_goTypes = []any{
 	(*PingRequest)(nil),          // 0: p2p.PingRequest
 	(*PingResponse)(nil),         // 1: p2p.PingResponse
@@ -854,6 +947,8 @@ var file_proto_p2p_proto_goTypes = []any{
 	(*GetFileIndexResponse)(nil), // 12: p2p.GetFileIndexResponse
 	(*DownloadFileRequest)(nil),  // 13: p2p.DownloadFileRequest
 	(*FileChunk)(nil),            // 14: p2p.FileChunk
+	(*SearchFilesRequest)(nil),   // 15: p2p.SearchFilesRequest
+	(*SearchFilesResponse)(nil),  // 16: p2p.SearchFilesResponse
 }
 var file_proto_p2p_proto_depIdxs = []int32{
 	2,  // 0: p2p.RegisterPeerRequest.peer:type_name -> p2p.PeerInfo
@@ -862,23 +957,26 @@ var file_proto_p2p_proto_depIdxs = []int32{
 	8,  // 3: p2p.ListFilesResponse.files:type_name -> p2p.FileInfo
 	2,  // 4: p2p.IndexedFile.peers:type_name -> p2p.PeerInfo
 	10, // 5: p2p.GetFileIndexResponse.files:type_name -> p2p.IndexedFile
-	0,  // 6: p2p.P2PService.Ping:input_type -> p2p.PingRequest
-	3,  // 7: p2p.P2PService.RegisterPeer:input_type -> p2p.RegisterPeerRequest
-	5,  // 8: p2p.P2PService.GetPeers:input_type -> p2p.GetPeersRequest
-	7,  // 9: p2p.P2PService.ListFiles:input_type -> p2p.ListFilesRequest
-	11, // 10: p2p.P2PService.GetFileIndex:input_type -> p2p.GetFileIndexRequest
-	13, // 11: p2p.P2PService.DownloadFile:input_type -> p2p.DownloadFileRequest
-	1,  // 12: p2p.P2PService.Ping:output_type -> p2p.PingResponse
-	4,  // 13: p2p.P2PService.RegisterPeer:output_type -> p2p.RegisterPeerResponse
-	6,  // 14: p2p.P2PService.GetPeers:output_type -> p2p.GetPeersResponse
-	9,  // 15: p2p.P2PService.ListFiles:output_type -> p2p.ListFilesResponse
-	12, // 16: p2p.P2PService.GetFileIndex:output_type -> p2p.GetFileIndexResponse
-	14, // 17: p2p.P2PService.DownloadFile:output_type -> p2p.FileChunk
-	12, // [12:18] is the sub-list for method output_type
-	6,  // [6:12] is the sub-list for method input_type
-	6,  // [6:6] is the sub-list for extension type_name
-	6,  // [6:6] is the sub-list for extension extendee
-	0,  // [0:6] is the sub-list for field type_name
+	10, // 6: p2p.SearchFilesResponse.results:type_name -> p2p.IndexedFile
+	0,  // 7: p2p.P2PService.Ping:input_type -> p2p.PingRequest
+	3,  // 8: p2p.P2PService.RegisterPeer:input_type -> p2p.RegisterPeerRequest
+	5,  // 9: p2p.P2PService.GetPeers:input_type -> p2p.GetPeersRequest
+	7,  // 10: p2p.P2PService.ListFiles:input_type -> p2p.ListFilesRequest
+	11, // 11: p2p.P2PService.GetFileIndex:input_type -> p2p.GetFileIndexRequest
+	13, // 12: p2p.P2PService.DownloadFile:input_type -> p2p.DownloadFileRequest
+	15, // 13: p2p.P2PService.SearchFiles:input_type -> p2p.SearchFilesRequest
+	1,  // 14: p2p.P2PService.Ping:output_type -> p2p.PingResponse
+	4,  // 15: p2p.P2PService.RegisterPeer:output_type -> p2p.RegisterPeerResponse
+	6,  // 16: p2p.P2PService.GetPeers:output_type -> p2p.GetPeersResponse
+	9,  // 17: p2p.P2PService.ListFiles:output_type -> p2p.ListFilesResponse
+	12, // 18: p2p.P2PService.GetFileIndex:output_type -> p2p.GetFileIndexResponse
+	14, // 19: p2p.P2PService.DownloadFile:output_type -> p2p.FileChunk
+	16, // 20: p2p.P2PService.SearchFiles:output_type -> p2p.SearchFilesResponse
+	14, // [14:21] is the sub-list for method output_type
+	7,  // [7:14] is the sub-list for method input_type
+	7,  // [7:7] is the sub-list for extension type_name
+	7,  // [7:7] is the sub-list for extension extendee
+	0,  // [0:7] is the sub-list for field type_name
 }
 
 func init() { file_proto_p2p_proto_init() }
@@ -892,7 +990,7 @@ func file_proto_p2p_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: unsafe.Slice(unsafe.StringData(file_proto_p2p_proto_rawDesc), len(file_proto_p2p_proto_rawDesc)),
 			NumEnums:      0,
-			NumMessages:   15,
+			NumMessages:   17,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
