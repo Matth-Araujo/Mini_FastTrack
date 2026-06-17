@@ -1,144 +1,83 @@
-# Mini FastTrack
+# 🚀 Mini FastTrack (Go P2P File Sharing)
 
-Sistema P2P em Go com descoberta de peers via gossip, bootstrap via gRPC e transferência de arquivos por streaming.
+Um sistema de compartilhamento de arquivos 100% descentralizado (Peer-to-Peer) desenvolvido em **Go** utilizando **gRPC** e o protocolo **Gossip**. 
 
-## Funcionalidades
+Este projeto foi construído para ser altamente resiliente e não depende de nenhum "Super Nó" ou servidor central de descoberta, cumprindo todos os requisitos de um sistema P2P puro.
 
-- Descoberta de peers com bootstrap.
-- Gossip com heartbeat, detecção de falha e remoção de peers mortos.
-- Listagem de arquivos disponíveis em cada peer.
-- Download de arquivos via stream gRPC.
-- Testes automatizados para discovery e server.
+---
 
-## Estrutura do projeto
+## 🎯 Como o projeto atende aos Requisitos da Disciplina
 
-- `cmd/peer`: executa um peer completo.
-- `cmd/client`: cliente simples para listar e baixar arquivos.
-- `internal/client`: cliente gRPC.
-- `internal/discovery`: tabela de peers e gossip.
-- `internal/domain`: tipos de domínio.
-- `internal/server`: servidor gRPC.
-- `proto`: arquivos `.proto` e código gerado.
+| Requisito | Como foi resolvido na Arquitetura |
+| :--- | :--- |
+| **1. Descoberta e Registro** | Qualquer nó pode atuar como *bootstrap*. Novos nós enviam um `RegisterPeer` e a rede fofoca (Gossip) a chegada do novo integrante. |
+| **2. Sem Servidor Central** | **Arquitetura Leaderless.** Não há nó líder. Se o ponto de entrada original cair, a rede continua intacta e operante. |
+| **3. Lista de Peers Ativos** | Mantida localmente em cada nó através de *Heartbeats* periódicos. Nós inativos são varridos automaticamente (após 30 segundos). |
+| **4. Lista de Arquivos** | Os metadados dos arquivos (nome, tamanho, checksum) são indexados e sincronizados em background na memória de cada nó. |
+| **5. Download Direto (P2P)** | Ocorre diretamente de par para par (`Peer -> Peer`) via *gRPC Streaming*, dividindo o arquivo em *chunks* de 32KB. |
+| **6. Protocolo de Rede** | Implementado protocolo customizado sobre **gRPC / Protocol Buffers** (TCP). **Nenhuma biblioteca P2P pronta foi utilizada.** |
+| **🌟 Diferencial (Extra)** | **Validação de Integridade (Checksum SHA-256).** Se um arquivo for baixado corrompido, o sistema detecta, descarta e avisa o usuário. |
 
-## Requisitos
+---
 
-- Go 1.22+
-- `protoc`
-- plugins do Go para protobuf:
-  - `protoc-gen-go`
-  - `protoc-gen-go-grpc`
+## 🛠️ Tecnologias Utilizadas
+* **Linguagem:** Go (Golang) 
+* **Comunicação RPC:** gRPC & Protocol Buffers (`protoc`)
+* **Consenso/Descoberta:** Algoritmo Epidêmico (Gossip Protocol)
+* **Hashing:** Criptografia SHA-256 para integridade de arquivos
 
-## Como gerar os arquivos protobuf
+---
 
-Se alterar o `.proto`, regenere com:
+## ⚙️ Estrutura do Projeto
 
+* `cmd/peer/main.go`: Ponto de entrada do Nó/Servidor. Mantém a rede viva e disponibiliza um terminal interativo.
+* `cmd/client/`: Ferramenta CLI estática alternativa para disparar comandos isolados.
+* `internal/discovery/`: Lógica do *Gossip Protocol*, Tabela de Roteamento (*PeerTable*) e Índice de Arquivos (*FileIndex*).
+* `internal/server/` & `internal/client/`: Implementação dos contratos gRPC.
+* `proto/`: Contratos e definições de mensagens do Protocol Buffers (`p2p.proto`).
+
+---
+
+## 🚀 Como Executar a Rede
+
+Para simular o sistema, você precisará de múltiplos terminais (simulando computadores diferentes). Os arquivos compartilhados por um nó devem ficar em uma pasta `./files/<PeerID>/` criada automaticamente na raiz.
+
+### 1. Subindo o "Nó Semente" (Bootstrap)
+O primeiro nó a entrar na rede não conhece ninguém. Ele apenas abre sua porta e começa a escutar.
 ```bash
-protoc \
-  --go_out=. --go_opt=paths=source_relative \
-  --go-grpc_out=. --go-grpc_opt=paths=source_relative \
-  proto/p2p.proto
+go run ./cmd/peer/main.go p1 127.0.0.1 5001
 ```
 
-## Como executar um peer
-
-Exemplo de execução:
-
-```bash
-go run ./cmd/peer peer1 127.0.0.1 5001
-```
-
-Com bootstrap:
+### 2. Conectando novos Peers à rede
+Para ligar o `p2` e o `p3`, passamos o endereço de algum nó que já está lá dentro (neste caso, o `p1` ou até mesmo o `p2`).
 
 ```bash
-go run ./cmd/peer peer2 127.0.0.1 5002 127.0.0.1:5001
-go run ./cmd/peer peer3 127.0.0.1 5003 127.0.0.1:5001
+# Terminal 2 (Conecta no p1)
+go run ./cmd/peer/main.go p2 127.0.0.1 5002 127.0.0.1:5001
+
+# Terminal 3 (Conecta no p2, descobrindo o p1 via fofoca)
+go run ./cmd/peer/main.go p3 127.0.0.1 5003 127.0.0.1:5002
 ```
 
-### Parâmetros
+---
 
-- `peerID`: identificador do peer.
-- `host`: endereço local.
-- `port`: porta do peer.
-- `bootstrapHost:port`: um ou mais peers bootstrap separados por vírgula.
+## 💻 Interface Interativa (CLI)
 
-Exemplo com múltiplos bootstraps:
+Após iniciar um peer, ele abrirá um terminal interativo (`fasttrack>`) para você realizar operações na rede P2P.
+Os comandos disponíveis são:
 
-```bash
-go run ./cmd/peer peer4 127.0.0.1 5004 127.0.0.1:5001,127.0.0.1:5002
-```
+* **`help`** : Lista todos os comandos disponíveis.
+* **`peers`** : Mostra a tabela de nós ativos conhecidos por este peer, com IP e Porta.
+* **`myfiles`** : Lista os arquivos que estão na sua própria pasta local (ex: `./files/p1/`).
+* **`files <peer_id>`** : Consulta no índice global os arquivos disponibilizados por um usuário específico (ex: `files p2`).
+* **`search <nome_do_arquivo>`** : Busca na rede inteira por arquivos que contenham o termo digitado e mostra quais peers possuem esse arquivo.
+* **`download <host:porta> <nome_do_arquivo>`** : Conecta diretamente ao peer fornecedor e baixa o arquivo para a sua pasta `./downloads/<PeerID>/`.
+* **`exit`** ou **`quit`** : Desconecta o nó e encerra o sistema.
 
-## Como usar o cliente
+---
 
-### Listar arquivos
+## 🛡️ Tratamento de Erros e Resiliência
 
-```bash
-go run ./cmd/client 127.0.0.1:5001 list
-```
-
-### Baixar arquivo
-
-```bash
-go run ./cmd/client 127.0.0.1:5001 download hello.txt
-```
-
-O arquivo será salvo em:
-
-```bash
-./downloads/hello.txt
-```
-
-## Pastas de arquivos
-
-Cada peer serve arquivos da pasta:
-
-```bash
-files/<peerID>/
-```
-
-Exemplo:
-
-```bash
-mkdir -p files/peer1
-echo "hello from peer1" > files/peer1/hello.txt
-```
-
-## Fluxo de funcionamento
-
-1. O peer sobe o servidor gRPC.
-2. Se houver bootstrap, ele registra o peer no bootstrap.
-3. O bootstrap devolve seu próprio `self` e os peers conhecidos.
-4. O gossip começa a trocar estado com outros peers.
-5. O servidor expõe os arquivos locais via `ListFiles` e `DownloadFile`.
-
-## Observações
-
-- O gossip usa heartbeat para atualização de estado.
-- Peers que param de responder são marcados como mortos.
-- Depois de um tempo, peers mortos são removidos da tabela.
-
-## Exemplo de teste manual
-
-Terminal 1:
-
-```bash
-go run ./cmd/peer peer1 127.0.0.1 5001
-```
-
-Terminal 2:
-
-```bash
-go run ./cmd/peer peer2 127.0.0.1 5002 127.0.0.1:5001
-```
-
-Terminal 3:
-
-```bash
-go run ./cmd/peer peer3 127.0.0.1 5003 127.0.0.1:5001
-```
-
-Depois:
-
-```bash
-go run ./cmd/client 127.0.0.1:5001 list
-go run ./cmd/client 127.0.0.1:5001 download hello.txt
-```
+* **Desconexões Abruptas:** Se um nó for finalizado repentinamente (`Ctrl+C` ou queda de energia), o nó falhará em enviar *Heartbeats*. O sistema detecta a ausência em 15 segundos e remove o nó definitivamente da tabela em 30 segundos, limpando seus arquivos do índice de buscas.
+* **Tratamento de Arquivos:** Se o arquivo não existir no destino ou o download falhar no meio da transferência, o gRPC cancela a operação e o terminal exibe o erro tratável sem derrubar o processo.
+* **Bootstrap Redundante:** O código suporta múltiplos IPs de inicialização. É possível passar `IP:PORTA,IP:PORTA` no terminal. Se o primeiro ponto falhar, ele tenta o próximo contato para entrar na rede.
