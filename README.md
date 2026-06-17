@@ -6,7 +6,7 @@ Este projeto foi construído para ser altamente resiliente e não depende de nen
 
 ---
 
-## 🎯 Como o projeto atende aos Requisitos da Disciplina
+## 🎯 Requisitos do Projeto
 
 | Requisito | Como foi resolvido na Arquitetura |
 | :--- | :--- |
