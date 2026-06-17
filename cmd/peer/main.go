@@ -182,7 +182,7 @@ func main() {
 		reader := bufio.NewReader(os.Stdin)
 		time.Sleep(2 * time.Second)
 		fmt.Println("\n==========================================")
-		fmt.Printf("  Go FastTrack — %s\n", self.ID)
+		fmt.Printf("  Mini FastTrack — %s\n", self.ID)
 		fmt.Printf("  IP: %s  Porta: %d\n", self.Host, self.Port)
 		fmt.Println("==========================================")
 		fmt.Println("  Digite 'help' para ver os comandos.")
