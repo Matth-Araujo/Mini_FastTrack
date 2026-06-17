@@ -269,3 +269,39 @@ func (c *P2PClient) GetFileIndex(target string) ([]domain.IndexedFile, error) {
 
 	return result, nil
 }
+
+func (c *P2PClient) SearchFiles(target, query string) ([]domain.IndexedFile, error) {
+	conn, err := c.dial(target)
+	if err != nil {
+		return nil, err
+	}
+	defer conn.Close()
+
+	cli := p2p.NewP2PServiceClient(conn)
+	ctx, cancel := context.WithTimeout(context.Background(), c.timeout)
+	defer cancel()
+
+	resp, err := cli.SearchFiles(ctx, &p2p.SearchFilesRequest{Query: query})
+	if err != nil {
+		return nil, err
+	}
+
+	result := make([]domain.IndexedFile, 0, len(resp.Results))
+	for _, f := range resp.Results {
+		peers := make([]domain.Peer, 0, len(f.GetPeers()))
+		for _, p := range f.GetPeers() {
+			peers = append(peers, domain.Peer{
+				ID:   p.GetId(),
+				Host: p.GetHost(),
+				Port: int(p.GetPort()),
+			})
+		}
+		result = append(result, domain.IndexedFile{
+			Name:     f.GetName(),
+			Size:     f.GetSize(),
+			Checksum: f.GetChecksum(),
+			Peers:    peers,
+		})
+	}
+	return result, nil
+}

@@ -102,26 +102,6 @@ mkdir -p files/peer1
 echo "hello from peer1" > files/peer1/hello.txt
 ```
 
-## Testes
-
-Executar todos os testes:
-
-```bash
-go test ./...
-```
-
-Testar apenas discovery:
-
-```bash
-go test ./internal/discovery -v
-```
-
-Testar apenas server:
-
-```bash
-go test ./internal/server -v
-```
-
 ## Fluxo de funcionamento
 
 1. O peer sobe o servidor gRPC.

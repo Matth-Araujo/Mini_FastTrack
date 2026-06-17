@@ -1,0 +1,2257 @@
+2026/06/16 20:37:49 gRPC server escutando em 127.0.0.1:5001
+2026/06/16 20:37:51 [p1] peer iniciado em 127.0.0.1:5001
+2026/06/16 20:37:56 [p1][gossip] self heartbeat=2
+2026/06/16 20:37:56 [p1][gossip] targets=1
+2026/06/16 20:37:56 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=1
+2026/06/16 20:37:56 [p1] peers ativos conhecidos: 2
+2026/06/16 20:37:56 [p1] -> p1 127.0.0.1:5001 heartbeat=2 alive=true last_seen=1781653076
+2026/06/16 20:37:56 [p1] -> p2 127.0.0.1:5002 heartbeat=1 alive=true last_seen=1781653073
+2026/06/16 20:37:56 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:38:01 [p1][gossip] self heartbeat=3
+2026/06/16 20:38:01 [p1] peers ativos conhecidos: 2
+2026/06/16 20:38:01 [p1] -> p1 127.0.0.1:5001 heartbeat=2 alive=true last_seen=1781653076
+2026/06/16 20:38:01 [p1] -> p2 127.0.0.1:5002 heartbeat=2 alive=true last_seen=1781653078
+2026/06/16 20:38:01 [p1][gossip] targets=1
+2026/06/16 20:38:01 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=2
+2026/06/16 20:38:01 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:38:06 [p1] peers ativos conhecidos: 2
+2026/06/16 20:38:06 [p1] -> p1 127.0.0.1:5001 heartbeat=3 alive=true last_seen=1781653081
+2026/06/16 20:38:06 [p1][gossip] self heartbeat=4
+2026/06/16 20:38:06 [p1][gossip] targets=1
+2026/06/16 20:38:06 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=3
+2026/06/16 20:38:06 [p1] -> p2 127.0.0.1:5002 heartbeat=3 alive=true last_seen=1781653083
+2026/06/16 20:38:06 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:38:11 [p1][gossip] self heartbeat=5
+2026/06/16 20:38:11 [p1][gossip] targets=1
+2026/06/16 20:38:11 [p1] peers ativos conhecidos: 2
+2026/06/16 20:38:11 [p1] -> p1 127.0.0.1:5001 heartbeat=5 alive=true last_seen=1781653091
+2026/06/16 20:38:11 [p1] -> p2 127.0.0.1:5002 heartbeat=4 alive=true last_seen=1781653088
+2026/06/16 20:38:11 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=4
+2026/06/16 20:38:11 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:38:16 [p1] peers ativos conhecidos: 2
+2026/06/16 20:38:16 [p1][gossip] self heartbeat=6
+2026/06/16 20:38:16 [p1][gossip] targets=1
+2026/06/16 20:38:16 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=5
+2026/06/16 20:38:16 [p1] -> p1 127.0.0.1:5001 heartbeat=5 alive=true last_seen=1781653091
+2026/06/16 20:38:16 [p1] -> p2 127.0.0.1:5002 heartbeat=5 alive=true last_seen=1781653093
+2026/06/16 20:38:16 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:38:21 [p1] peers ativos conhecidos: 2
+2026/06/16 20:38:21 [p1] -> p1 127.0.0.1:5001 heartbeat=6 alive=true last_seen=1781653096
+2026/06/16 20:38:21 [p1] -> p2 127.0.0.1:5002 heartbeat=6 alive=true last_seen=1781653098
+2026/06/16 20:38:21 [p1][gossip] self heartbeat=7
+2026/06/16 20:38:21 [p1][gossip] targets=1
+2026/06/16 20:38:21 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=6
+2026/06/16 20:38:21 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:38:26 [p1][gossip] self heartbeat=8
+2026/06/16 20:38:26 [p1][gossip] targets=1
+2026/06/16 20:38:26 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=7
+2026/06/16 20:38:26 [p1] peers ativos conhecidos: 2
+2026/06/16 20:38:26 [p1] -> p1 127.0.0.1:5001 heartbeat=8 alive=true last_seen=1781653106
+2026/06/16 20:38:26 [p1] -> p2 127.0.0.1:5002 heartbeat=7 alive=true last_seen=1781653103
+2026/06/16 20:38:26 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:38:31 [p1] peers ativos conhecidos: 2
+2026/06/16 20:38:31 [p1] -> p1 127.0.0.1:5001 heartbeat=8 alive=true last_seen=1781653106
+2026/06/16 20:38:31 [p1] -> p2 127.0.0.1:5002 heartbeat=8 alive=true last_seen=1781653108
+2026/06/16 20:38:31 [p1][gossip] self heartbeat=9
+2026/06/16 20:38:31 [p1][gossip] targets=1
+2026/06/16 20:38:31 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=8
+2026/06/16 20:38:31 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:38:36 [p1] peers ativos conhecidos: 2
+2026/06/16 20:38:36 [p1] -> p1 127.0.0.1:5001 heartbeat=9 alive=true last_seen=1781653111
+2026/06/16 20:38:36 [p1] -> p2 127.0.0.1:5002 heartbeat=9 alive=true last_seen=1781653113
+2026/06/16 20:38:36 [p1][gossip] self heartbeat=10
+2026/06/16 20:38:36 [p1][gossip] targets=1
+2026/06/16 20:38:36 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=9
+2026/06/16 20:38:36 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:38:41 [p1][gossip] self heartbeat=11
+2026/06/16 20:38:41 [p1][gossip] targets=1
+2026/06/16 20:38:41 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=10
+2026/06/16 20:38:41 [p1] peers ativos conhecidos: 2
+2026/06/16 20:38:41 [p1] -> p1 127.0.0.1:5001 heartbeat=11 alive=true last_seen=1781653121
+2026/06/16 20:38:41 [p1] -> p2 127.0.0.1:5002 heartbeat=10 alive=true last_seen=1781653118
+2026/06/16 20:38:41 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:38:46 [p1] peers ativos conhecidos: 2
+2026/06/16 20:38:46 [p1] -> p1 127.0.0.1:5001 heartbeat=11 alive=true last_seen=1781653121
+2026/06/16 20:38:46 [p1] -> p2 127.0.0.1:5002 heartbeat=11 alive=true last_seen=1781653123
+2026/06/16 20:38:46 [p1][gossip] self heartbeat=12
+2026/06/16 20:38:46 [p1][gossip] targets=1
+2026/06/16 20:38:46 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=11
+2026/06/16 20:38:46 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:38:51 [p1][gossip] self heartbeat=13
+2026/06/16 20:38:51 [p1][gossip] targets=1
+2026/06/16 20:38:51 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=12
+2026/06/16 20:38:51 [p1] peers ativos conhecidos: 2
+2026/06/16 20:38:51 [p1] -> p1 127.0.0.1:5001 heartbeat=13 alive=true last_seen=1781653131
+2026/06/16 20:38:51 [p1] -> p2 127.0.0.1:5002 heartbeat=12 alive=true last_seen=1781653128
+2026/06/16 20:38:51 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:38:56 [p1] peers ativos conhecidos: 2
+2026/06/16 20:38:56 [p1] -> p1 127.0.0.1:5001 heartbeat=13 alive=true last_seen=1781653131
+2026/06/16 20:38:56 [p1] -> p2 127.0.0.1:5002 heartbeat=13 alive=true last_seen=1781653133
+2026/06/16 20:38:56 [p1][gossip] self heartbeat=14
+2026/06/16 20:38:56 [p1][gossip] targets=1
+2026/06/16 20:38:56 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=13
+2026/06/16 20:38:56 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:39:01 [p1] peers ativos conhecidos: 2
+2026/06/16 20:39:01 [p1] -> p1 127.0.0.1:5001 heartbeat=14 alive=true last_seen=1781653136
+2026/06/16 20:39:01 [p1] -> p2 127.0.0.1:5002 heartbeat=14 alive=true last_seen=1781653138
+2026/06/16 20:39:01 [p1][gossip] self heartbeat=15
+2026/06/16 20:39:01 [p1][gossip] targets=1
+2026/06/16 20:39:01 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=14
+2026/06/16 20:39:01 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:39:06 [p1] peers ativos conhecidos: 2
+2026/06/16 20:39:06 [p1] -> p1 127.0.0.1:5001 heartbeat=15 alive=true last_seen=1781653141
+2026/06/16 20:39:06 [p1] -> p2 127.0.0.1:5002 heartbeat=15 alive=true last_seen=1781653143
+2026/06/16 20:39:06 [p1][gossip] self heartbeat=16
+2026/06/16 20:39:06 [p1][gossip] targets=1
+2026/06/16 20:39:06 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=15
+2026/06/16 20:39:06 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:39:11 [p1][gossip] self heartbeat=17
+2026/06/16 20:39:11 [p1][gossip] targets=1
+2026/06/16 20:39:11 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=16
+2026/06/16 20:39:11 [p1] peers ativos conhecidos: 2
+2026/06/16 20:39:11 [p1] -> p2 127.0.0.1:5002 heartbeat=16 alive=true last_seen=1781653148
+2026/06/16 20:39:11 [p1] -> p1 127.0.0.1:5001 heartbeat=17 alive=true last_seen=1781653151
+2026/06/16 20:39:11 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:39:16 [p1][gossip] self heartbeat=18
+2026/06/16 20:39:16 [p1][gossip] targets=1
+2026/06/16 20:39:16 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=17
+2026/06/16 20:39:16 [p1] peers ativos conhecidos: 2
+2026/06/16 20:39:16 [p1] -> p1 127.0.0.1:5001 heartbeat=18 alive=true last_seen=1781653156
+2026/06/16 20:39:16 [p1] -> p2 127.0.0.1:5002 heartbeat=17 alive=true last_seen=1781653153
+2026/06/16 20:39:16 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:39:21 [p1][gossip] self heartbeat=19
+2026/06/16 20:39:21 [p1][gossip] targets=1
+2026/06/16 20:39:21 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=18
+2026/06/16 20:39:21 [p1] peers ativos conhecidos: 2
+2026/06/16 20:39:21 [p1] -> p1 127.0.0.1:5001 heartbeat=19 alive=true last_seen=1781653161
+2026/06/16 20:39:21 [p1] -> p2 127.0.0.1:5002 heartbeat=18 alive=true last_seen=1781653158
+2026/06/16 20:39:21 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:39:26 [p1][gossip] self heartbeat=20
+2026/06/16 20:39:26 [p1] peers ativos conhecidos: 2
+2026/06/16 20:39:26 [p1] -> p1 127.0.0.1:5001 heartbeat=20 alive=true last_seen=1781653166
+2026/06/16 20:39:26 [p1] -> p2 127.0.0.1:5002 heartbeat=19 alive=true last_seen=1781653163
+2026/06/16 20:39:26 [p1][gossip] targets=1
+2026/06/16 20:39:26 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=19
+2026/06/16 20:39:26 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:39:31 [p1][gossip] self heartbeat=21
+2026/06/16 20:39:31 [p1][gossip] targets=1
+2026/06/16 20:39:31 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=20
+2026/06/16 20:39:31 [p1] peers ativos conhecidos: 2
+2026/06/16 20:39:31 [p1] -> p2 127.0.0.1:5002 heartbeat=20 alive=true last_seen=1781653168
+2026/06/16 20:39:31 [p1] -> p1 127.0.0.1:5001 heartbeat=21 alive=true last_seen=1781653171
+2026/06/16 20:39:31 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:39:36 [p1] peers ativos conhecidos: 2
+2026/06/16 20:39:36 [p1] -> p1 127.0.0.1:5001 heartbeat=21 alive=true last_seen=1781653171
+2026/06/16 20:39:36 [p1] -> p2 127.0.0.1:5002 heartbeat=21 alive=true last_seen=1781653173
+2026/06/16 20:39:36 [p1][gossip] self heartbeat=22
+2026/06/16 20:39:36 [p1][gossip] targets=1
+2026/06/16 20:39:36 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=21
+2026/06/16 20:39:36 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:39:41 [p1][gossip] self heartbeat=23
+2026/06/16 20:39:41 [p1][gossip] targets=1
+2026/06/16 20:39:41 [p1] peers ativos conhecidos: 2
+2026/06/16 20:39:41 [p1] -> p1 127.0.0.1:5001 heartbeat=23 alive=true last_seen=1781653181
+2026/06/16 20:39:41 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=22
+2026/06/16 20:39:41 [p1] -> p2 127.0.0.1:5002 heartbeat=22 alive=true last_seen=1781653178
+2026/06/16 20:39:41 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:39:46 [p1][gossip] self heartbeat=24
+2026/06/16 20:39:46 [p1][gossip] targets=1
+2026/06/16 20:39:46 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=23
+2026/06/16 20:39:46 [p1] peers ativos conhecidos: 2
+2026/06/16 20:39:46 [p1] -> p1 127.0.0.1:5001 heartbeat=24 alive=true last_seen=1781653186
+2026/06/16 20:39:46 [p1] -> p2 127.0.0.1:5002 heartbeat=23 alive=true last_seen=1781653183
+2026/06/16 20:39:46 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:39:51 [p1][gossip] self heartbeat=25
+2026/06/16 20:39:51 [p1][gossip] targets=1
+2026/06/16 20:39:51 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=24
+2026/06/16 20:39:51 [p1] peers ativos conhecidos: 2
+2026/06/16 20:39:51 [p1] -> p2 127.0.0.1:5002 heartbeat=24 alive=true last_seen=1781653188
+2026/06/16 20:39:51 [p1] -> p1 127.0.0.1:5001 heartbeat=25 alive=true last_seen=1781653191
+2026/06/16 20:39:51 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:39:56 [p1] peers ativos conhecidos: 2
+2026/06/16 20:39:56 [p1] -> p1 127.0.0.1:5001 heartbeat=25 alive=true last_seen=1781653191
+2026/06/16 20:39:56 [p1] -> p2 127.0.0.1:5002 heartbeat=25 alive=true last_seen=1781653193
+2026/06/16 20:39:56 [p1][gossip] self heartbeat=26
+2026/06/16 20:39:56 [p1][gossip] targets=1
+2026/06/16 20:39:56 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=25
+2026/06/16 20:39:56 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:40:01 [p1] peers ativos conhecidos: 2
+2026/06/16 20:40:01 [p1] -> p1 127.0.0.1:5001 heartbeat=26 alive=true last_seen=1781653196
+2026/06/16 20:40:01 [p1][gossip] self heartbeat=27
+2026/06/16 20:40:01 [p1][gossip] targets=1
+2026/06/16 20:40:01 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=26
+2026/06/16 20:40:01 [p1] -> p2 127.0.0.1:5002 heartbeat=26 alive=true last_seen=1781653198
+2026/06/16 20:40:01 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:40:06 [p1] peers ativos conhecidos: 2
+2026/06/16 20:40:06 [p1] -> p1 127.0.0.1:5001 heartbeat=27 alive=true last_seen=1781653201
+2026/06/16 20:40:06 [p1] -> p2 127.0.0.1:5002 heartbeat=27 alive=true last_seen=1781653203
+2026/06/16 20:40:06 [p1][gossip] self heartbeat=28
+2026/06/16 20:40:06 [p1][gossip] targets=1
+2026/06/16 20:40:06 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=27
+2026/06/16 20:40:06 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:40:11 [p1][gossip] self heartbeat=29
+2026/06/16 20:40:11 [p1] peers ativos conhecidos: 2
+2026/06/16 20:40:11 [p1] -> p2 127.0.0.1:5002 heartbeat=28 alive=true last_seen=1781653208
+2026/06/16 20:40:11 [p1][gossip] targets=1
+2026/06/16 20:40:11 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=28
+2026/06/16 20:40:11 [p1] -> p1 127.0.0.1:5001 heartbeat=29 alive=true last_seen=1781653211
+2026/06/16 20:40:11 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:40:16 [p1] peers ativos conhecidos: 2
+2026/06/16 20:40:16 [p1] -> p1 127.0.0.1:5001 heartbeat=29 alive=true last_seen=1781653211
+2026/06/16 20:40:16 [p1] -> p2 127.0.0.1:5002 heartbeat=29 alive=true last_seen=1781653213
+2026/06/16 20:40:16 [p1][gossip] self heartbeat=30
+2026/06/16 20:40:16 [p1][gossip] targets=1
+2026/06/16 20:40:16 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=29
+2026/06/16 20:40:16 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:40:21 [p1] peers ativos conhecidos: 2
+2026/06/16 20:40:21 [p1] -> p1 127.0.0.1:5001 heartbeat=30 alive=true last_seen=1781653216
+2026/06/16 20:40:21 [p1][gossip] self heartbeat=31
+2026/06/16 20:40:21 [p1][gossip] targets=1
+2026/06/16 20:40:21 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=30
+2026/06/16 20:40:21 [p1] -> p2 127.0.0.1:5002 heartbeat=30 alive=true last_seen=1781653218
+2026/06/16 20:40:21 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:40:26 [p1][gossip] self heartbeat=32
+2026/06/16 20:40:26 [p1][gossip] targets=1
+2026/06/16 20:40:26 [p1] peers ativos conhecidos: 2
+2026/06/16 20:40:26 [p1] -> p1 127.0.0.1:5001 heartbeat=32 alive=true last_seen=1781653226
+2026/06/16 20:40:26 [p1] -> p2 127.0.0.1:5002 heartbeat=31 alive=true last_seen=1781653223
+2026/06/16 20:40:26 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=31
+2026/06/16 20:40:26 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:40:31 [p1][gossip] self heartbeat=33
+2026/06/16 20:40:31 [p1] peers ativos conhecidos: 2
+2026/06/16 20:40:31 [p1] -> p2 127.0.0.1:5002 heartbeat=32 alive=true last_seen=1781653228
+2026/06/16 20:40:31 [p1] -> p1 127.0.0.1:5001 heartbeat=33 alive=true last_seen=1781653231
+2026/06/16 20:40:31 [p1][gossip] targets=1
+2026/06/16 20:40:31 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=32
+2026/06/16 20:40:31 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:40:36 [p1][gossip] self heartbeat=34
+2026/06/16 20:40:36 [p1][gossip] targets=1
+2026/06/16 20:40:36 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=33
+2026/06/16 20:40:36 [p1] peers ativos conhecidos: 2
+2026/06/16 20:40:36 [p1] -> p1 127.0.0.1:5001 heartbeat=34 alive=true last_seen=1781653236
+2026/06/16 20:40:36 [p1] -> p2 127.0.0.1:5002 heartbeat=33 alive=true last_seen=1781653233
+2026/06/16 20:40:36 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:40:41 [p1] peers ativos conhecidos: 2
+2026/06/16 20:40:41 [p1] -> p1 127.0.0.1:5001 heartbeat=34 alive=true last_seen=1781653236
+2026/06/16 20:40:41 [p1] -> p2 127.0.0.1:5002 heartbeat=34 alive=true last_seen=1781653238
+2026/06/16 20:40:41 [p1][gossip] self heartbeat=35
+2026/06/16 20:40:41 [p1][gossip] targets=1
+2026/06/16 20:40:41 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=34
+2026/06/16 20:40:41 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:40:46 [p1][gossip] self heartbeat=36
+2026/06/16 20:40:46 [p1][gossip] targets=1
+2026/06/16 20:40:46 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=35
+2026/06/16 20:40:46 [p1] peers ativos conhecidos: 2
+2026/06/16 20:40:46 [p1] -> p1 127.0.0.1:5001 heartbeat=36 alive=true last_seen=1781653246
+2026/06/16 20:40:46 [p1] -> p2 127.0.0.1:5002 heartbeat=35 alive=true last_seen=1781653243
+2026/06/16 20:40:46 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:40:51 [p1][gossip] self heartbeat=37
+2026/06/16 20:40:51 [p1][gossip] targets=1
+2026/06/16 20:40:51 [p1] peers ativos conhecidos: 2
+2026/06/16 20:40:51 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=36
+2026/06/16 20:40:51 [p1] -> p2 127.0.0.1:5002 heartbeat=36 alive=true last_seen=1781653248
+2026/06/16 20:40:51 [p1] -> p1 127.0.0.1:5001 heartbeat=37 alive=true last_seen=1781653251
+2026/06/16 20:40:51 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:40:56 [p1][gossip] self heartbeat=38
+2026/06/16 20:40:56 [p1] peers ativos conhecidos: 2
+2026/06/16 20:40:56 [p1] -> p1 127.0.0.1:5001 heartbeat=38 alive=true last_seen=1781653256
+2026/06/16 20:40:56 [p1] -> p2 127.0.0.1:5002 heartbeat=37 alive=true last_seen=1781653253
+2026/06/16 20:40:56 [p1][gossip] targets=1
+2026/06/16 20:40:56 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=37
+2026/06/16 20:40:56 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:41:01 [p1][gossip] self heartbeat=39
+2026/06/16 20:41:01 [p1][gossip] targets=1
+2026/06/16 20:41:01 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=38
+2026/06/16 20:41:01 [p1] peers ativos conhecidos: 2
+2026/06/16 20:41:01 [p1] -> p1 127.0.0.1:5001 heartbeat=39 alive=true last_seen=1781653261
+2026/06/16 20:41:01 [p1] -> p2 127.0.0.1:5002 heartbeat=38 alive=true last_seen=1781653258
+2026/06/16 20:41:01 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:41:15 gRPC server escutando em 127.0.0.1:5001
+2026/06/16 20:41:17 [p1] peer iniciado em 127.0.0.1:5001
+2026/06/16 20:41:22 [p1] peers ativos conhecidos: 2
+2026/06/16 20:41:22 [p1][gossip] self heartbeat=2
+2026/06/16 20:41:22 [p1][gossip] targets=1
+2026/06/16 20:41:22 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=1
+2026/06/16 20:41:22 [p1] -> p1 127.0.0.1:5001 heartbeat=1 alive=true last_seen=1781653275
+2026/06/16 20:41:22 [p1] -> p2 127.0.0.1:5002 heartbeat=1 alive=true last_seen=1781653280
+2026/06/16 20:41:22 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:41:27 [p1][gossip] self heartbeat=3
+2026/06/16 20:41:27 [p1] peers ativos conhecidos: 2
+2026/06/16 20:41:27 [p1] -> p1 127.0.0.1:5001 heartbeat=3 alive=true last_seen=1781653287
+2026/06/16 20:41:27 [p1] -> p2 127.0.0.1:5002 heartbeat=2 alive=true last_seen=1781653285
+2026/06/16 20:41:27 [p1][gossip] targets=1
+2026/06/16 20:41:27 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=2
+2026/06/16 20:41:27 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:41:32 [p1] peers ativos conhecidos: 2
+2026/06/16 20:41:32 [p1][gossip] self heartbeat=4
+2026/06/16 20:41:32 [p1][gossip] targets=1
+2026/06/16 20:41:32 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=3
+2026/06/16 20:41:32 [p1] -> p1 127.0.0.1:5001 heartbeat=3 alive=true last_seen=1781653287
+2026/06/16 20:41:32 [p1] -> p2 127.0.0.1:5002 heartbeat=3 alive=true last_seen=1781653290
+2026/06/16 20:41:32 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:41:37 [p1][gossip] self heartbeat=5
+2026/06/16 20:41:37 [p1] peers ativos conhecidos: 2
+2026/06/16 20:41:37 [p1] -> p1 127.0.0.1:5001 heartbeat=5 alive=true last_seen=1781653297
+2026/06/16 20:41:37 [p1] -> p2 127.0.0.1:5002 heartbeat=4 alive=true last_seen=1781653295
+2026/06/16 20:41:37 [p1][gossip] targets=1
+2026/06/16 20:41:37 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=4
+2026/06/16 20:41:37 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:41:42 [p1] peers ativos conhecidos: 2
+2026/06/16 20:41:42 [p1] -> p1 127.0.0.1:5001 heartbeat=5 alive=true last_seen=1781653297
+2026/06/16 20:41:42 [p1][gossip] self heartbeat=6
+2026/06/16 20:41:42 [p1][gossip] targets=1
+2026/06/16 20:41:42 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=5
+2026/06/16 20:41:42 [p1] -> p2 127.0.0.1:5002 heartbeat=5 alive=true last_seen=1781653300
+2026/06/16 20:41:42 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:41:47 [p1][gossip] self heartbeat=7
+2026/06/16 20:41:47 [p1][gossip] targets=1
+2026/06/16 20:41:47 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=6
+2026/06/16 20:41:47 [p1] peers ativos conhecidos: 2
+2026/06/16 20:41:47 [p1] -> p1 127.0.0.1:5001 heartbeat=7 alive=true last_seen=1781653307
+2026/06/16 20:41:47 [p1] -> p2 127.0.0.1:5002 heartbeat=6 alive=true last_seen=1781653305
+2026/06/16 20:41:47 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:41:52 [p1][gossip] self heartbeat=8
+2026/06/16 20:41:52 [p1][gossip] targets=1
+2026/06/16 20:41:52 [p1] peers ativos conhecidos: 2
+2026/06/16 20:41:52 [p1] -> p1 127.0.0.1:5001 heartbeat=8 alive=true last_seen=1781653312
+2026/06/16 20:41:52 [p1] -> p2 127.0.0.1:5002 heartbeat=7 alive=true last_seen=1781653310
+2026/06/16 20:41:52 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=7
+2026/06/16 20:41:52 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:41:57 [p1][gossip] self heartbeat=9
+2026/06/16 20:41:57 [p1][gossip] targets=1
+2026/06/16 20:41:57 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=8
+2026/06/16 20:41:57 [p1] peers ativos conhecidos: 2
+2026/06/16 20:41:57 [p1] -> p1 127.0.0.1:5001 heartbeat=9 alive=true last_seen=1781653317
+2026/06/16 20:41:57 [p1] -> p2 127.0.0.1:5002 heartbeat=8 alive=true last_seen=1781653315
+2026/06/16 20:41:57 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:42:02 [p1][gossip] self heartbeat=10
+2026/06/16 20:42:02 [p1][gossip] targets=1
+2026/06/16 20:42:02 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=9
+2026/06/16 20:42:02 [p1] peers ativos conhecidos: 2
+2026/06/16 20:42:02 [p1] -> p1 127.0.0.1:5001 heartbeat=10 alive=true last_seen=1781653322
+2026/06/16 20:42:02 [p1] -> p2 127.0.0.1:5002 heartbeat=9 alive=true last_seen=1781653320
+2026/06/16 20:42:02 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:42:07 [p1][gossip] self heartbeat=11
+2026/06/16 20:42:07 [p1][gossip] targets=1
+2026/06/16 20:42:07 [p1] peers ativos conhecidos: 2
+2026/06/16 20:42:07 [p1] -> p1 127.0.0.1:5001 heartbeat=11 alive=true last_seen=1781653327
+2026/06/16 20:42:07 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=10
+2026/06/16 20:42:07 [p1] -> p2 127.0.0.1:5002 heartbeat=10 alive=true last_seen=1781653325
+2026/06/16 20:42:07 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:42:12 [p1] peers ativos conhecidos: 2
+2026/06/16 20:42:12 [p1] -> p1 127.0.0.1:5001 heartbeat=11 alive=true last_seen=1781653327
+2026/06/16 20:42:12 [p1][gossip] self heartbeat=12
+2026/06/16 20:42:12 [p1][gossip] targets=1
+2026/06/16 20:42:12 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=11
+2026/06/16 20:42:12 [p1] -> p2 127.0.0.1:5002 heartbeat=11 alive=true last_seen=1781653330
+2026/06/16 20:42:12 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:42:17 [p1] peers ativos conhecidos: 2
+2026/06/16 20:42:17 [p1] -> p1 127.0.0.1:5001 heartbeat=12 alive=true last_seen=1781653332
+2026/06/16 20:42:17 [p1][gossip] self heartbeat=13
+2026/06/16 20:42:17 [p1][gossip] targets=1
+2026/06/16 20:42:17 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=12
+2026/06/16 20:42:17 [p1] -> p2 127.0.0.1:5002 heartbeat=12 alive=true last_seen=1781653335
+2026/06/16 20:42:17 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:42:22 [p1] peers ativos conhecidos: 2
+2026/06/16 20:42:22 [p1] -> p1 127.0.0.1:5001 heartbeat=13 alive=true last_seen=1781653337
+2026/06/16 20:42:22 [p1] -> p2 127.0.0.1:5002 heartbeat=13 alive=true last_seen=1781653340
+2026/06/16 20:42:22 [p1][gossip] self heartbeat=14
+2026/06/16 20:42:22 [p1][gossip] targets=1
+2026/06/16 20:42:22 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=13
+2026/06/16 20:42:22 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:42:27 [p1] peers ativos conhecidos: 2
+2026/06/16 20:42:27 [p1] -> p1 127.0.0.1:5001 heartbeat=14 alive=true last_seen=1781653342
+2026/06/16 20:42:27 [p1] -> p2 127.0.0.1:5002 heartbeat=14 alive=true last_seen=1781653345
+2026/06/16 20:42:27 [p1][gossip] self heartbeat=15
+2026/06/16 20:42:27 [p1][gossip] targets=1
+2026/06/16 20:42:27 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=14
+2026/06/16 20:42:27 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:42:32 [p1][gossip] self heartbeat=16
+2026/06/16 20:42:32 [p1] peers ativos conhecidos: 2
+2026/06/16 20:42:32 [p1] -> p2 127.0.0.1:5002 heartbeat=15 alive=true last_seen=1781653350
+2026/06/16 20:42:32 [p1] -> p1 127.0.0.1:5001 heartbeat=16 alive=true last_seen=1781653352
+2026/06/16 20:42:32 [p1][gossip] targets=1
+2026/06/16 20:42:32 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=15
+2026/06/16 20:42:32 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:42:37 [p1] peers ativos conhecidos: 2
+2026/06/16 20:42:37 [p1] -> p1 127.0.0.1:5001 heartbeat=16 alive=true last_seen=1781653352
+2026/06/16 20:42:37 [p1] -> p2 127.0.0.1:5002 heartbeat=16 alive=true last_seen=1781653355
+2026/06/16 20:42:37 [p1][gossip] self heartbeat=17
+2026/06/16 20:42:37 [p1][gossip] targets=1
+2026/06/16 20:42:37 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=16
+2026/06/16 20:42:37 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:42:42 [p1][gossip] self heartbeat=18
+2026/06/16 20:42:42 [p1] peers ativos conhecidos: 2
+2026/06/16 20:42:42 [p1] -> p1 127.0.0.1:5001 heartbeat=18 alive=true last_seen=1781653362
+2026/06/16 20:42:42 [p1] -> p2 127.0.0.1:5002 heartbeat=17 alive=true last_seen=1781653360
+2026/06/16 20:42:42 [p1][gossip] targets=1
+2026/06/16 20:42:42 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=17
+2026/06/16 20:42:42 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:42:47 [p1][gossip] self heartbeat=19
+2026/06/16 20:42:47 [p1][gossip] targets=1
+2026/06/16 20:42:47 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=18
+2026/06/16 20:42:47 [p1] peers ativos conhecidos: 2
+2026/06/16 20:42:47 [p1] -> p1 127.0.0.1:5001 heartbeat=19 alive=true last_seen=1781653367
+2026/06/16 20:42:47 [p1] -> p2 127.0.0.1:5002 heartbeat=18 alive=true last_seen=1781653365
+2026/06/16 20:42:47 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:42:52 [p1][gossip] self heartbeat=20
+2026/06/16 20:42:52 [p1][gossip] targets=1
+2026/06/16 20:42:52 [p1] peers ativos conhecidos: 2
+2026/06/16 20:42:52 [p1] -> p1 127.0.0.1:5001 heartbeat=20 alive=true last_seen=1781653372
+2026/06/16 20:42:52 [p1] -> p2 127.0.0.1:5002 heartbeat=19 alive=true last_seen=1781653370
+2026/06/16 20:42:52 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=19
+2026/06/16 20:42:52 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:42:57 [p1] peers ativos conhecidos: 2
+2026/06/16 20:42:57 [p1][gossip] self heartbeat=21
+2026/06/16 20:42:57 [p1][gossip] targets=1
+2026/06/16 20:42:57 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=20
+2026/06/16 20:42:57 [p1] -> p2 127.0.0.1:5002 heartbeat=20 alive=true last_seen=1781653375
+2026/06/16 20:42:57 [p1] -> p1 127.0.0.1:5001 heartbeat=20 alive=true last_seen=1781653372
+2026/06/16 20:42:57 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:43:02 [p1][gossip] self heartbeat=22
+2026/06/16 20:43:02 [p1][gossip] targets=1
+2026/06/16 20:43:02 [p1] peers ativos conhecidos: 2
+2026/06/16 20:43:02 [p1] -> p1 127.0.0.1:5001 heartbeat=22 alive=true last_seen=1781653382
+2026/06/16 20:43:02 [p1] -> p2 127.0.0.1:5002 heartbeat=21 alive=true last_seen=1781653380
+2026/06/16 20:43:02 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=21
+2026/06/16 20:43:02 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:43:07 [p1][gossip] self heartbeat=23
+2026/06/16 20:43:07 [p1][gossip] targets=1
+2026/06/16 20:43:07 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=22
+2026/06/16 20:43:07 [p1] peers ativos conhecidos: 2
+2026/06/16 20:43:07 [p1] -> p1 127.0.0.1:5001 heartbeat=23 alive=true last_seen=1781653387
+2026/06/16 20:43:07 [p1] -> p2 127.0.0.1:5002 heartbeat=22 alive=true last_seen=1781653385
+2026/06/16 20:43:07 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:43:12 [p1][gossip] self heartbeat=24
+2026/06/16 20:43:12 [p1][gossip] targets=1
+2026/06/16 20:43:12 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=23
+2026/06/16 20:43:12 [p1] peers ativos conhecidos: 2
+2026/06/16 20:43:12 [p1] -> p1 127.0.0.1:5001 heartbeat=24 alive=true last_seen=1781653392
+2026/06/16 20:43:12 [p1] -> p2 127.0.0.1:5002 heartbeat=23 alive=true last_seen=1781653390
+2026/06/16 20:43:12 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:43:17 [p1][gossip] self heartbeat=25
+2026/06/16 20:43:17 [p1][gossip] targets=1
+2026/06/16 20:43:17 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=24
+2026/06/16 20:43:17 [p1] peers ativos conhecidos: 2
+2026/06/16 20:43:17 [p1] -> p1 127.0.0.1:5001 heartbeat=25 alive=true last_seen=1781653397
+2026/06/16 20:43:17 [p1] -> p2 127.0.0.1:5002 heartbeat=24 alive=true last_seen=1781653395
+2026/06/16 20:43:17 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:43:22 [p1] peers ativos conhecidos: 2
+2026/06/16 20:43:22 [p1] -> p1 127.0.0.1:5001 heartbeat=25 alive=true last_seen=1781653397
+2026/06/16 20:43:22 [p1] -> p2 127.0.0.1:5002 heartbeat=25 alive=true last_seen=1781653400
+2026/06/16 20:43:22 [p1][gossip] self heartbeat=26
+2026/06/16 20:43:22 [p1][gossip] targets=1
+2026/06/16 20:43:22 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=25
+2026/06/16 20:43:22 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:43:27 [p1][gossip] self heartbeat=27
+2026/06/16 20:43:27 [p1][gossip] targets=1
+2026/06/16 20:43:27 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=26
+2026/06/16 20:43:27 [p1] peers ativos conhecidos: 2
+2026/06/16 20:43:27 [p1] -> p1 127.0.0.1:5001 heartbeat=27 alive=true last_seen=1781653407
+2026/06/16 20:43:27 [p1] -> p2 127.0.0.1:5002 heartbeat=26 alive=true last_seen=1781653405
+2026/06/16 20:43:27 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:43:32 [p1] peers ativos conhecidos: 2
+2026/06/16 20:43:32 [p1] -> p1 127.0.0.1:5001 heartbeat=27 alive=true last_seen=1781653407
+2026/06/16 20:43:32 [p1] -> p2 127.0.0.1:5002 heartbeat=27 alive=true last_seen=1781653410
+2026/06/16 20:43:32 [p1][gossip] self heartbeat=28
+2026/06/16 20:43:32 [p1][gossip] targets=1
+2026/06/16 20:43:32 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=27
+2026/06/16 20:43:32 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:43:37 [p1] peers ativos conhecidos: 2
+2026/06/16 20:43:37 [p1] -> p1 127.0.0.1:5001 heartbeat=28 alive=true last_seen=1781653412
+2026/06/16 20:43:37 [p1] -> p2 127.0.0.1:5002 heartbeat=28 alive=true last_seen=1781653415
+2026/06/16 20:43:37 [p1][gossip] self heartbeat=29
+2026/06/16 20:43:37 [p1][gossip] targets=1
+2026/06/16 20:43:37 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=28
+2026/06/16 20:43:37 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:43:42 [p1] peers ativos conhecidos: 2
+2026/06/16 20:43:42 [p1] -> p1 127.0.0.1:5001 heartbeat=29 alive=true last_seen=1781653417
+2026/06/16 20:43:42 [p1][gossip] self heartbeat=30
+2026/06/16 20:43:42 [p1][gossip] targets=1
+2026/06/16 20:43:42 [p1] -> p2 127.0.0.1:5002 heartbeat=29 alive=true last_seen=1781653420
+2026/06/16 20:43:42 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=29
+2026/06/16 20:43:42 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:43:47 [p1][gossip] self heartbeat=31
+2026/06/16 20:43:47 [p1][gossip] targets=1
+2026/06/16 20:43:47 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=30
+2026/06/16 20:43:47 [p1] peers ativos conhecidos: 2
+2026/06/16 20:43:47 [p1] -> p1 127.0.0.1:5001 heartbeat=31 alive=true last_seen=1781653427
+2026/06/16 20:43:47 [p1] -> p2 127.0.0.1:5002 heartbeat=30 alive=true last_seen=1781653425
+2026/06/16 20:43:47 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:43:52 [p1] peers ativos conhecidos: 2
+2026/06/16 20:43:52 [p1] -> p1 127.0.0.1:5001 heartbeat=31 alive=true last_seen=1781653427
+2026/06/16 20:43:52 [p1] -> p2 127.0.0.1:5002 heartbeat=31 alive=true last_seen=1781653430
+2026/06/16 20:43:52 [p1][gossip] self heartbeat=32
+2026/06/16 20:43:52 [p1][gossip] targets=1
+2026/06/16 20:43:52 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=31
+2026/06/16 20:43:52 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:43:57 [p1][gossip] self heartbeat=33
+2026/06/16 20:43:57 [p1][gossip] targets=1
+2026/06/16 20:43:57 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=32
+2026/06/16 20:43:57 [p1] peers ativos conhecidos: 2
+2026/06/16 20:43:57 [p1] -> p1 127.0.0.1:5001 heartbeat=33 alive=true last_seen=1781653437
+2026/06/16 20:43:57 [p1] -> p2 127.0.0.1:5002 heartbeat=32 alive=true last_seen=1781653435
+2026/06/16 20:43:57 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:44:02 [p1][gossip] self heartbeat=34
+2026/06/16 20:44:02 [p1][gossip] targets=1
+2026/06/16 20:44:02 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=33
+2026/06/16 20:44:02 [p1] peers ativos conhecidos: 2
+2026/06/16 20:44:02 [p1] -> p1 127.0.0.1:5001 heartbeat=34 alive=true last_seen=1781653442
+2026/06/16 20:44:02 [p1] -> p2 127.0.0.1:5002 heartbeat=33 alive=true last_seen=1781653440
+2026/06/16 20:44:02 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:44:07 [p1] peers ativos conhecidos: 2
+2026/06/16 20:44:07 [p1] -> p1 127.0.0.1:5001 heartbeat=34 alive=true last_seen=1781653442
+2026/06/16 20:44:07 [p1] -> p2 127.0.0.1:5002 heartbeat=34 alive=true last_seen=1781653445
+2026/06/16 20:44:07 [p1][gossip] self heartbeat=35
+2026/06/16 20:44:07 [p1][gossip] targets=1
+2026/06/16 20:44:07 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=34
+2026/06/16 20:44:07 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:44:12 [p1][gossip] self heartbeat=36
+2026/06/16 20:44:12 [p1][gossip] targets=1
+2026/06/16 20:44:12 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=35
+2026/06/16 20:44:12 [p1] peers ativos conhecidos: 2
+2026/06/16 20:44:12 [p1] -> p1 127.0.0.1:5001 heartbeat=36 alive=true last_seen=1781653452
+2026/06/16 20:44:12 [p1] -> p2 127.0.0.1:5002 heartbeat=35 alive=true last_seen=1781653450
+2026/06/16 20:44:12 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:44:17 [p1][gossip] self heartbeat=37
+2026/06/16 20:44:17 [p1][gossip] targets=1
+2026/06/16 20:44:17 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=36
+2026/06/16 20:44:17 [p1] peers ativos conhecidos: 2
+2026/06/16 20:44:17 [p1] -> p1 127.0.0.1:5001 heartbeat=37 alive=true last_seen=1781653457
+2026/06/16 20:44:17 [p1] -> p2 127.0.0.1:5002 heartbeat=36 alive=true last_seen=1781653455
+2026/06/16 20:44:17 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:44:22 [p1] peers ativos conhecidos: 2
+2026/06/16 20:44:22 [p1][gossip] self heartbeat=38
+2026/06/16 20:44:22 [p1][gossip] targets=1
+2026/06/16 20:44:22 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=37
+2026/06/16 20:44:22 [p1] -> p1 127.0.0.1:5001 heartbeat=37 alive=true last_seen=1781653457
+2026/06/16 20:44:22 [p1] -> p2 127.0.0.1:5002 heartbeat=37 alive=true last_seen=1781653460
+2026/06/16 20:44:22 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:44:27 [p1] peers ativos conhecidos: 2
+2026/06/16 20:44:27 [p1] -> p1 127.0.0.1:5001 heartbeat=38 alive=true last_seen=1781653462
+2026/06/16 20:44:27 [p1] -> p2 127.0.0.1:5002 heartbeat=38 alive=true last_seen=1781653465
+2026/06/16 20:44:27 [p1][gossip] self heartbeat=39
+2026/06/16 20:44:27 [p1][gossip] targets=1
+2026/06/16 20:44:27 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=38
+2026/06/16 20:44:27 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:44:32 [p1][gossip] self heartbeat=40
+2026/06/16 20:44:32 [p1][gossip] targets=1
+2026/06/16 20:44:32 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=39
+2026/06/16 20:44:32 [p1] peers ativos conhecidos: 2
+2026/06/16 20:44:32 [p1] -> p2 127.0.0.1:5002 heartbeat=39 alive=true last_seen=1781653470
+2026/06/16 20:44:32 [p1] -> p1 127.0.0.1:5001 heartbeat=40 alive=true last_seen=1781653472
+2026/06/16 20:44:32 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:44:37 [p1][gossip] self heartbeat=41
+2026/06/16 20:44:37 [p1][gossip] targets=1
+2026/06/16 20:44:37 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=40
+2026/06/16 20:44:37 [p1] peers ativos conhecidos: 2
+2026/06/16 20:44:37 [p1] -> p1 127.0.0.1:5001 heartbeat=41 alive=true last_seen=1781653477
+2026/06/16 20:44:37 [p1] -> p2 127.0.0.1:5002 heartbeat=40 alive=true last_seen=1781653475
+2026/06/16 20:44:37 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:44:42 [p1][gossip] self heartbeat=42
+2026/06/16 20:44:42 [p1] peers ativos conhecidos: 2
+2026/06/16 20:44:42 [p1] -> p1 127.0.0.1:5001 heartbeat=42 alive=true last_seen=1781653482
+2026/06/16 20:44:42 [p1] -> p2 127.0.0.1:5002 heartbeat=41 alive=true last_seen=1781653480
+2026/06/16 20:44:42 [p1][gossip] targets=1
+2026/06/16 20:44:42 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=41
+2026/06/16 20:44:42 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:44:47 [p1] peers ativos conhecidos: 2
+2026/06/16 20:44:47 [p1][gossip] self heartbeat=43
+2026/06/16 20:44:47 [p1][gossip] targets=1
+2026/06/16 20:44:47 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=42
+2026/06/16 20:44:47 [p1] -> p1 127.0.0.1:5001 heartbeat=42 alive=true last_seen=1781653482
+2026/06/16 20:44:47 [p1] -> p2 127.0.0.1:5002 heartbeat=42 alive=true last_seen=1781653485
+2026/06/16 20:44:47 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:44:52 [p1] peers ativos conhecidos: 2
+2026/06/16 20:44:52 [p1][gossip] self heartbeat=44
+2026/06/16 20:44:52 [p1][gossip] targets=1
+2026/06/16 20:44:52 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=43
+2026/06/16 20:44:52 [p1] -> p2 127.0.0.1:5002 heartbeat=43 alive=true last_seen=1781653490
+2026/06/16 20:44:52 [p1] -> p1 127.0.0.1:5001 heartbeat=43 alive=true last_seen=1781653487
+2026/06/16 20:44:52 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:44:57 [p1] peers ativos conhecidos: 2
+2026/06/16 20:44:57 [p1] -> p1 127.0.0.1:5001 heartbeat=44 alive=true last_seen=1781653492
+2026/06/16 20:44:57 [p1] -> p2 127.0.0.1:5002 heartbeat=44 alive=true last_seen=1781653495
+2026/06/16 20:44:57 [p1][gossip] self heartbeat=45
+2026/06/16 20:44:57 [p1][gossip] targets=1
+2026/06/16 20:44:57 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=44
+2026/06/16 20:44:57 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:45:02 [p1] peers ativos conhecidos: 2
+2026/06/16 20:45:02 [p1][gossip] self heartbeat=46
+2026/06/16 20:45:02 [p1][gossip] targets=1
+2026/06/16 20:45:02 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=45
+2026/06/16 20:45:02 [p1] -> p2 127.0.0.1:5002 heartbeat=45 alive=true last_seen=1781653500
+2026/06/16 20:45:02 [p1] -> p1 127.0.0.1:5001 heartbeat=45 alive=true last_seen=1781653497
+2026/06/16 20:45:02 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:45:07 [p1] peers ativos conhecidos: 2
+2026/06/16 20:45:07 [p1] -> p2 127.0.0.1:5002 heartbeat=46 alive=true last_seen=1781653505
+2026/06/16 20:45:07 [p1] -> p1 127.0.0.1:5001 heartbeat=46 alive=true last_seen=1781653502
+2026/06/16 20:45:07 [p1][gossip] self heartbeat=47
+2026/06/16 20:45:07 [p1][gossip] targets=1
+2026/06/16 20:45:07 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=46
+2026/06/16 20:45:07 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:45:12 [p1] peers ativos conhecidos: 2
+2026/06/16 20:45:12 [p1] -> p2 127.0.0.1:5002 heartbeat=47 alive=true last_seen=1781653510
+2026/06/16 20:45:12 [p1][gossip] self heartbeat=48
+2026/06/16 20:45:12 [p1][gossip] targets=1
+2026/06/16 20:45:12 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=47
+2026/06/16 20:45:12 [p1] -> p1 127.0.0.1:5001 heartbeat=47 alive=true last_seen=1781653507
+2026/06/16 20:45:12 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:45:17 [p1][gossip] self heartbeat=49
+2026/06/16 20:45:17 [p1][gossip] targets=1
+2026/06/16 20:45:17 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=48
+2026/06/16 20:45:17 [p1] peers ativos conhecidos: 2
+2026/06/16 20:45:17 [p1] -> p1 127.0.0.1:5001 heartbeat=49 alive=true last_seen=1781653517
+2026/06/16 20:45:17 [p1] -> p2 127.0.0.1:5002 heartbeat=48 alive=true last_seen=1781653515
+2026/06/16 20:45:17 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:45:22 [p1][gossip] self heartbeat=50
+2026/06/16 20:45:22 [p1] peers ativos conhecidos: 2
+2026/06/16 20:45:22 [p1] -> p1 127.0.0.1:5001 heartbeat=50 alive=true last_seen=1781653522
+2026/06/16 20:45:22 [p1] -> p2 127.0.0.1:5002 heartbeat=49 alive=true last_seen=1781653520
+2026/06/16 20:45:22 [p1][gossip] targets=1
+2026/06/16 20:45:22 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=49
+2026/06/16 20:45:22 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:45:27 [p1][gossip] self heartbeat=51
+2026/06/16 20:45:27 [p1][gossip] targets=1
+2026/06/16 20:45:27 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=50
+2026/06/16 20:45:27 [p1] peers ativos conhecidos: 2
+2026/06/16 20:45:27 [p1] -> p1 127.0.0.1:5001 heartbeat=51 alive=true last_seen=1781653527
+2026/06/16 20:45:27 [p1] -> p2 127.0.0.1:5002 heartbeat=50 alive=true last_seen=1781653525
+2026/06/16 20:45:27 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:45:32 [p1] peers ativos conhecidos: 2
+2026/06/16 20:45:32 [p1] -> p1 127.0.0.1:5001 heartbeat=51 alive=true last_seen=1781653527
+2026/06/16 20:45:32 [p1] -> p2 127.0.0.1:5002 heartbeat=51 alive=true last_seen=1781653530
+2026/06/16 20:45:32 [p1][gossip] self heartbeat=52
+2026/06/16 20:45:32 [p1][gossip] targets=1
+2026/06/16 20:45:32 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=51
+2026/06/16 20:45:32 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:45:37 [p1] peers ativos conhecidos: 2
+2026/06/16 20:45:37 [p1] -> p1 127.0.0.1:5001 heartbeat=52 alive=true last_seen=1781653532
+2026/06/16 20:45:37 [p1][gossip] self heartbeat=53
+2026/06/16 20:45:37 [p1][gossip] targets=1
+2026/06/16 20:45:37 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=52
+2026/06/16 20:45:37 [p1] -> p2 127.0.0.1:5002 heartbeat=52 alive=true last_seen=1781653535
+2026/06/16 20:45:37 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:45:42 [p1] peers ativos conhecidos: 2
+2026/06/16 20:45:42 [p1][gossip] self heartbeat=54
+2026/06/16 20:45:42 [p1][gossip] targets=1
+2026/06/16 20:45:42 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=53
+2026/06/16 20:45:42 [p1] -> p2 127.0.0.1:5002 heartbeat=53 alive=true last_seen=1781653540
+2026/06/16 20:45:42 [p1] -> p1 127.0.0.1:5001 heartbeat=53 alive=true last_seen=1781653537
+2026/06/16 20:45:42 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:45:47 [p1] peers ativos conhecidos: 2
+2026/06/16 20:45:47 [p1] -> p1 127.0.0.1:5001 heartbeat=54 alive=true last_seen=1781653542
+2026/06/16 20:45:47 [p1] -> p2 127.0.0.1:5002 heartbeat=54 alive=true last_seen=1781653545
+2026/06/16 20:45:47 [p1][gossip] self heartbeat=55
+2026/06/16 20:45:47 [p1][gossip] targets=1
+2026/06/16 20:45:47 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=54
+2026/06/16 20:45:47 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:45:52 [p1][gossip] self heartbeat=56
+2026/06/16 20:45:52 [p1][gossip] targets=1
+2026/06/16 20:45:52 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=55
+2026/06/16 20:45:52 [p1] peers ativos conhecidos: 2
+2026/06/16 20:45:52 [p1] -> p1 127.0.0.1:5001 heartbeat=56 alive=true last_seen=1781653552
+2026/06/16 20:45:52 [p1] -> p2 127.0.0.1:5002 heartbeat=55 alive=true last_seen=1781653550
+2026/06/16 20:45:52 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:45:57 [p1][gossip] self heartbeat=57
+2026/06/16 20:45:57 [p1][gossip] targets=1
+2026/06/16 20:45:57 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=56
+2026/06/16 20:45:57 [p1] peers ativos conhecidos: 2
+2026/06/16 20:45:57 [p1] -> p1 127.0.0.1:5001 heartbeat=57 alive=true last_seen=1781653557
+2026/06/16 20:45:57 [p1] -> p2 127.0.0.1:5002 heartbeat=56 alive=true last_seen=1781653555
+2026/06/16 20:45:57 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:46:02 [p1] peers ativos conhecidos: 2
+2026/06/16 20:46:02 [p1] -> p1 127.0.0.1:5001 heartbeat=57 alive=true last_seen=1781653557
+2026/06/16 20:46:02 [p1][gossip] self heartbeat=58
+2026/06/16 20:46:02 [p1][gossip] targets=1
+2026/06/16 20:46:02 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=57
+2026/06/16 20:46:02 [p1] -> p2 127.0.0.1:5002 heartbeat=57 alive=true last_seen=1781653560
+2026/06/16 20:46:02 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:46:07 [p1] peers ativos conhecidos: 2
+2026/06/16 20:46:07 [p1] -> p1 127.0.0.1:5001 heartbeat=58 alive=true last_seen=1781653562
+2026/06/16 20:46:07 [p1] -> p2 127.0.0.1:5002 heartbeat=58 alive=true last_seen=1781653565
+2026/06/16 20:46:07 [p1][gossip] self heartbeat=59
+2026/06/16 20:46:07 [p1][gossip] targets=1
+2026/06/16 20:46:07 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=58
+2026/06/16 20:46:07 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:46:12 [p1] peers ativos conhecidos: 2
+2026/06/16 20:46:12 [p1][gossip] self heartbeat=60
+2026/06/16 20:46:12 [p1][gossip] targets=1
+2026/06/16 20:46:12 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=59
+2026/06/16 20:46:12 [p1] -> p1 127.0.0.1:5001 heartbeat=59 alive=true last_seen=1781653567
+2026/06/16 20:46:12 [p1] -> p2 127.0.0.1:5002 heartbeat=59 alive=true last_seen=1781653570
+2026/06/16 20:46:12 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:46:17 [p1][gossip] self heartbeat=61
+2026/06/16 20:46:17 [p1][gossip] targets=1
+2026/06/16 20:46:17 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=60
+2026/06/16 20:46:17 [p1] peers ativos conhecidos: 2
+2026/06/16 20:46:17 [p1] -> p1 127.0.0.1:5001 heartbeat=61 alive=true last_seen=1781653577
+2026/06/16 20:46:17 [p1] -> p2 127.0.0.1:5002 heartbeat=60 alive=true last_seen=1781653575
+2026/06/16 20:46:17 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:46:22 [p1][gossip] self heartbeat=62
+2026/06/16 20:46:22 [p1] peers ativos conhecidos: 2
+2026/06/16 20:46:22 [p1] -> p1 127.0.0.1:5001 heartbeat=62 alive=true last_seen=1781653582
+2026/06/16 20:46:22 [p1] -> p2 127.0.0.1:5002 heartbeat=61 alive=true last_seen=1781653580
+2026/06/16 20:46:22 [p1][gossip] targets=1
+2026/06/16 20:46:22 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=61
+2026/06/16 20:46:22 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:46:27 [p1] peers ativos conhecidos: 2
+2026/06/16 20:46:27 [p1] -> p1 127.0.0.1:5001 heartbeat=62 alive=true last_seen=1781653582
+2026/06/16 20:46:27 [p1][gossip] self heartbeat=63
+2026/06/16 20:46:27 [p1][gossip] targets=1
+2026/06/16 20:46:27 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=62
+2026/06/16 20:46:27 [p1] -> p2 127.0.0.1:5002 heartbeat=62 alive=true last_seen=1781653585
+2026/06/16 20:46:27 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:46:32 [p1] peers ativos conhecidos: 2
+2026/06/16 20:46:32 [p1] -> p1 127.0.0.1:5001 heartbeat=63 alive=true last_seen=1781653587
+2026/06/16 20:46:32 [p1] -> p2 127.0.0.1:5002 heartbeat=63 alive=true last_seen=1781653590
+2026/06/16 20:46:32 [p1][gossip] self heartbeat=64
+2026/06/16 20:46:32 [p1][gossip] targets=1
+2026/06/16 20:46:32 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=63
+2026/06/16 20:46:32 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:46:37 [p1][gossip] self heartbeat=65
+2026/06/16 20:46:37 [p1] peers ativos conhecidos: 2
+2026/06/16 20:46:37 [p1] -> p2 127.0.0.1:5002 heartbeat=64 alive=true last_seen=1781653595
+2026/06/16 20:46:37 [p1] -> p1 127.0.0.1:5001 heartbeat=65 alive=true last_seen=1781653597
+2026/06/16 20:46:37 [p1][gossip] targets=1
+2026/06/16 20:46:37 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=64
+2026/06/16 20:46:37 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:46:42 [p1] peers ativos conhecidos: 2
+2026/06/16 20:46:42 [p1][gossip] self heartbeat=66
+2026/06/16 20:46:42 [p1][gossip] targets=1
+2026/06/16 20:46:42 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=65
+2026/06/16 20:46:42 [p1] -> p1 127.0.0.1:5001 heartbeat=65 alive=true last_seen=1781653597
+2026/06/16 20:46:42 [p1] -> p2 127.0.0.1:5002 heartbeat=65 alive=true last_seen=1781653600
+2026/06/16 20:46:42 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:46:47 [p1] peers ativos conhecidos: 2
+2026/06/16 20:46:47 [p1] -> p1 127.0.0.1:5001 heartbeat=66 alive=true last_seen=1781653602
+2026/06/16 20:46:47 [p1] -> p2 127.0.0.1:5002 heartbeat=66 alive=true last_seen=1781653605
+2026/06/16 20:46:47 [p1][gossip] self heartbeat=67
+2026/06/16 20:46:47 [p1][gossip] targets=1
+2026/06/16 20:46:47 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=66
+2026/06/16 20:46:47 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:46:52 [p1][gossip] self heartbeat=68
+2026/06/16 20:46:52 [p1] peers ativos conhecidos: 2
+2026/06/16 20:46:52 [p1] -> p1 127.0.0.1:5001 heartbeat=68 alive=true last_seen=1781653612
+2026/06/16 20:46:52 [p1] -> p2 127.0.0.1:5002 heartbeat=67 alive=true last_seen=1781653610
+2026/06/16 20:46:52 [p1][gossip] targets=1
+2026/06/16 20:46:52 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=67
+2026/06/16 20:46:52 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:46:57 [p1][gossip] self heartbeat=69
+2026/06/16 20:46:57 [p1][gossip] targets=1
+2026/06/16 20:46:57 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=68
+2026/06/16 20:46:57 [p1] peers ativos conhecidos: 2
+2026/06/16 20:46:57 [p1] -> p1 127.0.0.1:5001 heartbeat=69 alive=true last_seen=1781653617
+2026/06/16 20:46:57 [p1] -> p2 127.0.0.1:5002 heartbeat=68 alive=true last_seen=1781653615
+2026/06/16 20:46:57 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:47:02 [p1][gossip] self heartbeat=70
+2026/06/16 20:47:02 [p1] peers ativos conhecidos: 2
+2026/06/16 20:47:02 [p1] -> p1 127.0.0.1:5001 heartbeat=70 alive=true last_seen=1781653622
+2026/06/16 20:47:02 [p1] -> p2 127.0.0.1:5002 heartbeat=69 alive=true last_seen=1781653620
+2026/06/16 20:47:02 [p1][gossip] targets=1
+2026/06/16 20:47:02 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=69
+2026/06/16 20:47:02 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:47:07 [p1][gossip] self heartbeat=71
+2026/06/16 20:47:07 [p1][gossip] targets=1
+2026/06/16 20:47:07 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=70
+2026/06/16 20:47:07 [p1] peers ativos conhecidos: 2
+2026/06/16 20:47:07 [p1] -> p1 127.0.0.1:5001 heartbeat=71 alive=true last_seen=1781653627
+2026/06/16 20:47:07 [p1] -> p2 127.0.0.1:5002 heartbeat=70 alive=true last_seen=1781653625
+2026/06/16 20:47:07 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:47:12 [p1] peers ativos conhecidos: 2
+2026/06/16 20:47:12 [p1][gossip] self heartbeat=72
+2026/06/16 20:47:12 [p1] -> p1 127.0.0.1:5001 heartbeat=71 alive=true last_seen=1781653627
+2026/06/16 20:47:12 [p1] -> p2 127.0.0.1:5002 heartbeat=71 alive=true last_seen=1781653630
+2026/06/16 20:47:12 [p1][gossip] targets=1
+2026/06/16 20:47:12 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=71
+2026/06/16 20:47:12 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:47:17 [p1][gossip] self heartbeat=73
+2026/06/16 20:47:17 [p1][gossip] targets=1
+2026/06/16 20:47:17 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=72
+2026/06/16 20:47:17 [p1] peers ativos conhecidos: 2
+2026/06/16 20:47:17 [p1] -> p1 127.0.0.1:5001 heartbeat=73 alive=true last_seen=1781653637
+2026/06/16 20:47:17 [p1] -> p2 127.0.0.1:5002 heartbeat=72 alive=true last_seen=1781653635
+2026/06/16 20:47:17 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:48:04 gRPC server escutando em 127.0.0.1:5001
+2026/06/16 20:48:06 [p1] peer iniciado em 127.0.0.1:5001
+2026/06/16 20:48:11 [p1] peers ativos conhecidos: 2
+2026/06/16 20:48:11 [p1] -> p1 127.0.0.1:5001 heartbeat=1 alive=true last_seen=1781653684
+2026/06/16 20:48:11 [p1] -> p2 127.0.0.1:5002 heartbeat=1 alive=true last_seen=1781653690
+2026/06/16 20:48:11 [p1][gossip] self heartbeat=2
+2026/06/16 20:48:11 [p1][gossip] targets=1
+2026/06/16 20:48:11 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=1
+2026/06/16 20:48:11 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:48:16 [p1] peers ativos conhecidos: 2
+2026/06/16 20:48:16 [p1] -> p1 127.0.0.1:5001 heartbeat=2 alive=true last_seen=1781653691
+2026/06/16 20:48:16 [p1] -> p2 127.0.0.1:5002 heartbeat=2 alive=true last_seen=1781653695
+2026/06/16 20:48:16 [p1][gossip] self heartbeat=3
+2026/06/16 20:48:16 [p1][gossip] targets=1
+2026/06/16 20:48:16 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=2
+2026/06/16 20:48:16 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:48:21 [p1][gossip] self heartbeat=4
+2026/06/16 20:48:21 [p1][gossip] targets=1
+2026/06/16 20:48:21 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=3
+2026/06/16 20:48:21 [p1] peers ativos conhecidos: 2
+2026/06/16 20:48:21 [p1] -> p1 127.0.0.1:5001 heartbeat=4 alive=true last_seen=1781653701
+2026/06/16 20:48:21 [p1] -> p2 127.0.0.1:5002 heartbeat=3 alive=true last_seen=1781653700
+2026/06/16 20:48:21 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:48:26 [p1] peers ativos conhecidos: 2
+2026/06/16 20:48:26 [p1] -> p1 127.0.0.1:5001 heartbeat=4 alive=true last_seen=1781653701
+2026/06/16 20:48:26 [p1][gossip] self heartbeat=5
+2026/06/16 20:48:26 [p1][gossip] targets=1
+2026/06/16 20:48:26 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=4
+2026/06/16 20:48:26 [p1] -> p2 127.0.0.1:5002 heartbeat=4 alive=true last_seen=1781653705
+2026/06/16 20:48:26 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:48:31 [p1] peers ativos conhecidos: 2
+2026/06/16 20:48:31 [p1][gossip] self heartbeat=6
+2026/06/16 20:48:31 [p1] -> p1 127.0.0.1:5001 heartbeat=5 alive=true last_seen=1781653706
+2026/06/16 20:48:31 [p1] -> p2 127.0.0.1:5002 heartbeat=5 alive=true last_seen=1781653710
+2026/06/16 20:48:31 [p1][gossip] targets=1
+2026/06/16 20:48:31 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=5
+2026/06/16 20:48:31 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:48:36 [p1][gossip] self heartbeat=7
+2026/06/16 20:48:36 [p1][gossip] targets=1
+2026/06/16 20:48:36 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=6
+2026/06/16 20:48:36 [p1] peers ativos conhecidos: 2
+2026/06/16 20:48:36 [p1] -> p1 127.0.0.1:5001 heartbeat=7 alive=true last_seen=1781653716
+2026/06/16 20:48:36 [p1] -> p2 127.0.0.1:5002 heartbeat=6 alive=true last_seen=1781653715
+2026/06/16 20:48:36 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:48:41 [p1] peers ativos conhecidos: 2
+2026/06/16 20:48:41 [p1] -> p2 127.0.0.1:5002 heartbeat=7 alive=true last_seen=1781653720
+2026/06/16 20:48:41 [p1] -> p1 127.0.0.1:5001 heartbeat=7 alive=true last_seen=1781653716
+2026/06/16 20:48:41 [p1][gossip] self heartbeat=8
+2026/06/16 20:48:41 [p1][gossip] targets=1
+2026/06/16 20:48:41 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=7
+2026/06/16 20:48:41 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:48:46 [p1] peers ativos conhecidos: 2
+2026/06/16 20:48:46 [p1] -> p2 127.0.0.1:5002 heartbeat=8 alive=true last_seen=1781653725
+2026/06/16 20:48:46 [p1] -> p1 127.0.0.1:5001 heartbeat=8 alive=true last_seen=1781653721
+2026/06/16 20:48:46 [p1][gossip] self heartbeat=9
+2026/06/16 20:48:46 [p1][gossip] targets=1
+2026/06/16 20:48:46 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=8
+2026/06/16 20:48:46 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:48:51 [p1][gossip] self heartbeat=10
+2026/06/16 20:48:51 [p1][gossip] targets=1
+2026/06/16 20:48:51 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=9
+2026/06/16 20:48:51 [p1] peers ativos conhecidos: 2
+2026/06/16 20:48:51 [p1] -> p2 127.0.0.1:5002 heartbeat=9 alive=true last_seen=1781653730
+2026/06/16 20:48:51 [p1] -> p1 127.0.0.1:5001 heartbeat=10 alive=true last_seen=1781653731
+2026/06/16 20:48:51 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:48:56 [p1][gossip] self heartbeat=11
+2026/06/16 20:48:56 [p1][gossip] targets=1
+2026/06/16 20:48:56 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=10
+2026/06/16 20:48:56 [p1] peers ativos conhecidos: 2
+2026/06/16 20:48:56 [p1] -> p1 127.0.0.1:5001 heartbeat=11 alive=true last_seen=1781653736
+2026/06/16 20:48:56 [p1] -> p2 127.0.0.1:5002 heartbeat=10 alive=true last_seen=1781653735
+2026/06/16 20:48:56 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:49:01 [p1] peers ativos conhecidos: 2
+2026/06/16 20:49:01 [p1][gossip] self heartbeat=12
+2026/06/16 20:49:01 [p1] -> p1 127.0.0.1:5001 heartbeat=11 alive=true last_seen=1781653736
+2026/06/16 20:49:01 [p1] -> p2 127.0.0.1:5002 heartbeat=11 alive=true last_seen=1781653740
+2026/06/16 20:49:01 [p1][gossip] targets=1
+2026/06/16 20:49:01 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=11
+2026/06/16 20:49:01 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:49:06 [p1][gossip] self heartbeat=13
+2026/06/16 20:49:06 [p1][gossip] targets=1
+2026/06/16 20:49:06 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=12
+2026/06/16 20:49:06 [p1] peers ativos conhecidos: 2
+2026/06/16 20:49:06 [p1] -> p1 127.0.0.1:5001 heartbeat=13 alive=true last_seen=1781653746
+2026/06/16 20:49:06 [p1] -> p2 127.0.0.1:5002 heartbeat=12 alive=true last_seen=1781653745
+2026/06/16 20:49:06 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:49:11 [p1][gossip] self heartbeat=14
+2026/06/16 20:49:11 [p1][gossip] targets=1
+2026/06/16 20:49:11 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=13
+2026/06/16 20:49:11 [p1] peers ativos conhecidos: 2
+2026/06/16 20:49:11 [p1] -> p1 127.0.0.1:5001 heartbeat=14 alive=true last_seen=1781653751
+2026/06/16 20:49:11 [p1] -> p2 127.0.0.1:5002 heartbeat=13 alive=true last_seen=1781653750
+2026/06/16 20:49:11 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:49:16 [p1][gossip] self heartbeat=15
+2026/06/16 20:49:16 [p1][gossip] targets=1
+2026/06/16 20:49:16 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=14
+2026/06/16 20:49:16 [p1] peers ativos conhecidos: 2
+2026/06/16 20:49:16 [p1] -> p2 127.0.0.1:5002 heartbeat=14 alive=true last_seen=1781653755
+2026/06/16 20:49:16 [p1] -> p1 127.0.0.1:5001 heartbeat=15 alive=true last_seen=1781653756
+2026/06/16 20:49:16 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:49:21 [p1][gossip] self heartbeat=16
+2026/06/16 20:49:21 [p1] peers ativos conhecidos: 2
+2026/06/16 20:49:21 [p1] -> p1 127.0.0.1:5001 heartbeat=16 alive=true last_seen=1781653761
+2026/06/16 20:49:21 [p1] -> p2 127.0.0.1:5002 heartbeat=15 alive=true last_seen=1781653760
+2026/06/16 20:49:21 [p1][gossip] targets=1
+2026/06/16 20:49:21 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=15
+2026/06/16 20:49:21 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:49:26 [p1][gossip] self heartbeat=17
+2026/06/16 20:49:26 [p1][gossip] targets=1
+2026/06/16 20:49:26 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=16
+2026/06/16 20:49:26 [p1] peers ativos conhecidos: 2
+2026/06/16 20:49:26 [p1] -> p1 127.0.0.1:5001 heartbeat=17 alive=true last_seen=1781653766
+2026/06/16 20:49:26 [p1] -> p2 127.0.0.1:5002 heartbeat=16 alive=true last_seen=1781653765
+2026/06/16 20:49:26 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:49:31 [p1][gossip] self heartbeat=18
+2026/06/16 20:49:31 [p1][gossip] targets=1
+2026/06/16 20:49:31 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=17
+2026/06/16 20:49:31 [p1] peers ativos conhecidos: 2
+2026/06/16 20:49:31 [p1] -> p1 127.0.0.1:5001 heartbeat=18 alive=true last_seen=1781653771
+2026/06/16 20:49:31 [p1] -> p2 127.0.0.1:5002 heartbeat=17 alive=true last_seen=1781653770
+2026/06/16 20:49:31 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:49:36 [p1][gossip] self heartbeat=19
+2026/06/16 20:49:36 [p1][gossip] targets=1
+2026/06/16 20:49:36 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=18
+2026/06/16 20:49:36 [p1] peers ativos conhecidos: 2
+2026/06/16 20:49:36 [p1] -> p1 127.0.0.1:5001 heartbeat=19 alive=true last_seen=1781653776
+2026/06/16 20:49:36 [p1] -> p2 127.0.0.1:5002 heartbeat=18 alive=true last_seen=1781653775
+2026/06/16 20:49:36 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:49:41 [p1][gossip] self heartbeat=20
+2026/06/16 20:49:41 [p1] peers ativos conhecidos: 2
+2026/06/16 20:49:41 [p1][gossip] targets=1
+2026/06/16 20:49:41 [p1] -> p2 127.0.0.1:5002 heartbeat=19 alive=true last_seen=1781653780
+2026/06/16 20:49:41 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=19
+2026/06/16 20:49:41 [p1] -> p1 127.0.0.1:5001 heartbeat=20 alive=true last_seen=1781653781
+2026/06/16 20:49:41 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:49:46 [p1] peers ativos conhecidos: 2
+2026/06/16 20:49:46 [p1] -> p1 127.0.0.1:5001 heartbeat=20 alive=true last_seen=1781653781
+2026/06/16 20:49:46 [p1] -> p2 127.0.0.1:5002 heartbeat=20 alive=true last_seen=1781653785
+2026/06/16 20:49:46 [p1][gossip] self heartbeat=21
+2026/06/16 20:49:46 [p1][gossip] targets=1
+2026/06/16 20:49:46 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=20
+2026/06/16 20:49:46 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:49:51 [p1][gossip] self heartbeat=22
+2026/06/16 20:49:51 [p1][gossip] targets=1
+2026/06/16 20:49:51 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=21
+2026/06/16 20:49:51 [p1] peers ativos conhecidos: 2
+2026/06/16 20:49:51 [p1] -> p1 127.0.0.1:5001 heartbeat=22 alive=true last_seen=1781653791
+2026/06/16 20:49:51 [p1] -> p2 127.0.0.1:5002 heartbeat=21 alive=true last_seen=1781653790
+2026/06/16 20:49:51 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:49:56 [p1][gossip] self heartbeat=23
+2026/06/16 20:49:56 [p1][gossip] targets=1
+2026/06/16 20:49:56 [p1] peers ativos conhecidos: 2
+2026/06/16 20:49:56 [p1] -> p1 127.0.0.1:5001 heartbeat=23 alive=true last_seen=1781653796
+2026/06/16 20:49:56 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=22
+2026/06/16 20:49:56 [p1] -> p2 127.0.0.1:5002 heartbeat=22 alive=true last_seen=1781653795
+2026/06/16 20:49:56 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:50:01 [p1][gossip] self heartbeat=24
+2026/06/16 20:50:01 [p1][gossip] targets=1
+2026/06/16 20:50:01 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=23
+2026/06/16 20:50:01 [p1] peers ativos conhecidos: 2
+2026/06/16 20:50:01 [p1] -> p1 127.0.0.1:5001 heartbeat=24 alive=true last_seen=1781653801
+2026/06/16 20:50:01 [p1] -> p2 127.0.0.1:5002 heartbeat=23 alive=true last_seen=1781653800
+2026/06/16 20:50:01 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:50:06 [p1][gossip] self heartbeat=25
+2026/06/16 20:50:06 [p1][gossip] targets=1
+2026/06/16 20:50:06 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=24
+2026/06/16 20:50:06 [p1] peers ativos conhecidos: 2
+2026/06/16 20:50:06 [p1] -> p1 127.0.0.1:5001 heartbeat=25 alive=true last_seen=1781653806
+2026/06/16 20:50:06 [p1] -> p2 127.0.0.1:5002 heartbeat=24 alive=true last_seen=1781653805
+2026/06/16 20:50:06 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:50:11 [p1][gossip] self heartbeat=26
+2026/06/16 20:50:11 [p1][gossip] targets=1
+2026/06/16 20:50:11 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=25
+2026/06/16 20:50:11 [p1] peers ativos conhecidos: 2
+2026/06/16 20:50:11 [p1] -> p2 127.0.0.1:5002 heartbeat=25 alive=true last_seen=1781653810
+2026/06/16 20:50:11 [p1] -> p1 127.0.0.1:5001 heartbeat=26 alive=true last_seen=1781653811
+2026/06/16 20:50:11 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:50:16 [p1][gossip] self heartbeat=27
+2026/06/16 20:50:16 [p1][gossip] targets=1
+2026/06/16 20:50:16 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=26
+2026/06/16 20:50:16 [p1] peers ativos conhecidos: 2
+2026/06/16 20:50:16 [p1] -> p2 127.0.0.1:5002 heartbeat=26 alive=true last_seen=1781653815
+2026/06/16 20:50:16 [p1] -> p1 127.0.0.1:5001 heartbeat=27 alive=true last_seen=1781653816
+2026/06/16 20:50:16 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:50:23 [p1] peers ativos conhecidos: 2
+2026/06/16 20:50:23 [p1] -> p1 127.0.0.1:5001 heartbeat=27 alive=true last_seen=1781653816
+2026/06/16 20:50:23 [p1] -> p2 127.0.0.1:5002 heartbeat=27 alive=true last_seen=1781653821
+2026/06/16 20:50:23 [p1][gossip] self heartbeat=28
+2026/06/16 20:50:23 [p1][gossip] targets=1
+2026/06/16 20:50:23 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=27
+2026/06/16 20:50:23 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:50:28 [p1][gossip] self heartbeat=29
+2026/06/16 20:50:28 [p1][gossip] targets=1
+2026/06/16 20:50:28 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=28
+2026/06/16 20:50:28 [p1] peers ativos conhecidos: 2
+2026/06/16 20:50:28 [p1] -> p1 127.0.0.1:5001 heartbeat=29 alive=true last_seen=1781653828
+2026/06/16 20:50:28 [p1] -> p2 127.0.0.1:5002 heartbeat=28 alive=true last_seen=1781653826
+2026/06/16 20:50:28 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:50:33 [p1][gossip] self heartbeat=30
+2026/06/16 20:50:33 [p1][gossip] targets=1
+2026/06/16 20:50:33 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=29
+2026/06/16 20:50:33 [p1] peers ativos conhecidos: 2
+2026/06/16 20:50:33 [p1] -> p1 127.0.0.1:5001 heartbeat=30 alive=true last_seen=1781653833
+2026/06/16 20:50:33 [p1] -> p2 127.0.0.1:5002 heartbeat=29 alive=true last_seen=1781653831
+2026/06/16 20:50:33 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:50:38 [p1][gossip] self heartbeat=31
+2026/06/16 20:50:38 [p1][gossip] targets=1
+2026/06/16 20:50:38 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=30
+2026/06/16 20:50:38 [p1] peers ativos conhecidos: 2
+2026/06/16 20:50:38 [p1] -> p1 127.0.0.1:5001 heartbeat=31 alive=true last_seen=1781653838
+2026/06/16 20:50:38 [p1] -> p2 127.0.0.1:5002 heartbeat=30 alive=true last_seen=1781653836
+2026/06/16 20:50:38 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:50:43 [p1] peers ativos conhecidos: 2
+2026/06/16 20:50:43 [p1] -> p1 127.0.0.1:5001 heartbeat=31 alive=true last_seen=1781653838
+2026/06/16 20:50:43 [p1] -> p2 127.0.0.1:5002 heartbeat=31 alive=true last_seen=1781653841
+2026/06/16 20:50:43 [p1][gossip] self heartbeat=32
+2026/06/16 20:50:43 [p1][gossip] targets=1
+2026/06/16 20:50:43 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=31
+2026/06/16 20:50:43 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:50:48 [p1][gossip] self heartbeat=33
+2026/06/16 20:50:48 [p1][gossip] targets=1
+2026/06/16 20:50:48 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=32
+2026/06/16 20:50:48 [p1] peers ativos conhecidos: 2
+2026/06/16 20:50:48 [p1] -> p1 127.0.0.1:5001 heartbeat=33 alive=true last_seen=1781653848
+2026/06/16 20:50:48 [p1] -> p2 127.0.0.1:5002 heartbeat=32 alive=true last_seen=1781653846
+2026/06/16 20:50:48 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:50:53 [p1] peers ativos conhecidos: 2
+2026/06/16 20:50:53 [p1] -> p1 127.0.0.1:5001 heartbeat=33 alive=true last_seen=1781653848
+2026/06/16 20:50:53 [p1] -> p2 127.0.0.1:5002 heartbeat=33 alive=true last_seen=1781653851
+2026/06/16 20:50:53 [p1][gossip] self heartbeat=34
+2026/06/16 20:50:53 [p1][gossip] targets=1
+2026/06/16 20:50:53 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=33
+2026/06/16 20:50:53 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:50:58 [p1] peers ativos conhecidos: 2
+2026/06/16 20:50:58 [p1] -> p1 127.0.0.1:5001 heartbeat=34 alive=true last_seen=1781653853
+2026/06/16 20:50:58 [p1] -> p2 127.0.0.1:5002 heartbeat=34 alive=true last_seen=1781653856
+2026/06/16 20:50:58 [p1][gossip] self heartbeat=35
+2026/06/16 20:50:58 [p1][gossip] targets=1
+2026/06/16 20:50:58 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=34
+2026/06/16 20:50:58 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:51:03 [p1][gossip] self heartbeat=36
+2026/06/16 20:51:03 [p1][gossip] targets=1
+2026/06/16 20:51:03 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=35
+2026/06/16 20:51:03 [p1] peers ativos conhecidos: 2
+2026/06/16 20:51:03 [p1] -> p1 127.0.0.1:5001 heartbeat=36 alive=true last_seen=1781653863
+2026/06/16 20:51:03 [p1] -> p2 127.0.0.1:5002 heartbeat=35 alive=true last_seen=1781653861
+2026/06/16 20:51:03 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:51:08 [p1][gossip] self heartbeat=37
+2026/06/16 20:51:08 [p1][gossip] targets=1
+2026/06/16 20:51:08 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=36
+2026/06/16 20:51:08 [p1] peers ativos conhecidos: 2
+2026/06/16 20:51:08 [p1] -> p2 127.0.0.1:5002 heartbeat=36 alive=true last_seen=1781653866
+2026/06/16 20:51:08 [p1] -> p1 127.0.0.1:5001 heartbeat=37 alive=true last_seen=1781653868
+2026/06/16 20:51:08 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:51:13 [p1] peers ativos conhecidos: 2
+2026/06/16 20:51:13 [p1] -> p1 127.0.0.1:5001 heartbeat=37 alive=true last_seen=1781653868
+2026/06/16 20:51:13 [p1] -> p2 127.0.0.1:5002 heartbeat=37 alive=true last_seen=1781653871
+2026/06/16 20:51:13 [p1][gossip] self heartbeat=38
+2026/06/16 20:51:13 [p1][gossip] targets=1
+2026/06/16 20:51:13 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=37
+2026/06/16 20:51:13 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:51:18 [p1][gossip] self heartbeat=39
+2026/06/16 20:51:18 [p1][gossip] targets=1
+2026/06/16 20:51:18 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=38
+2026/06/16 20:51:18 [p1] peers ativos conhecidos: 2
+2026/06/16 20:51:18 [p1] -> p1 127.0.0.1:5001 heartbeat=39 alive=true last_seen=1781653878
+2026/06/16 20:51:18 [p1] -> p2 127.0.0.1:5002 heartbeat=38 alive=true last_seen=1781653876
+2026/06/16 20:51:18 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:51:23 [p1][gossip] self heartbeat=40
+2026/06/16 20:51:23 [p1][gossip] targets=1
+2026/06/16 20:51:23 [p1] peers ativos conhecidos: 2
+2026/06/16 20:51:23 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=39
+2026/06/16 20:51:23 [p1] -> p1 127.0.0.1:5001 heartbeat=40 alive=true last_seen=1781653883
+2026/06/16 20:51:23 [p1] -> p2 127.0.0.1:5002 heartbeat=39 alive=true last_seen=1781653881
+2026/06/16 20:51:23 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:51:28 [p1][gossip] self heartbeat=41
+2026/06/16 20:51:28 [p1][gossip] targets=1
+2026/06/16 20:51:28 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=40
+2026/06/16 20:51:28 [p1] peers ativos conhecidos: 2
+2026/06/16 20:51:28 [p1] -> p1 127.0.0.1:5001 heartbeat=41 alive=true last_seen=1781653888
+2026/06/16 20:51:28 [p1] -> p2 127.0.0.1:5002 heartbeat=40 alive=true last_seen=1781653886
+2026/06/16 20:51:28 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:51:33 [p1][gossip] self heartbeat=42
+2026/06/16 20:51:33 [p1][gossip] targets=1
+2026/06/16 20:51:33 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=41
+2026/06/16 20:51:33 [p1] peers ativos conhecidos: 2
+2026/06/16 20:51:33 [p1] -> p2 127.0.0.1:5002 heartbeat=41 alive=true last_seen=1781653891
+2026/06/16 20:51:33 [p1] -> p1 127.0.0.1:5001 heartbeat=42 alive=true last_seen=1781653893
+2026/06/16 20:51:33 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:51:38 [p1][gossip] self heartbeat=43
+2026/06/16 20:51:38 [p1][gossip] targets=1
+2026/06/16 20:51:38 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=42
+2026/06/16 20:51:38 [p1] peers ativos conhecidos: 2
+2026/06/16 20:51:38 [p1] -> p1 127.0.0.1:5001 heartbeat=43 alive=true last_seen=1781653898
+2026/06/16 20:51:38 [p1] -> p2 127.0.0.1:5002 heartbeat=42 alive=true last_seen=1781653896
+2026/06/16 20:51:38 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:51:43 [p1][gossip] self heartbeat=44
+2026/06/16 20:51:43 [p1][gossip] targets=1
+2026/06/16 20:51:43 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=43
+2026/06/16 20:51:43 [p1] peers ativos conhecidos: 2
+2026/06/16 20:51:43 [p1] -> p1 127.0.0.1:5001 heartbeat=44 alive=true last_seen=1781653903
+2026/06/16 20:51:43 [p1] -> p2 127.0.0.1:5002 heartbeat=43 alive=true last_seen=1781653901
+2026/06/16 20:51:43 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:51:48 [p1][gossip] self heartbeat=45
+2026/06/16 20:51:48 [p1][gossip] targets=1
+2026/06/16 20:51:48 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=44
+2026/06/16 20:51:48 [p1] peers ativos conhecidos: 2
+2026/06/16 20:51:48 [p1] -> p1 127.0.0.1:5001 heartbeat=45 alive=true last_seen=1781653908
+2026/06/16 20:51:48 [p1] -> p2 127.0.0.1:5002 heartbeat=44 alive=true last_seen=1781653906
+2026/06/16 20:51:48 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:51:53 [p1][gossip] self heartbeat=46
+2026/06/16 20:51:53 [p1][gossip] targets=1
+2026/06/16 20:51:53 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=45
+2026/06/16 20:51:53 [p1] peers ativos conhecidos: 2
+2026/06/16 20:51:53 [p1] -> p1 127.0.0.1:5001 heartbeat=46 alive=true last_seen=1781653913
+2026/06/16 20:51:53 [p1] -> p2 127.0.0.1:5002 heartbeat=45 alive=true last_seen=1781653911
+2026/06/16 20:51:53 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:51:58 [p1][gossip] self heartbeat=47
+2026/06/16 20:51:58 [p1][gossip] targets=1
+2026/06/16 20:51:58 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=46
+2026/06/16 20:51:58 [p1] peers ativos conhecidos: 2
+2026/06/16 20:51:58 [p1] -> p1 127.0.0.1:5001 heartbeat=47 alive=true last_seen=1781653918
+2026/06/16 20:51:58 [p1] -> p2 127.0.0.1:5002 heartbeat=46 alive=true last_seen=1781653916
+2026/06/16 20:51:58 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:52:03 [p1][gossip] self heartbeat=48
+2026/06/16 20:52:03 [p1] peers ativos conhecidos: 2
+2026/06/16 20:52:03 [p1] -> p1 127.0.0.1:5001 heartbeat=48 alive=true last_seen=1781653923
+2026/06/16 20:52:03 [p1] -> p2 127.0.0.1:5002 heartbeat=47 alive=true last_seen=1781653921
+2026/06/16 20:52:03 [p1][gossip] targets=1
+2026/06/16 20:52:03 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=47
+2026/06/16 20:52:03 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:52:08 [p1][gossip] self heartbeat=49
+2026/06/16 20:52:08 [p1][gossip] targets=1
+2026/06/16 20:52:08 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=48
+2026/06/16 20:52:08 [p1] peers ativos conhecidos: 2
+2026/06/16 20:52:08 [p1] -> p1 127.0.0.1:5001 heartbeat=49 alive=true last_seen=1781653928
+2026/06/16 20:52:08 [p1] -> p2 127.0.0.1:5002 heartbeat=48 alive=true last_seen=1781653926
+2026/06/16 20:52:08 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:52:13 [p1][gossip] self heartbeat=50
+2026/06/16 20:52:13 [p1][gossip] targets=1
+2026/06/16 20:52:13 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=49
+2026/06/16 20:52:13 [p1] peers ativos conhecidos: 2
+2026/06/16 20:52:13 [p1] -> p1 127.0.0.1:5001 heartbeat=50 alive=true last_seen=1781653933
+2026/06/16 20:52:13 [p1] -> p2 127.0.0.1:5002 heartbeat=49 alive=true last_seen=1781653931
+2026/06/16 20:52:13 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:52:18 [p1][gossip] self heartbeat=51
+2026/06/16 20:52:18 [p1][gossip] targets=1
+2026/06/16 20:52:18 [p1] peers ativos conhecidos: 2
+2026/06/16 20:52:18 [p1] -> p1 127.0.0.1:5001 heartbeat=51 alive=true last_seen=1781653938
+2026/06/16 20:52:18 [p1] -> p2 127.0.0.1:5002 heartbeat=50 alive=true last_seen=1781653936
+2026/06/16 20:52:18 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=50
+2026/06/16 20:52:18 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:52:23 [p1][gossip] self heartbeat=52
+2026/06/16 20:52:23 [p1] peers ativos conhecidos: 2
+2026/06/16 20:52:23 [p1] -> p1 127.0.0.1:5001 heartbeat=52 alive=true last_seen=1781653943
+2026/06/16 20:52:23 [p1] -> p2 127.0.0.1:5002 heartbeat=51 alive=true last_seen=1781653941
+2026/06/16 20:52:23 [p1][gossip] targets=1
+2026/06/16 20:52:23 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=51
+2026/06/16 20:52:23 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:52:28 [p1] peers ativos conhecidos: 2
+2026/06/16 20:52:28 [p1][gossip] self heartbeat=53
+2026/06/16 20:52:28 [p1][gossip] targets=1
+2026/06/16 20:52:28 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=52
+2026/06/16 20:52:28 [p1] -> p2 127.0.0.1:5002 heartbeat=52 alive=true last_seen=1781653946
+2026/06/16 20:52:28 [p1] -> p1 127.0.0.1:5001 heartbeat=52 alive=true last_seen=1781653943
+2026/06/16 20:52:28 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:52:33 [p1][gossip] self heartbeat=54
+2026/06/16 20:52:33 [p1][gossip] targets=1
+2026/06/16 20:52:33 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=53
+2026/06/16 20:52:33 [p1] peers ativos conhecidos: 2
+2026/06/16 20:52:33 [p1] -> p1 127.0.0.1:5001 heartbeat=54 alive=true last_seen=1781653953
+2026/06/16 20:52:33 [p1] -> p2 127.0.0.1:5002 heartbeat=53 alive=true last_seen=1781653951
+2026/06/16 20:52:33 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:52:38 [p1][gossip] self heartbeat=55
+2026/06/16 20:52:38 [p1] peers ativos conhecidos: 2
+2026/06/16 20:52:38 [p1] -> p1 127.0.0.1:5001 heartbeat=55 alive=true last_seen=1781653958
+2026/06/16 20:52:38 [p1] -> p2 127.0.0.1:5002 heartbeat=54 alive=true last_seen=1781653956
+2026/06/16 20:52:38 [p1][gossip] targets=1
+2026/06/16 20:52:38 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=54
+2026/06/16 20:52:38 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:52:43 [p1] peers ativos conhecidos: 2
+2026/06/16 20:52:43 [p1] -> p1 127.0.0.1:5001 heartbeat=55 alive=true last_seen=1781653958
+2026/06/16 20:52:43 [p1] -> p2 127.0.0.1:5002 heartbeat=55 alive=true last_seen=1781653961
+2026/06/16 20:52:43 [p1][gossip] self heartbeat=56
+2026/06/16 20:52:43 [p1][gossip] targets=1
+2026/06/16 20:52:43 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=55
+2026/06/16 20:52:43 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:52:48 [p1] peers ativos conhecidos: 2
+2026/06/16 20:52:48 [p1] -> p1 127.0.0.1:5001 heartbeat=56 alive=true last_seen=1781653963
+2026/06/16 20:52:48 [p1] -> p2 127.0.0.1:5002 heartbeat=56 alive=true last_seen=1781653966
+2026/06/16 20:52:48 [p1][gossip] self heartbeat=57
+2026/06/16 20:52:48 [p1][gossip] targets=1
+2026/06/16 20:52:48 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=56
+2026/06/16 20:52:48 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:52:53 [p1][gossip] self heartbeat=58
+2026/06/16 20:52:53 [p1][gossip] targets=1
+2026/06/16 20:52:53 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=57
+2026/06/16 20:52:53 [p1] peers ativos conhecidos: 2
+2026/06/16 20:52:53 [p1] -> p1 127.0.0.1:5001 heartbeat=58 alive=true last_seen=1781653973
+2026/06/16 20:52:53 [p1] -> p2 127.0.0.1:5002 heartbeat=57 alive=true last_seen=1781653971
+2026/06/16 20:52:53 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:52:58 [p1][gossip] self heartbeat=59
+2026/06/16 20:52:58 [p1][gossip] targets=1
+2026/06/16 20:52:58 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=58
+2026/06/16 20:52:58 [p1] peers ativos conhecidos: 2
+2026/06/16 20:52:58 [p1] -> p2 127.0.0.1:5002 heartbeat=58 alive=true last_seen=1781653976
+2026/06/16 20:52:58 [p1] -> p1 127.0.0.1:5001 heartbeat=58 alive=true last_seen=1781653973
+2026/06/16 20:52:58 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:53:03 [p1][gossip] self heartbeat=60
+2026/06/16 20:53:03 [p1] peers ativos conhecidos: 2
+2026/06/16 20:53:03 [p1] -> p1 127.0.0.1:5001 heartbeat=60 alive=true last_seen=1781653983
+2026/06/16 20:53:03 [p1] -> p2 127.0.0.1:5002 heartbeat=59 alive=true last_seen=1781653981
+2026/06/16 20:53:03 [p1][gossip] targets=1
+2026/06/16 20:53:03 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=59
+2026/06/16 20:53:03 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:53:08 [p1][gossip] self heartbeat=61
+2026/06/16 20:53:08 [p1][gossip] targets=1
+2026/06/16 20:53:08 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=60
+2026/06/16 20:53:08 [p1] peers ativos conhecidos: 2
+2026/06/16 20:53:08 [p1] -> p1 127.0.0.1:5001 heartbeat=61 alive=true last_seen=1781653988
+2026/06/16 20:53:08 [p1] -> p2 127.0.0.1:5002 heartbeat=60 alive=true last_seen=1781653986
+2026/06/16 20:53:08 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:53:13 [p1][gossip] self heartbeat=62
+2026/06/16 20:53:13 [p1][gossip] targets=1
+2026/06/16 20:53:13 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=61
+2026/06/16 20:53:13 [p1] peers ativos conhecidos: 2
+2026/06/16 20:53:13 [p1] -> p1 127.0.0.1:5001 heartbeat=62 alive=true last_seen=1781653993
+2026/06/16 20:53:13 [p1] -> p2 127.0.0.1:5002 heartbeat=61 alive=true last_seen=1781653991
+2026/06/16 20:53:13 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:53:18 [p1] peers ativos conhecidos: 2
+2026/06/16 20:53:18 [p1] -> p1 127.0.0.1:5001 heartbeat=62 alive=true last_seen=1781653993
+2026/06/16 20:53:18 [p1] -> p2 127.0.0.1:5002 heartbeat=62 alive=true last_seen=1781653996
+2026/06/16 20:53:18 [p1][gossip] self heartbeat=63
+2026/06/16 20:53:18 [p1][gossip] targets=1
+2026/06/16 20:53:18 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=62
+2026/06/16 20:53:18 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:53:23 [p1] peers ativos conhecidos: 2
+2026/06/16 20:53:23 [p1] -> p1 127.0.0.1:5001 heartbeat=63 alive=true last_seen=1781653998
+2026/06/16 20:53:23 [p1] -> p2 127.0.0.1:5002 heartbeat=63 alive=true last_seen=1781654001
+2026/06/16 20:53:23 [p1][gossip] self heartbeat=64
+2026/06/16 20:53:23 [p1][gossip] targets=1
+2026/06/16 20:53:23 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=63
+2026/06/16 20:53:23 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:53:28 [p1] peers ativos conhecidos: 2
+2026/06/16 20:53:28 [p1][gossip] self heartbeat=65
+2026/06/16 20:53:28 [p1][gossip] targets=1
+2026/06/16 20:53:28 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=64
+2026/06/16 20:53:28 [p1] -> p2 127.0.0.1:5002 heartbeat=64 alive=true last_seen=1781654006
+2026/06/16 20:53:28 [p1] -> p1 127.0.0.1:5001 heartbeat=64 alive=true last_seen=1781654003
+2026/06/16 20:53:28 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:53:33 [p1][gossip] self heartbeat=66
+2026/06/16 20:53:33 [p1][gossip] targets=1
+2026/06/16 20:53:33 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=65
+2026/06/16 20:53:33 [p1] peers ativos conhecidos: 2
+2026/06/16 20:53:33 [p1] -> p1 127.0.0.1:5001 heartbeat=66 alive=true last_seen=1781654013
+2026/06/16 20:53:33 [p1] -> p2 127.0.0.1:5002 heartbeat=65 alive=true last_seen=1781654011
+2026/06/16 20:53:33 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:53:38 [p1] peers ativos conhecidos: 2
+2026/06/16 20:53:38 [p1] -> p1 127.0.0.1:5001 heartbeat=66 alive=true last_seen=1781654013
+2026/06/16 20:53:38 [p1] -> p2 127.0.0.1:5002 heartbeat=66 alive=true last_seen=1781654016
+2026/06/16 20:53:38 [p1][gossip] self heartbeat=67
+2026/06/16 20:53:38 [p1][gossip] targets=1
+2026/06/16 20:53:38 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=66
+2026/06/16 20:53:38 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:53:43 [p1][gossip] self heartbeat=68
+2026/06/16 20:53:43 [p1][gossip] targets=1
+2026/06/16 20:53:43 [p1] peers ativos conhecidos: 2
+2026/06/16 20:53:43 [p1] -> p1 127.0.0.1:5001 heartbeat=68 alive=true last_seen=1781654023
+2026/06/16 20:53:43 [p1] -> p2 127.0.0.1:5002 heartbeat=67 alive=true last_seen=1781654021
+2026/06/16 20:53:43 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=67
+2026/06/16 20:53:43 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:53:48 [p1][gossip] self heartbeat=69
+2026/06/16 20:53:48 [p1] peers ativos conhecidos: 2
+2026/06/16 20:53:48 [p1] -> p1 127.0.0.1:5001 heartbeat=69 alive=true last_seen=1781654028
+2026/06/16 20:53:48 [p1] -> p2 127.0.0.1:5002 heartbeat=68 alive=true last_seen=1781654026
+2026/06/16 20:53:48 [p1][gossip] targets=1
+2026/06/16 20:53:48 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=68
+2026/06/16 20:53:48 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:53:53 [p1] peers ativos conhecidos: 2
+2026/06/16 20:53:53 [p1] -> p2 127.0.0.1:5002 heartbeat=69 alive=true last_seen=1781654031
+2026/06/16 20:53:53 [p1] -> p1 127.0.0.1:5001 heartbeat=69 alive=true last_seen=1781654028
+2026/06/16 20:53:53 [p1][gossip] self heartbeat=70
+2026/06/16 20:53:53 [p1][gossip] targets=1
+2026/06/16 20:53:53 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=69
+2026/06/16 20:53:53 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:53:58 [p1] peers ativos conhecidos: 2
+2026/06/16 20:53:58 [p1] -> p1 127.0.0.1:5001 heartbeat=70 alive=true last_seen=1781654033
+2026/06/16 20:53:58 [p1] -> p2 127.0.0.1:5002 heartbeat=70 alive=true last_seen=1781654036
+2026/06/16 20:53:58 [p1][gossip] self heartbeat=71
+2026/06/16 20:53:58 [p1][gossip] targets=1
+2026/06/16 20:53:58 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=70
+2026/06/16 20:53:58 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:54:03 [p1][gossip] self heartbeat=72
+2026/06/16 20:54:03 [p1][gossip] targets=1
+2026/06/16 20:54:03 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=71
+2026/06/16 20:54:03 [p1] peers ativos conhecidos: 2
+2026/06/16 20:54:03 [p1] -> p1 127.0.0.1:5001 heartbeat=72 alive=true last_seen=1781654043
+2026/06/16 20:54:03 [p1] -> p2 127.0.0.1:5002 heartbeat=71 alive=true last_seen=1781654041
+2026/06/16 20:54:03 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:54:08 [p1] peers ativos conhecidos: 2
+2026/06/16 20:54:08 [p1] -> p1 127.0.0.1:5001 heartbeat=72 alive=true last_seen=1781654043
+2026/06/16 20:54:08 [p1] -> p2 127.0.0.1:5002 heartbeat=72 alive=true last_seen=1781654046
+2026/06/16 20:54:08 [p1][gossip] self heartbeat=73
+2026/06/16 20:54:08 [p1][gossip] targets=1
+2026/06/16 20:54:08 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=72
+2026/06/16 20:54:08 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:54:13 [p1] peers ativos conhecidos: 2
+2026/06/16 20:54:13 [p1] -> p1 127.0.0.1:5001 heartbeat=73 alive=true last_seen=1781654048
+2026/06/16 20:54:13 [p1][gossip] self heartbeat=74
+2026/06/16 20:54:13 [p1][gossip] targets=1
+2026/06/16 20:54:13 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=73
+2026/06/16 20:54:13 [p1] -> p2 127.0.0.1:5002 heartbeat=73 alive=true last_seen=1781654051
+2026/06/16 20:54:13 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:54:18 [p1] peers ativos conhecidos: 2
+2026/06/16 20:54:18 [p1] -> p2 127.0.0.1:5002 heartbeat=74 alive=true last_seen=1781654056
+2026/06/16 20:54:18 [p1] -> p1 127.0.0.1:5001 heartbeat=74 alive=true last_seen=1781654053
+2026/06/16 20:54:18 [p1][gossip] self heartbeat=75
+2026/06/16 20:54:18 [p1][gossip] targets=1
+2026/06/16 20:54:18 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=74
+2026/06/16 20:54:18 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:54:23 [p1][gossip] self heartbeat=76
+2026/06/16 20:54:23 [p1][gossip] targets=1
+2026/06/16 20:54:23 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=75
+2026/06/16 20:54:23 [p1] peers ativos conhecidos: 2
+2026/06/16 20:54:23 [p1] -> p1 127.0.0.1:5001 heartbeat=76 alive=true last_seen=1781654063
+2026/06/16 20:54:23 [p1] -> p2 127.0.0.1:5002 heartbeat=75 alive=true last_seen=1781654061
+2026/06/16 20:54:23 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:54:28 [p1][gossip] self heartbeat=77
+2026/06/16 20:54:28 [p1][gossip] targets=1
+2026/06/16 20:54:28 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=76
+2026/06/16 20:54:28 [p1] peers ativos conhecidos: 2
+2026/06/16 20:54:28 [p1] -> p1 127.0.0.1:5001 heartbeat=77 alive=true last_seen=1781654068
+2026/06/16 20:54:28 [p1] -> p2 127.0.0.1:5002 heartbeat=76 alive=true last_seen=1781654066
+2026/06/16 20:54:28 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:54:33 [p1][gossip] self heartbeat=78
+2026/06/16 20:54:33 [p1][gossip] targets=1
+2026/06/16 20:54:33 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=77
+2026/06/16 20:54:33 [p1] peers ativos conhecidos: 2
+2026/06/16 20:54:33 [p1] -> p1 127.0.0.1:5001 heartbeat=78 alive=true last_seen=1781654073
+2026/06/16 20:54:33 [p1] -> p2 127.0.0.1:5002 heartbeat=77 alive=true last_seen=1781654071
+2026/06/16 20:54:33 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:54:38 [p1][gossip] self heartbeat=79
+2026/06/16 20:54:38 [p1][gossip] targets=1
+2026/06/16 20:54:38 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=78
+2026/06/16 20:54:38 [p1] peers ativos conhecidos: 2
+2026/06/16 20:54:38 [p1] -> p1 127.0.0.1:5001 heartbeat=79 alive=true last_seen=1781654078
+2026/06/16 20:54:38 [p1] -> p2 127.0.0.1:5002 heartbeat=78 alive=true last_seen=1781654076
+2026/06/16 20:54:38 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:54:43 [p1] peers ativos conhecidos: 2
+2026/06/16 20:54:43 [p1][gossip] self heartbeat=80
+2026/06/16 20:54:43 [p1][gossip] targets=1
+2026/06/16 20:54:43 [p1] -> p1 127.0.0.1:5001 heartbeat=79 alive=true last_seen=1781654078
+2026/06/16 20:54:43 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=79
+2026/06/16 20:54:43 [p1] -> p2 127.0.0.1:5002 heartbeat=79 alive=true last_seen=1781654081
+2026/06/16 20:54:43 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:54:48 [p1] peers ativos conhecidos: 2
+2026/06/16 20:54:48 [p1][gossip] self heartbeat=81
+2026/06/16 20:54:48 [p1][gossip] targets=1
+2026/06/16 20:54:48 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=80
+2026/06/16 20:54:48 [p1] -> p1 127.0.0.1:5001 heartbeat=80 alive=true last_seen=1781654083
+2026/06/16 20:54:48 [p1] -> p2 127.0.0.1:5002 heartbeat=80 alive=true last_seen=1781654086
+2026/06/16 20:54:48 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:54:53 [p1] peers ativos conhecidos: 2
+2026/06/16 20:54:53 [p1] -> p1 127.0.0.1:5001 heartbeat=81 alive=true last_seen=1781654088
+2026/06/16 20:54:53 [p1] -> p2 127.0.0.1:5002 heartbeat=81 alive=true last_seen=1781654091
+2026/06/16 20:54:53 [p1][gossip] self heartbeat=82
+2026/06/16 20:54:53 [p1][gossip] targets=1
+2026/06/16 20:54:53 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=81
+2026/06/16 20:54:53 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:54:58 [p1][gossip] self heartbeat=83
+2026/06/16 20:54:58 [p1][gossip] targets=1
+2026/06/16 20:54:58 [p1] peers ativos conhecidos: 2
+2026/06/16 20:54:58 [p1] -> p1 127.0.0.1:5001 heartbeat=83 alive=true last_seen=1781654098
+2026/06/16 20:54:58 [p1] -> p2 127.0.0.1:5002 heartbeat=82 alive=true last_seen=1781654096
+2026/06/16 20:54:58 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=82
+2026/06/16 20:54:58 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:55:03 [p1][gossip] self heartbeat=84
+2026/06/16 20:55:03 [p1] peers ativos conhecidos: 2
+2026/06/16 20:55:03 [p1] -> p1 127.0.0.1:5001 heartbeat=84 alive=true last_seen=1781654103
+2026/06/16 20:55:03 [p1] -> p2 127.0.0.1:5002 heartbeat=83 alive=true last_seen=1781654101
+2026/06/16 20:55:03 [p1][gossip] targets=1
+2026/06/16 20:55:03 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=83
+2026/06/16 20:55:03 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:55:08 [p1] peers ativos conhecidos: 2
+2026/06/16 20:55:08 [p1] -> p2 127.0.0.1:5002 heartbeat=84 alive=true last_seen=1781654106
+2026/06/16 20:55:08 [p1][gossip] self heartbeat=85
+2026/06/16 20:55:08 [p1][gossip] targets=1
+2026/06/16 20:55:08 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=84
+2026/06/16 20:55:08 [p1] -> p1 127.0.0.1:5001 heartbeat=84 alive=true last_seen=1781654103
+2026/06/16 20:55:08 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:55:13 [p1] peers ativos conhecidos: 2
+2026/06/16 20:55:13 [p1] -> p1 127.0.0.1:5001 heartbeat=85 alive=true last_seen=1781654108
+2026/06/16 20:55:13 [p1][gossip] self heartbeat=86
+2026/06/16 20:55:13 [p1][gossip] targets=1
+2026/06/16 20:55:13 [p1] -> p2 127.0.0.1:5002 heartbeat=85 alive=true last_seen=1781654111
+2026/06/16 20:55:13 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=85
+2026/06/16 20:55:13 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:55:18 [p1][gossip] self heartbeat=87
+2026/06/16 20:55:18 [p1] peers ativos conhecidos: 2
+2026/06/16 20:55:18 [p1] -> p1 127.0.0.1:5001 heartbeat=87 alive=true last_seen=1781654118
+2026/06/16 20:55:18 [p1] -> p2 127.0.0.1:5002 heartbeat=86 alive=true last_seen=1781654116
+2026/06/16 20:55:18 [p1][gossip] targets=1
+2026/06/16 20:55:18 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=86
+2026/06/16 20:55:18 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:55:23 [p1] peers ativos conhecidos: 2
+2026/06/16 20:55:23 [p1][gossip] self heartbeat=88
+2026/06/16 20:55:23 [p1][gossip] targets=1
+2026/06/16 20:55:23 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=87
+2026/06/16 20:55:23 [p1] -> p1 127.0.0.1:5001 heartbeat=87 alive=true last_seen=1781654118
+2026/06/16 20:55:23 [p1] -> p2 127.0.0.1:5002 heartbeat=87 alive=true last_seen=1781654121
+2026/06/16 20:55:23 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:55:28 [p1] peers ativos conhecidos: 2
+2026/06/16 20:55:28 [p1] -> p1 127.0.0.1:5001 heartbeat=88 alive=true last_seen=1781654123
+2026/06/16 20:55:28 [p1][gossip] self heartbeat=89
+2026/06/16 20:55:28 [p1][gossip] targets=1
+2026/06/16 20:55:28 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=88
+2026/06/16 20:55:28 [p1] -> p2 127.0.0.1:5002 heartbeat=88 alive=true last_seen=1781654126
+2026/06/16 20:55:28 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:55:33 [p1][gossip] self heartbeat=90
+2026/06/16 20:55:33 [p1][gossip] targets=1
+2026/06/16 20:55:33 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=89
+2026/06/16 20:55:33 [p1] peers ativos conhecidos: 2
+2026/06/16 20:55:33 [p1] -> p1 127.0.0.1:5001 heartbeat=90 alive=true last_seen=1781654133
+2026/06/16 20:55:33 [p1] -> p2 127.0.0.1:5002 heartbeat=89 alive=true last_seen=1781654131
+2026/06/16 20:55:33 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:55:38 [p1] peers ativos conhecidos: 2
+2026/06/16 20:55:38 [p1] -> p1 127.0.0.1:5001 heartbeat=90 alive=true last_seen=1781654133
+2026/06/16 20:55:38 [p1] -> p2 127.0.0.1:5002 heartbeat=90 alive=true last_seen=1781654136
+2026/06/16 20:55:38 [p1][gossip] self heartbeat=91
+2026/06/16 20:55:38 [p1][gossip] targets=1
+2026/06/16 20:55:38 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=90
+2026/06/16 20:55:38 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:55:43 [p1][gossip] self heartbeat=92
+2026/06/16 20:55:43 [p1][gossip] targets=1
+2026/06/16 20:55:43 [p1] peers ativos conhecidos: 2
+2026/06/16 20:55:43 [p1] -> p1 127.0.0.1:5001 heartbeat=92 alive=true last_seen=1781654143
+2026/06/16 20:55:43 [p1] -> p2 127.0.0.1:5002 heartbeat=91 alive=true last_seen=1781654141
+2026/06/16 20:55:43 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=91
+2026/06/16 20:55:43 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:55:48 [p1] peers ativos conhecidos: 2
+2026/06/16 20:55:48 [p1] -> p1 127.0.0.1:5001 heartbeat=92 alive=true last_seen=1781654143
+2026/06/16 20:55:48 [p1] -> p2 127.0.0.1:5002 heartbeat=92 alive=true last_seen=1781654146
+2026/06/16 20:55:48 [p1][gossip] self heartbeat=93
+2026/06/16 20:55:48 [p1][gossip] targets=1
+2026/06/16 20:55:48 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=92
+2026/06/16 20:55:48 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:55:53 [p1] peers ativos conhecidos: 2
+2026/06/16 20:55:53 [p1] -> p1 127.0.0.1:5001 heartbeat=93 alive=true last_seen=1781654148
+2026/06/16 20:55:53 [p1] -> p2 127.0.0.1:5002 heartbeat=93 alive=true last_seen=1781654151
+2026/06/16 20:55:53 [p1][gossip] self heartbeat=94
+2026/06/16 20:55:53 [p1][gossip] targets=1
+2026/06/16 20:55:53 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=93
+2026/06/16 20:55:53 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:55:58 [p1][gossip] self heartbeat=95
+2026/06/16 20:55:58 [p1] peers ativos conhecidos: 2
+2026/06/16 20:55:58 [p1] -> p1 127.0.0.1:5001 heartbeat=95 alive=true last_seen=1781654158
+2026/06/16 20:55:58 [p1] -> p2 127.0.0.1:5002 heartbeat=94 alive=true last_seen=1781654156
+2026/06/16 20:55:58 [p1][gossip] targets=1
+2026/06/16 20:55:58 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=94
+2026/06/16 20:55:58 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:56:03 [p1] peers ativos conhecidos: 2
+2026/06/16 20:56:03 [p1] -> p1 127.0.0.1:5001 heartbeat=95 alive=true last_seen=1781654158
+2026/06/16 20:56:03 [p1] -> p2 127.0.0.1:5002 heartbeat=95 alive=true last_seen=1781654161
+2026/06/16 20:56:03 [p1][gossip] self heartbeat=96
+2026/06/16 20:56:03 [p1][gossip] targets=1
+2026/06/16 20:56:03 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=95
+2026/06/16 20:56:03 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:56:08 [p1] peers ativos conhecidos: 2
+2026/06/16 20:56:08 [p1] -> p1 127.0.0.1:5001 heartbeat=96 alive=true last_seen=1781654163
+2026/06/16 20:56:08 [p1][gossip] self heartbeat=97
+2026/06/16 20:56:08 [p1][gossip] targets=1
+2026/06/16 20:56:08 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=96
+2026/06/16 20:56:08 [p1] -> p2 127.0.0.1:5002 heartbeat=96 alive=true last_seen=1781654166
+2026/06/16 20:56:08 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:56:13 [p1][gossip] self heartbeat=98
+2026/06/16 20:56:13 [p1][gossip] targets=1
+2026/06/16 20:56:13 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=97
+2026/06/16 20:56:13 [p1] peers ativos conhecidos: 2
+2026/06/16 20:56:13 [p1] -> p1 127.0.0.1:5001 heartbeat=98 alive=true last_seen=1781654173
+2026/06/16 20:56:13 [p1] -> p2 127.0.0.1:5002 heartbeat=97 alive=true last_seen=1781654171
+2026/06/16 20:56:13 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:56:18 [p1] peers ativos conhecidos: 2
+2026/06/16 20:56:18 [p1] -> p2 127.0.0.1:5002 heartbeat=98 alive=true last_seen=1781654176
+2026/06/16 20:56:18 [p1] -> p1 127.0.0.1:5001 heartbeat=98 alive=true last_seen=1781654173
+2026/06/16 20:56:18 [p1][gossip] self heartbeat=99
+2026/06/16 20:56:18 [p1][gossip] targets=1
+2026/06/16 20:56:18 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=98
+2026/06/16 20:56:18 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:56:23 [p1][gossip] self heartbeat=100
+2026/06/16 20:56:23 [p1] peers ativos conhecidos: 2
+2026/06/16 20:56:23 [p1] -> p1 127.0.0.1:5001 heartbeat=100 alive=true last_seen=1781654183
+2026/06/16 20:56:23 [p1] -> p2 127.0.0.1:5002 heartbeat=99 alive=true last_seen=1781654181
+2026/06/16 20:56:23 [p1][gossip] targets=1
+2026/06/16 20:56:23 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=99
+2026/06/16 20:56:23 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:56:28 [p1][gossip] self heartbeat=101
+2026/06/16 20:56:28 [p1][gossip] targets=1
+2026/06/16 20:56:28 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=100
+2026/06/16 20:56:28 [p1] peers ativos conhecidos: 2
+2026/06/16 20:56:28 [p1] -> p1 127.0.0.1:5001 heartbeat=101 alive=true last_seen=1781654188
+2026/06/16 20:56:28 [p1] -> p2 127.0.0.1:5002 heartbeat=100 alive=true last_seen=1781654186
+2026/06/16 20:56:28 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:56:33 [p1] peers ativos conhecidos: 2
+2026/06/16 20:56:33 [p1] -> p1 127.0.0.1:5001 heartbeat=101 alive=true last_seen=1781654188
+2026/06/16 20:56:33 [p1] -> p2 127.0.0.1:5002 heartbeat=101 alive=true last_seen=1781654191
+2026/06/16 20:56:33 [p1][gossip] self heartbeat=102
+2026/06/16 20:56:33 [p1][gossip] targets=1
+2026/06/16 20:56:33 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=101
+2026/06/16 20:56:33 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:56:38 [p1] peers ativos conhecidos: 2
+2026/06/16 20:56:38 [p1] -> p1 127.0.0.1:5001 heartbeat=102 alive=true last_seen=1781654193
+2026/06/16 20:56:38 [p1] -> p2 127.0.0.1:5002 heartbeat=102 alive=true last_seen=1781654196
+2026/06/16 20:56:38 [p1][gossip] self heartbeat=103
+2026/06/16 20:56:38 [p1][gossip] targets=1
+2026/06/16 20:56:38 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=102
+2026/06/16 20:56:38 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:56:43 [p1][gossip] self heartbeat=104
+2026/06/16 20:56:43 [p1][gossip] targets=1
+2026/06/16 20:56:43 [p1] peers ativos conhecidos: 2
+2026/06/16 20:56:43 [p1] -> p1 127.0.0.1:5001 heartbeat=104 alive=true last_seen=1781654203
+2026/06/16 20:56:43 [p1] -> p2 127.0.0.1:5002 heartbeat=103 alive=true last_seen=1781654201
+2026/06/16 20:56:43 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=103
+2026/06/16 20:56:43 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:56:48 [p1] peers ativos conhecidos: 2
+2026/06/16 20:56:48 [p1] -> p1 127.0.0.1:5001 heartbeat=104 alive=true last_seen=1781654203
+2026/06/16 20:56:48 [p1] -> p2 127.0.0.1:5002 heartbeat=104 alive=true last_seen=1781654206
+2026/06/16 20:56:48 [p1][gossip] self heartbeat=105
+2026/06/16 20:56:48 [p1][gossip] targets=1
+2026/06/16 20:56:48 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=104
+2026/06/16 20:56:48 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:56:56 gRPC server escutando em 127.0.0.1:5001
+2026/06/16 20:56:58 [p1] peer iniciado em 127.0.0.1:5001
+2026/06/16 20:57:03 [p1] peers ativos conhecidos: 2
+2026/06/16 20:57:03 [p1] -> p1 127.0.0.1:5001 heartbeat=1 alive=true last_seen=1781654216
+2026/06/16 20:57:03 [p1] -> p2 127.0.0.1:5002 heartbeat=1 alive=true last_seen=1781654220
+2026/06/16 20:57:03 [p1][gossip] self heartbeat=2
+2026/06/16 20:57:03 [p1][gossip] targets=1
+2026/06/16 20:57:03 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=1
+2026/06/16 20:57:03 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:57:08 [p1][gossip] self heartbeat=3
+2026/06/16 20:57:08 [p1][gossip] targets=1
+2026/06/16 20:57:08 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=2
+2026/06/16 20:57:08 [p1] peers ativos conhecidos: 2
+2026/06/16 20:57:08 [p1] -> p1 127.0.0.1:5001 heartbeat=3 alive=true last_seen=1781654228
+2026/06/16 20:57:08 [p1] -> p2 127.0.0.1:5002 heartbeat=2 alive=true last_seen=1781654225
+2026/06/16 20:57:08 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:57:13 [p1] peers ativos conhecidos: 2
+2026/06/16 20:57:13 [p1] -> p1 127.0.0.1:5001 heartbeat=3 alive=true last_seen=1781654228
+2026/06/16 20:57:13 [p1] -> p2 127.0.0.1:5002 heartbeat=3 alive=true last_seen=1781654230
+2026/06/16 20:57:13 [p1][gossip] self heartbeat=4
+2026/06/16 20:57:13 [p1][gossip] targets=1
+2026/06/16 20:57:13 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=3
+2026/06/16 20:57:13 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:57:18 [p1] peers ativos conhecidos: 2
+2026/06/16 20:57:18 [p1] -> p1 127.0.0.1:5001 heartbeat=4 alive=true last_seen=1781654233
+2026/06/16 20:57:18 [p1] -> p2 127.0.0.1:5002 heartbeat=4 alive=true last_seen=1781654235
+2026/06/16 20:57:18 [p1][gossip] self heartbeat=5
+2026/06/16 20:57:18 [p1][gossip] targets=1
+2026/06/16 20:57:18 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=4
+2026/06/16 20:57:18 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:57:23 [p1][gossip] self heartbeat=6
+2026/06/16 20:57:23 [p1][gossip] targets=1
+2026/06/16 20:57:23 [p1] peers ativos conhecidos: 2
+2026/06/16 20:57:23 [p1] -> p1 127.0.0.1:5001 heartbeat=6 alive=true last_seen=1781654243
+2026/06/16 20:57:23 [p1] -> p2 127.0.0.1:5002 heartbeat=5 alive=true last_seen=1781654240
+2026/06/16 20:57:23 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=5
+2026/06/16 20:57:23 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:57:28 [p1] peers ativos conhecidos: 2
+2026/06/16 20:57:28 [p1] -> p1 127.0.0.1:5001 heartbeat=6 alive=true last_seen=1781654243
+2026/06/16 20:57:28 [p1] -> p2 127.0.0.1:5002 heartbeat=6 alive=true last_seen=1781654245
+2026/06/16 20:57:28 [p1][gossip] self heartbeat=7
+2026/06/16 20:57:28 [p1][gossip] targets=1
+2026/06/16 20:57:28 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=6
+2026/06/16 20:57:28 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:57:33 [p1] peers ativos conhecidos: 2
+2026/06/16 20:57:33 [p1] -> p1 127.0.0.1:5001 heartbeat=7 alive=true last_seen=1781654248
+2026/06/16 20:57:33 [p1] -> p2 127.0.0.1:5002 heartbeat=7 alive=true last_seen=1781654250
+2026/06/16 20:57:33 [p1][gossip] self heartbeat=8
+2026/06/16 20:57:33 [p1][gossip] targets=1
+2026/06/16 20:57:33 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=7
+2026/06/16 20:57:33 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:57:38 [p1][gossip] self heartbeat=9
+2026/06/16 20:57:38 [p1][gossip] targets=1
+2026/06/16 20:57:38 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=8
+2026/06/16 20:57:38 [p1] peers ativos conhecidos: 2
+2026/06/16 20:57:38 [p1] -> p1 127.0.0.1:5001 heartbeat=9 alive=true last_seen=1781654258
+2026/06/16 20:57:38 [p1] -> p2 127.0.0.1:5002 heartbeat=8 alive=true last_seen=1781654255
+2026/06/16 20:57:38 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:57:43 [p1] peers ativos conhecidos: 2
+2026/06/16 20:57:43 [p1] -> p1 127.0.0.1:5001 heartbeat=9 alive=true last_seen=1781654258
+2026/06/16 20:57:43 [p1] -> p2 127.0.0.1:5002 heartbeat=9 alive=true last_seen=1781654260
+2026/06/16 20:57:43 [p1][gossip] self heartbeat=10
+2026/06/16 20:57:43 [p1][gossip] targets=1
+2026/06/16 20:57:43 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=9
+2026/06/16 20:57:43 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:57:48 [p1] peers ativos conhecidos: 2
+2026/06/16 20:57:48 [p1] -> p1 127.0.0.1:5001 heartbeat=10 alive=true last_seen=1781654263
+2026/06/16 20:57:48 [p1] -> p2 127.0.0.1:5002 heartbeat=10 alive=true last_seen=1781654265
+2026/06/16 20:57:48 [p1][gossip] self heartbeat=11
+2026/06/16 20:57:48 [p1][gossip] targets=1
+2026/06/16 20:57:48 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=10
+2026/06/16 20:57:48 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:57:53 [p1] peers ativos conhecidos: 2
+2026/06/16 20:57:53 [p1] -> p1 127.0.0.1:5001 heartbeat=11 alive=true last_seen=1781654268
+2026/06/16 20:57:53 [p1] -> p2 127.0.0.1:5002 heartbeat=11 alive=true last_seen=1781654270
+2026/06/16 20:57:53 [p1][gossip] self heartbeat=12
+2026/06/16 20:57:53 [p1][gossip] targets=1
+2026/06/16 20:57:53 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=11
+2026/06/16 20:57:53 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:57:58 [p1] peers ativos conhecidos: 2
+2026/06/16 20:57:58 [p1] -> p2 127.0.0.1:5002 heartbeat=12 alive=true last_seen=1781654275
+2026/06/16 20:57:58 [p1] -> p1 127.0.0.1:5001 heartbeat=12 alive=true last_seen=1781654273
+2026/06/16 20:57:58 [p1][gossip] self heartbeat=13
+2026/06/16 20:57:58 [p1][gossip] targets=1
+2026/06/16 20:57:58 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=12
+2026/06/16 20:57:58 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:58:03 [p1] peers ativos conhecidos: 2
+2026/06/16 20:58:03 [p1] -> p1 127.0.0.1:5001 heartbeat=13 alive=true last_seen=1781654278
+2026/06/16 20:58:03 [p1] -> p2 127.0.0.1:5002 heartbeat=13 alive=true last_seen=1781654280
+2026/06/16 20:58:03 [p1][gossip] self heartbeat=14
+2026/06/16 20:58:03 [p1][gossip] targets=1
+2026/06/16 20:58:03 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=13
+2026/06/16 20:58:03 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:58:08 [p1] peers ativos conhecidos: 2
+2026/06/16 20:58:08 [p1] -> p1 127.0.0.1:5001 heartbeat=14 alive=true last_seen=1781654283
+2026/06/16 20:58:08 [p1] -> p2 127.0.0.1:5002 heartbeat=14 alive=true last_seen=1781654285
+2026/06/16 20:58:08 [p1][gossip] self heartbeat=15
+2026/06/16 20:58:08 [p1][gossip] targets=1
+2026/06/16 20:58:08 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=14
+2026/06/16 20:58:08 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:58:13 [p1][gossip] self heartbeat=16
+2026/06/16 20:58:13 [p1][gossip] targets=1
+2026/06/16 20:58:13 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=15
+2026/06/16 20:58:13 [p1] peers ativos conhecidos: 2
+2026/06/16 20:58:13 [p1] -> p1 127.0.0.1:5001 heartbeat=16 alive=true last_seen=1781654293
+2026/06/16 20:58:13 [p1] -> p2 127.0.0.1:5002 heartbeat=15 alive=true last_seen=1781654290
+2026/06/16 20:58:13 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:58:18 [p1] peers ativos conhecidos: 2
+2026/06/16 20:58:18 [p1] -> p1 127.0.0.1:5001 heartbeat=16 alive=true last_seen=1781654293
+2026/06/16 20:58:18 [p1] -> p2 127.0.0.1:5002 heartbeat=16 alive=true last_seen=1781654295
+2026/06/16 20:58:18 [p1][gossip] self heartbeat=17
+2026/06/16 20:58:18 [p1][gossip] targets=1
+2026/06/16 20:58:18 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=16
+2026/06/16 20:58:18 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:58:23 [p1][gossip] self heartbeat=18
+2026/06/16 20:58:23 [p1] peers ativos conhecidos: 2
+2026/06/16 20:58:23 [p1] -> p1 127.0.0.1:5001 heartbeat=18 alive=true last_seen=1781654303
+2026/06/16 20:58:23 [p1] -> p2 127.0.0.1:5002 heartbeat=17 alive=true last_seen=1781654300
+2026/06/16 20:58:23 [p1][gossip] targets=1
+2026/06/16 20:58:23 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=17
+2026/06/16 20:58:23 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:58:28 [p1][gossip] self heartbeat=19
+2026/06/16 20:58:28 [p1][gossip] targets=1
+2026/06/16 20:58:28 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=18
+2026/06/16 20:58:28 [p1] peers ativos conhecidos: 2
+2026/06/16 20:58:28 [p1] -> p1 127.0.0.1:5001 heartbeat=19 alive=true last_seen=1781654308
+2026/06/16 20:58:28 [p1] -> p2 127.0.0.1:5002 heartbeat=18 alive=true last_seen=1781654305
+2026/06/16 20:58:28 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:58:33 [p1][gossip] self heartbeat=20
+2026/06/16 20:58:33 [p1][gossip] targets=1
+2026/06/16 20:58:33 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=19
+2026/06/16 20:58:33 [p1] peers ativos conhecidos: 2
+2026/06/16 20:58:33 [p1] -> p1 127.0.0.1:5001 heartbeat=20 alive=true last_seen=1781654313
+2026/06/16 20:58:33 [p1] -> p2 127.0.0.1:5002 heartbeat=19 alive=true last_seen=1781654310
+2026/06/16 20:58:33 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:58:38 [p1][gossip] self heartbeat=21
+2026/06/16 20:58:38 [p1][gossip] targets=1
+2026/06/16 20:58:38 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=20
+2026/06/16 20:58:38 [p1] peers ativos conhecidos: 2
+2026/06/16 20:58:38 [p1] -> p1 127.0.0.1:5001 heartbeat=21 alive=true last_seen=1781654318
+2026/06/16 20:58:38 [p1] -> p2 127.0.0.1:5002 heartbeat=20 alive=true last_seen=1781654315
+2026/06/16 20:58:38 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:58:43 [p1] peers ativos conhecidos: 2
+2026/06/16 20:58:43 [p1] -> p1 127.0.0.1:5001 heartbeat=21 alive=true last_seen=1781654318
+2026/06/16 20:58:43 [p1] -> p2 127.0.0.1:5002 heartbeat=21 alive=true last_seen=1781654320
+2026/06/16 20:58:43 [p1][gossip] self heartbeat=22
+2026/06/16 20:58:43 [p1][gossip] targets=1
+2026/06/16 20:58:43 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=21
+2026/06/16 20:58:43 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:58:48 [p1] peers ativos conhecidos: 2
+2026/06/16 20:58:48 [p1] -> p1 127.0.0.1:5001 heartbeat=22 alive=true last_seen=1781654323
+2026/06/16 20:58:48 [p1] -> p2 127.0.0.1:5002 heartbeat=22 alive=true last_seen=1781654325
+2026/06/16 20:58:48 [p1][gossip] self heartbeat=23
+2026/06/16 20:58:48 [p1][gossip] targets=1
+2026/06/16 20:58:48 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=22
+2026/06/16 20:58:48 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:58:53 [p1] peers ativos conhecidos: 2
+2026/06/16 20:58:53 [p1][gossip] self heartbeat=24
+2026/06/16 20:58:53 [p1][gossip] targets=1
+2026/06/16 20:58:53 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=23
+2026/06/16 20:58:53 [p1] -> p2 127.0.0.1:5002 heartbeat=23 alive=true last_seen=1781654330
+2026/06/16 20:58:53 [p1] -> p1 127.0.0.1:5001 heartbeat=23 alive=true last_seen=1781654328
+2026/06/16 20:58:53 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:58:58 [p1] peers ativos conhecidos: 2
+2026/06/16 20:58:58 [p1] -> p1 127.0.0.1:5001 heartbeat=24 alive=true last_seen=1781654333
+2026/06/16 20:58:58 [p1] -> p2 127.0.0.1:5002 heartbeat=24 alive=true last_seen=1781654335
+2026/06/16 20:58:58 [p1][gossip] self heartbeat=25
+2026/06/16 20:58:58 [p1][gossip] targets=1
+2026/06/16 20:58:58 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=24
+2026/06/16 20:58:58 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:59:03 [p1] peers ativos conhecidos: 2
+2026/06/16 20:59:03 [p1] -> p1 127.0.0.1:5001 heartbeat=25 alive=true last_seen=1781654338
+2026/06/16 20:59:03 [p1] -> p2 127.0.0.1:5002 heartbeat=25 alive=true last_seen=1781654340
+2026/06/16 20:59:03 [p1][gossip] self heartbeat=26
+2026/06/16 20:59:03 [p1][gossip] targets=1
+2026/06/16 20:59:03 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=25
+2026/06/16 20:59:03 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:59:08 [p1][gossip] self heartbeat=27
+2026/06/16 20:59:08 [p1][gossip] targets=1
+2026/06/16 20:59:08 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=26
+2026/06/16 20:59:08 [p1] peers ativos conhecidos: 2
+2026/06/16 20:59:08 [p1] -> p1 127.0.0.1:5001 heartbeat=27 alive=true last_seen=1781654348
+2026/06/16 20:59:08 [p1] -> p2 127.0.0.1:5002 heartbeat=26 alive=true last_seen=1781654345
+2026/06/16 20:59:08 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:59:13 [p1] peers ativos conhecidos: 2
+2026/06/16 20:59:13 [p1] -> p1 127.0.0.1:5001 heartbeat=27 alive=true last_seen=1781654348
+2026/06/16 20:59:13 [p1] -> p2 127.0.0.1:5002 heartbeat=27 alive=true last_seen=1781654350
+2026/06/16 20:59:13 [p1][gossip] self heartbeat=28
+2026/06/16 20:59:13 [p1][gossip] targets=1
+2026/06/16 20:59:13 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=27
+2026/06/16 20:59:13 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:59:18 [p1] peers ativos conhecidos: 2
+2026/06/16 20:59:18 [p1] -> p1 127.0.0.1:5001 heartbeat=28 alive=true last_seen=1781654353
+2026/06/16 20:59:18 [p1][gossip] self heartbeat=29
+2026/06/16 20:59:18 [p1][gossip] targets=1
+2026/06/16 20:59:18 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=28
+2026/06/16 20:59:18 [p1] -> p2 127.0.0.1:5002 heartbeat=28 alive=true last_seen=1781654355
+2026/06/16 20:59:18 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:59:23 [p1] peers ativos conhecidos: 2
+2026/06/16 20:59:23 [p1] -> p2 127.0.0.1:5002 heartbeat=29 alive=true last_seen=1781654360
+2026/06/16 20:59:23 [p1] -> p1 127.0.0.1:5001 heartbeat=29 alive=true last_seen=1781654358
+2026/06/16 20:59:23 [p1][gossip] self heartbeat=30
+2026/06/16 20:59:23 [p1][gossip] targets=1
+2026/06/16 20:59:23 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=29
+2026/06/16 20:59:23 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:59:28 [p1] peers ativos conhecidos: 2
+2026/06/16 20:59:28 [p1] -> p1 127.0.0.1:5001 heartbeat=30 alive=true last_seen=1781654363
+2026/06/16 20:59:28 [p1] -> p2 127.0.0.1:5002 heartbeat=30 alive=true last_seen=1781654365
+2026/06/16 20:59:28 [p1][gossip] self heartbeat=31
+2026/06/16 20:59:28 [p1][gossip] targets=1
+2026/06/16 20:59:28 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=30
+2026/06/16 20:59:28 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:59:33 [p1][gossip] self heartbeat=32
+2026/06/16 20:59:33 [p1][gossip] targets=1
+2026/06/16 20:59:33 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=31
+2026/06/16 20:59:33 [p1] peers ativos conhecidos: 2
+2026/06/16 20:59:33 [p1] -> p1 127.0.0.1:5001 heartbeat=32 alive=true last_seen=1781654373
+2026/06/16 20:59:33 [p1] -> p2 127.0.0.1:5002 heartbeat=31 alive=true last_seen=1781654370
+2026/06/16 20:59:33 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:59:38 [p1][gossip] self heartbeat=33
+2026/06/16 20:59:38 [p1] peers ativos conhecidos: 2
+2026/06/16 20:59:38 [p1] -> p1 127.0.0.1:5001 heartbeat=33 alive=true last_seen=1781654378
+2026/06/16 20:59:38 [p1] -> p2 127.0.0.1:5002 heartbeat=32 alive=true last_seen=1781654375
+2026/06/16 20:59:38 [p1][gossip] targets=1
+2026/06/16 20:59:38 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=32
+2026/06/16 20:59:38 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:59:43 [p1] peers ativos conhecidos: 2
+2026/06/16 20:59:43 [p1] -> p1 127.0.0.1:5001 heartbeat=33 alive=true last_seen=1781654378
+2026/06/16 20:59:43 [p1] -> p2 127.0.0.1:5002 heartbeat=33 alive=true last_seen=1781654380
+2026/06/16 20:59:43 [p1][gossip] self heartbeat=34
+2026/06/16 20:59:43 [p1][gossip] targets=1
+2026/06/16 20:59:43 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=33
+2026/06/16 20:59:43 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:59:48 [p1] peers ativos conhecidos: 2
+2026/06/16 20:59:48 [p1] -> p1 127.0.0.1:5001 heartbeat=34 alive=true last_seen=1781654383
+2026/06/16 20:59:48 [p1] -> p2 127.0.0.1:5002 heartbeat=34 alive=true last_seen=1781654385
+2026/06/16 20:59:48 [p1][gossip] self heartbeat=35
+2026/06/16 20:59:48 [p1][gossip] targets=1
+2026/06/16 20:59:48 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=34
+2026/06/16 20:59:48 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:59:53 [p1] peers ativos conhecidos: 2
+2026/06/16 20:59:53 [p1] -> p1 127.0.0.1:5001 heartbeat=35 alive=true last_seen=1781654388
+2026/06/16 20:59:53 [p1] -> p2 127.0.0.1:5002 heartbeat=35 alive=true last_seen=1781654390
+2026/06/16 20:59:53 [p1][gossip] self heartbeat=36
+2026/06/16 20:59:53 [p1][gossip] targets=1
+2026/06/16 20:59:53 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=35
+2026/06/16 20:59:53 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 20:59:58 [p1][gossip] self heartbeat=37
+2026/06/16 20:59:58 [p1] peers ativos conhecidos: 2
+2026/06/16 20:59:58 [p1][gossip] targets=1
+2026/06/16 20:59:58 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=36
+2026/06/16 20:59:58 [p1] -> p1 127.0.0.1:5001 heartbeat=37 alive=true last_seen=1781654398
+2026/06/16 20:59:58 [p1] -> p2 127.0.0.1:5002 heartbeat=36 alive=true last_seen=1781654395
+2026/06/16 20:59:58 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:00:03 [p1][gossip] self heartbeat=38
+2026/06/16 21:00:03 [p1] peers ativos conhecidos: 2
+2026/06/16 21:00:03 [p1] -> p2 127.0.0.1:5002 heartbeat=37 alive=true last_seen=1781654400
+2026/06/16 21:00:03 [p1] -> p1 127.0.0.1:5001 heartbeat=38 alive=true last_seen=1781654403
+2026/06/16 21:00:03 [p1][gossip] targets=1
+2026/06/16 21:00:03 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=37
+2026/06/16 21:00:03 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:00:08 [p1][gossip] self heartbeat=39
+2026/06/16 21:00:08 [p1][gossip] targets=1
+2026/06/16 21:00:08 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=38
+2026/06/16 21:00:08 [p1] peers ativos conhecidos: 2
+2026/06/16 21:00:08 [p1] -> p1 127.0.0.1:5001 heartbeat=39 alive=true last_seen=1781654408
+2026/06/16 21:00:08 [p1] -> p2 127.0.0.1:5002 heartbeat=38 alive=true last_seen=1781654405
+2026/06/16 21:00:08 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:00:13 [p1] peers ativos conhecidos: 2
+2026/06/16 21:00:13 [p1] -> p1 127.0.0.1:5001 heartbeat=39 alive=true last_seen=1781654408
+2026/06/16 21:00:13 [p1] -> p2 127.0.0.1:5002 heartbeat=39 alive=true last_seen=1781654410
+2026/06/16 21:00:13 [p1][gossip] self heartbeat=40
+2026/06/16 21:00:13 [p1][gossip] targets=1
+2026/06/16 21:00:13 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=39
+2026/06/16 21:00:13 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:00:18 [p1] peers ativos conhecidos: 2
+2026/06/16 21:00:18 [p1] -> p1 127.0.0.1:5001 heartbeat=40 alive=true last_seen=1781654413
+2026/06/16 21:00:18 [p1] -> p2 127.0.0.1:5002 heartbeat=40 alive=true last_seen=1781654415
+2026/06/16 21:00:18 [p1][gossip] self heartbeat=41
+2026/06/16 21:00:18 [p1][gossip] targets=1
+2026/06/16 21:00:18 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=40
+2026/06/16 21:00:18 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:00:23 [p1][gossip] self heartbeat=42
+2026/06/16 21:00:23 [p1][gossip] targets=1
+2026/06/16 21:00:23 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=41
+2026/06/16 21:00:23 [p1] peers ativos conhecidos: 2
+2026/06/16 21:00:23 [p1] -> p2 127.0.0.1:5002 heartbeat=41 alive=true last_seen=1781654420
+2026/06/16 21:00:23 [p1] -> p1 127.0.0.1:5001 heartbeat=42 alive=true last_seen=1781654423
+2026/06/16 21:00:23 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:00:28 [p1][gossip] self heartbeat=43
+2026/06/16 21:00:28 [p1] peers ativos conhecidos: 2
+2026/06/16 21:00:28 [p1] -> p1 127.0.0.1:5001 heartbeat=43 alive=true last_seen=1781654428
+2026/06/16 21:00:28 [p1] -> p2 127.0.0.1:5002 heartbeat=42 alive=true last_seen=1781654425
+2026/06/16 21:00:28 [p1][gossip] targets=1
+2026/06/16 21:00:28 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=42
+2026/06/16 21:00:28 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:00:33 [p1] peers ativos conhecidos: 2
+2026/06/16 21:00:33 [p1][gossip] self heartbeat=44
+2026/06/16 21:00:33 [p1][gossip] targets=1
+2026/06/16 21:00:33 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=43
+2026/06/16 21:00:33 [p1] -> p1 127.0.0.1:5001 heartbeat=43 alive=true last_seen=1781654428
+2026/06/16 21:00:33 [p1] -> p2 127.0.0.1:5002 heartbeat=43 alive=true last_seen=1781654430
+2026/06/16 21:00:33 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:00:38 [p1] peers ativos conhecidos: 2
+2026/06/16 21:00:38 [p1] -> p1 127.0.0.1:5001 heartbeat=44 alive=true last_seen=1781654433
+2026/06/16 21:00:38 [p1] -> p2 127.0.0.1:5002 heartbeat=44 alive=true last_seen=1781654435
+2026/06/16 21:00:38 [p1][gossip] self heartbeat=45
+2026/06/16 21:00:38 [p1][gossip] targets=1
+2026/06/16 21:00:38 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=44
+2026/06/16 21:00:38 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:00:43 [p1] peers ativos conhecidos: 2
+2026/06/16 21:00:43 [p1][gossip] self heartbeat=46
+2026/06/16 21:00:43 [p1][gossip] targets=1
+2026/06/16 21:00:43 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=45
+2026/06/16 21:00:43 [p1] -> p1 127.0.0.1:5001 heartbeat=45 alive=true last_seen=1781654438
+2026/06/16 21:00:43 [p1] -> p2 127.0.0.1:5002 heartbeat=45 alive=true last_seen=1781654440
+2026/06/16 21:00:43 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:00:48 [p1][gossip] self heartbeat=47
+2026/06/16 21:00:48 [p1] peers ativos conhecidos: 2
+2026/06/16 21:00:48 [p1] -> p1 127.0.0.1:5001 heartbeat=47 alive=true last_seen=1781654448
+2026/06/16 21:00:48 [p1] -> p2 127.0.0.1:5002 heartbeat=46 alive=true last_seen=1781654445
+2026/06/16 21:00:48 [p1][gossip] targets=1
+2026/06/16 21:00:48 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=46
+2026/06/16 21:00:48 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:00:53 [p1][gossip] self heartbeat=48
+2026/06/16 21:00:53 [p1][gossip] targets=1
+2026/06/16 21:00:53 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=47
+2026/06/16 21:00:53 [p1] peers ativos conhecidos: 2
+2026/06/16 21:00:53 [p1] -> p1 127.0.0.1:5001 heartbeat=48 alive=true last_seen=1781654453
+2026/06/16 21:00:53 [p1] -> p2 127.0.0.1:5002 heartbeat=47 alive=true last_seen=1781654450
+2026/06/16 21:00:53 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:00:58 [p1] peers ativos conhecidos: 2
+2026/06/16 21:00:58 [p1][gossip] self heartbeat=49
+2026/06/16 21:00:58 [p1][gossip] targets=1
+2026/06/16 21:00:58 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=48
+2026/06/16 21:00:58 [p1] -> p1 127.0.0.1:5001 heartbeat=48 alive=true last_seen=1781654453
+2026/06/16 21:00:58 [p1] -> p2 127.0.0.1:5002 heartbeat=48 alive=true last_seen=1781654455
+2026/06/16 21:00:58 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:01:03 [p1][gossip] self heartbeat=50
+2026/06/16 21:01:03 [p1][gossip] targets=1
+2026/06/16 21:01:03 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=49
+2026/06/16 21:01:03 [p1] peers ativos conhecidos: 2
+2026/06/16 21:01:03 [p1] -> p1 127.0.0.1:5001 heartbeat=50 alive=true last_seen=1781654463
+2026/06/16 21:01:03 [p1] -> p2 127.0.0.1:5002 heartbeat=49 alive=true last_seen=1781654460
+2026/06/16 21:01:03 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:01:08 [p1][gossip] self heartbeat=51
+2026/06/16 21:01:08 [p1][gossip] targets=1
+2026/06/16 21:01:08 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=50
+2026/06/16 21:01:08 [p1] peers ativos conhecidos: 2
+2026/06/16 21:01:08 [p1] -> p1 127.0.0.1:5001 heartbeat=51 alive=true last_seen=1781654468
+2026/06/16 21:01:08 [p1] -> p2 127.0.0.1:5002 heartbeat=50 alive=true last_seen=1781654465
+2026/06/16 21:01:08 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:01:13 [p1] peers ativos conhecidos: 2
+2026/06/16 21:01:13 [p1] -> p1 127.0.0.1:5001 heartbeat=51 alive=true last_seen=1781654468
+2026/06/16 21:01:13 [p1] -> p2 127.0.0.1:5002 heartbeat=51 alive=true last_seen=1781654470
+2026/06/16 21:01:13 [p1][gossip] self heartbeat=52
+2026/06/16 21:01:13 [p1][gossip] targets=1
+2026/06/16 21:01:13 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=51
+2026/06/16 21:01:13 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:01:18 [p1] peers ativos conhecidos: 2
+2026/06/16 21:01:18 [p1] -> p1 127.0.0.1:5001 heartbeat=52 alive=true last_seen=1781654473
+2026/06/16 21:01:18 [p1] -> p2 127.0.0.1:5002 heartbeat=52 alive=true last_seen=1781654475
+2026/06/16 21:01:18 [p1][gossip] self heartbeat=53
+2026/06/16 21:01:18 [p1][gossip] targets=1
+2026/06/16 21:01:18 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=52
+2026/06/16 21:01:18 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:01:23 [p1] peers ativos conhecidos: 2
+2026/06/16 21:01:23 [p1] -> p1 127.0.0.1:5001 heartbeat=53 alive=true last_seen=1781654478
+2026/06/16 21:01:23 [p1] -> p2 127.0.0.1:5002 heartbeat=53 alive=true last_seen=1781654480
+2026/06/16 21:01:23 [p1][gossip] self heartbeat=54
+2026/06/16 21:01:23 [p1][gossip] targets=1
+2026/06/16 21:01:23 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=53
+2026/06/16 21:01:23 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:01:28 [p1] peers ativos conhecidos: 2
+2026/06/16 21:01:28 [p1] -> p1 127.0.0.1:5001 heartbeat=54 alive=true last_seen=1781654483
+2026/06/16 21:01:28 [p1] -> p2 127.0.0.1:5002 heartbeat=54 alive=true last_seen=1781654485
+2026/06/16 21:01:28 [p1][gossip] self heartbeat=55
+2026/06/16 21:01:28 [p1][gossip] targets=1
+2026/06/16 21:01:28 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=54
+2026/06/16 21:01:28 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:01:33 [p1] peers ativos conhecidos: 2
+2026/06/16 21:01:33 [p1] -> p1 127.0.0.1:5001 heartbeat=55 alive=true last_seen=1781654488
+2026/06/16 21:01:33 [p1] -> p2 127.0.0.1:5002 heartbeat=55 alive=true last_seen=1781654490
+2026/06/16 21:01:33 [p1][gossip] self heartbeat=56
+2026/06/16 21:01:33 [p1][gossip] targets=1
+2026/06/16 21:01:33 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=55
+2026/06/16 21:01:33 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:01:38 [p1][gossip] self heartbeat=57
+2026/06/16 21:01:38 [p1][gossip] targets=1
+2026/06/16 21:01:38 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=56
+2026/06/16 21:01:38 [p1] peers ativos conhecidos: 2
+2026/06/16 21:01:38 [p1] -> p1 127.0.0.1:5001 heartbeat=57 alive=true last_seen=1781654498
+2026/06/16 21:01:38 [p1] -> p2 127.0.0.1:5002 heartbeat=56 alive=true last_seen=1781654495
+2026/06/16 21:01:38 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:01:43 [p1][gossip] self heartbeat=58
+2026/06/16 21:01:43 [p1][gossip] targets=1
+2026/06/16 21:01:43 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=57
+2026/06/16 21:01:43 [p1] peers ativos conhecidos: 2
+2026/06/16 21:01:43 [p1] -> p1 127.0.0.1:5001 heartbeat=58 alive=true last_seen=1781654503
+2026/06/16 21:01:43 [p1] -> p2 127.0.0.1:5002 heartbeat=57 alive=true last_seen=1781654500
+2026/06/16 21:01:43 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:01:48 [p1][gossip] self heartbeat=59
+2026/06/16 21:01:48 [p1] peers ativos conhecidos: 2
+2026/06/16 21:01:48 [p1] -> p1 127.0.0.1:5001 heartbeat=59 alive=true last_seen=1781654508
+2026/06/16 21:01:48 [p1] -> p2 127.0.0.1:5002 heartbeat=58 alive=true last_seen=1781654505
+2026/06/16 21:01:48 [p1][gossip] targets=1
+2026/06/16 21:01:48 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=58
+2026/06/16 21:01:48 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:01:53 [p1] peers ativos conhecidos: 2
+2026/06/16 21:01:53 [p1] -> p1 127.0.0.1:5001 heartbeat=59 alive=true last_seen=1781654508
+2026/06/16 21:01:53 [p1] -> p2 127.0.0.1:5002 heartbeat=59 alive=true last_seen=1781654510
+2026/06/16 21:01:53 [p1][gossip] self heartbeat=60
+2026/06/16 21:01:53 [p1][gossip] targets=1
+2026/06/16 21:01:53 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=59
+2026/06/16 21:01:53 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:01:58 [p1] peers ativos conhecidos: 2
+2026/06/16 21:01:58 [p1] -> p1 127.0.0.1:5001 heartbeat=60 alive=true last_seen=1781654513
+2026/06/16 21:01:58 [p1] -> p2 127.0.0.1:5002 heartbeat=60 alive=true last_seen=1781654515
+2026/06/16 21:01:58 [p1][gossip] self heartbeat=61
+2026/06/16 21:01:58 [p1][gossip] targets=1
+2026/06/16 21:01:58 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=60
+2026/06/16 21:01:58 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:02:03 [p1][gossip] self heartbeat=62
+2026/06/16 21:02:03 [p1][gossip] targets=1
+2026/06/16 21:02:03 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=61
+2026/06/16 21:02:03 [p1] peers ativos conhecidos: 2
+2026/06/16 21:02:03 [p1] -> p1 127.0.0.1:5001 heartbeat=62 alive=true last_seen=1781654523
+2026/06/16 21:02:03 [p1] -> p2 127.0.0.1:5002 heartbeat=61 alive=true last_seen=1781654520
+2026/06/16 21:02:03 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:02:08 [p1][gossip] self heartbeat=63
+2026/06/16 21:02:08 [p1][gossip] targets=1
+2026/06/16 21:02:08 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=62
+2026/06/16 21:02:08 [p1] peers ativos conhecidos: 2
+2026/06/16 21:02:08 [p1] -> p1 127.0.0.1:5001 heartbeat=63 alive=true last_seen=1781654528
+2026/06/16 21:02:08 [p1] -> p2 127.0.0.1:5002 heartbeat=62 alive=true last_seen=1781654525
+2026/06/16 21:02:08 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:02:13 [p1] peers ativos conhecidos: 2
+2026/06/16 21:02:13 [p1] -> p1 127.0.0.1:5001 heartbeat=63 alive=true last_seen=1781654528
+2026/06/16 21:02:13 [p1][gossip] self heartbeat=64
+2026/06/16 21:02:13 [p1][gossip] targets=1
+2026/06/16 21:02:13 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=63
+2026/06/16 21:02:13 [p1] -> p2 127.0.0.1:5002 heartbeat=63 alive=true last_seen=1781654530
+2026/06/16 21:02:13 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:02:18 [p1][gossip] self heartbeat=65
+2026/06/16 21:02:18 [p1] peers ativos conhecidos: 2
+2026/06/16 21:02:18 [p1] -> p1 127.0.0.1:5001 heartbeat=65 alive=true last_seen=1781654538
+2026/06/16 21:02:18 [p1] -> p2 127.0.0.1:5002 heartbeat=64 alive=true last_seen=1781654535
+2026/06/16 21:02:18 [p1][gossip] targets=1
+2026/06/16 21:02:18 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=64
+2026/06/16 21:02:18 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:02:23 [p1] peers ativos conhecidos: 2
+2026/06/16 21:02:23 [p1] -> p1 127.0.0.1:5001 heartbeat=65 alive=true last_seen=1781654538
+2026/06/16 21:02:23 [p1][gossip] self heartbeat=66
+2026/06/16 21:02:23 [p1][gossip] targets=1
+2026/06/16 21:02:23 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=65
+2026/06/16 21:02:23 [p1] -> p2 127.0.0.1:5002 heartbeat=65 alive=true last_seen=1781654540
+2026/06/16 21:02:23 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:02:28 [p1][gossip] self heartbeat=67
+2026/06/16 21:02:28 [p1][gossip] targets=1
+2026/06/16 21:02:28 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=66
+2026/06/16 21:02:28 [p1] peers ativos conhecidos: 2
+2026/06/16 21:02:28 [p1] -> p1 127.0.0.1:5001 heartbeat=67 alive=true last_seen=1781654548
+2026/06/16 21:02:28 [p1] -> p2 127.0.0.1:5002 heartbeat=66 alive=true last_seen=1781654545
+2026/06/16 21:02:28 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:02:33 [p1] peers ativos conhecidos: 2
+2026/06/16 21:02:33 [p1] -> p1 127.0.0.1:5001 heartbeat=67 alive=true last_seen=1781654548
+2026/06/16 21:02:33 [p1] -> p2 127.0.0.1:5002 heartbeat=67 alive=true last_seen=1781654550
+2026/06/16 21:02:33 [p1][gossip] self heartbeat=68
+2026/06/16 21:02:33 [p1][gossip] targets=1
+2026/06/16 21:02:33 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=67
+2026/06/16 21:02:33 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:02:38 [p1][gossip] self heartbeat=69
+2026/06/16 21:02:38 [p1][gossip] targets=1
+2026/06/16 21:02:38 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=68
+2026/06/16 21:02:38 [p1] peers ativos conhecidos: 2
+2026/06/16 21:02:38 [p1] -> p1 127.0.0.1:5001 heartbeat=69 alive=true last_seen=1781654558
+2026/06/16 21:02:38 [p1] -> p2 127.0.0.1:5002 heartbeat=68 alive=true last_seen=1781654555
+2026/06/16 21:02:38 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:02:43 [p1][gossip] self heartbeat=70
+2026/06/16 21:02:43 [p1][gossip] targets=1
+2026/06/16 21:02:43 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=69
+2026/06/16 21:02:43 [p1] peers ativos conhecidos: 2
+2026/06/16 21:02:43 [p1] -> p1 127.0.0.1:5001 heartbeat=70 alive=true last_seen=1781654563
+2026/06/16 21:02:43 [p1] -> p2 127.0.0.1:5002 heartbeat=69 alive=true last_seen=1781654560
+2026/06/16 21:02:43 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:02:48 [p1][gossip] self heartbeat=71
+2026/06/16 21:02:48 [p1][gossip] targets=1
+2026/06/16 21:02:48 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=70
+2026/06/16 21:02:48 [p1] peers ativos conhecidos: 2
+2026/06/16 21:02:48 [p1] -> p1 127.0.0.1:5001 heartbeat=71 alive=true last_seen=1781654568
+2026/06/16 21:02:48 [p1] -> p2 127.0.0.1:5002 heartbeat=70 alive=true last_seen=1781654565
+2026/06/16 21:02:48 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:02:53 [p1][gossip] self heartbeat=72
+2026/06/16 21:02:53 [p1][gossip] targets=1
+2026/06/16 21:02:53 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=71
+2026/06/16 21:02:53 [p1] peers ativos conhecidos: 2
+2026/06/16 21:02:53 [p1] -> p2 127.0.0.1:5002 heartbeat=71 alive=true last_seen=1781654570
+2026/06/16 21:02:53 [p1] -> p1 127.0.0.1:5001 heartbeat=72 alive=true last_seen=1781654573
+2026/06/16 21:02:53 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:02:58 [p1][gossip] self heartbeat=73
+2026/06/16 21:02:58 [p1][gossip] targets=1
+2026/06/16 21:02:58 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=72
+2026/06/16 21:02:58 [p1] peers ativos conhecidos: 2
+2026/06/16 21:02:58 [p1] -> p1 127.0.0.1:5001 heartbeat=73 alive=true last_seen=1781654578
+2026/06/16 21:02:58 [p1] -> p2 127.0.0.1:5002 heartbeat=72 alive=true last_seen=1781654575
+2026/06/16 21:02:58 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:03:03 [p1][gossip] self heartbeat=74
+2026/06/16 21:03:03 [p1][gossip] targets=1
+2026/06/16 21:03:03 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=73
+2026/06/16 21:03:03 [p1] peers ativos conhecidos: 2
+2026/06/16 21:03:03 [p1] -> p1 127.0.0.1:5001 heartbeat=74 alive=true last_seen=1781654583
+2026/06/16 21:03:03 [p1] -> p2 127.0.0.1:5002 heartbeat=73 alive=true last_seen=1781654580
+2026/06/16 21:03:03 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:03:08 [p1][gossip] self heartbeat=75
+2026/06/16 21:03:08 [p1][gossip] targets=1
+2026/06/16 21:03:08 [p1] peers ativos conhecidos: 2
+2026/06/16 21:03:08 [p1] -> p2 127.0.0.1:5002 heartbeat=74 alive=true last_seen=1781654585
+2026/06/16 21:03:08 [p1] -> p1 127.0.0.1:5001 heartbeat=75 alive=true last_seen=1781654588
+2026/06/16 21:03:08 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=74
+2026/06/16 21:03:08 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:03:13 [p1] peers ativos conhecidos: 2
+2026/06/16 21:03:13 [p1][gossip] self heartbeat=76
+2026/06/16 21:03:13 [p1][gossip] targets=1
+2026/06/16 21:03:13 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=75
+2026/06/16 21:03:13 [p1] -> p1 127.0.0.1:5001 heartbeat=75 alive=true last_seen=1781654588
+2026/06/16 21:03:13 [p1] -> p2 127.0.0.1:5002 heartbeat=75 alive=true last_seen=1781654590
+2026/06/16 21:03:13 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:03:18 [p1] peers ativos conhecidos: 2
+2026/06/16 21:03:18 [p1][gossip] self heartbeat=77
+2026/06/16 21:03:18 [p1][gossip] targets=1
+2026/06/16 21:03:18 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=76
+2026/06/16 21:03:18 [p1] -> p1 127.0.0.1:5001 heartbeat=76 alive=true last_seen=1781654593
+2026/06/16 21:03:18 [p1] -> p2 127.0.0.1:5002 heartbeat=76 alive=true last_seen=1781654595
+2026/06/16 21:03:18 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:03:23 [p1][gossip] self heartbeat=78
+2026/06/16 21:03:23 [p1][gossip] targets=1
+2026/06/16 21:03:23 [p1] peers ativos conhecidos: 2
+2026/06/16 21:03:23 [p1] -> p2 127.0.0.1:5002 heartbeat=77 alive=true last_seen=1781654600
+2026/06/16 21:03:23 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=77
+2026/06/16 21:03:23 [p1] -> p1 127.0.0.1:5001 heartbeat=77 alive=true last_seen=1781654598
+2026/06/16 21:03:23 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:03:28 [p1][gossip] self heartbeat=79
+2026/06/16 21:03:28 [p1][gossip] targets=1
+2026/06/16 21:03:28 [p1] peers ativos conhecidos: 2
+2026/06/16 21:03:28 [p1] -> p2 127.0.0.1:5002 heartbeat=78 alive=true last_seen=1781654605
+2026/06/16 21:03:28 [p1] -> p1 127.0.0.1:5001 heartbeat=79 alive=true last_seen=1781654608
+2026/06/16 21:03:28 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=78
+2026/06/16 21:03:28 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:03:33 [p1] peers ativos conhecidos: 2
+2026/06/16 21:03:33 [p1][gossip] self heartbeat=80
+2026/06/16 21:03:33 [p1][gossip] targets=1
+2026/06/16 21:03:33 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=79
+2026/06/16 21:03:33 [p1] -> p1 127.0.0.1:5001 heartbeat=79 alive=true last_seen=1781654608
+2026/06/16 21:03:33 [p1] -> p2 127.0.0.1:5002 heartbeat=79 alive=true last_seen=1781654610
+2026/06/16 21:03:33 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:03:38 [p1][gossip] self heartbeat=81
+2026/06/16 21:03:38 [p1][gossip] targets=1
+2026/06/16 21:03:38 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=80
+2026/06/16 21:03:38 [p1] peers ativos conhecidos: 2
+2026/06/16 21:03:38 [p1] -> p1 127.0.0.1:5001 heartbeat=81 alive=true last_seen=1781654618
+2026/06/16 21:03:38 [p1] -> p2 127.0.0.1:5002 heartbeat=80 alive=true last_seen=1781654615
+2026/06/16 21:03:38 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:03:43 [p1] peers ativos conhecidos: 2
+2026/06/16 21:03:43 [p1] -> p1 127.0.0.1:5001 heartbeat=81 alive=true last_seen=1781654618
+2026/06/16 21:03:43 [p1] -> p2 127.0.0.1:5002 heartbeat=81 alive=true last_seen=1781654620
+2026/06/16 21:03:43 [p1][gossip] self heartbeat=82
+2026/06/16 21:03:43 [p1][gossip] targets=1
+2026/06/16 21:03:43 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=81
+2026/06/16 21:03:43 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:03:48 [p1][gossip] self heartbeat=83
+2026/06/16 21:03:48 [p1][gossip] targets=1
+2026/06/16 21:03:48 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=82
+2026/06/16 21:03:48 [p1] peers ativos conhecidos: 2
+2026/06/16 21:03:48 [p1] -> p1 127.0.0.1:5001 heartbeat=83 alive=true last_seen=1781654628
+2026/06/16 21:03:48 [p1] -> p2 127.0.0.1:5002 heartbeat=82 alive=true last_seen=1781654625
+2026/06/16 21:03:48 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:03:53 [p1][gossip] self heartbeat=84
+2026/06/16 21:03:53 [p1][gossip] targets=1
+2026/06/16 21:03:53 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=83
+2026/06/16 21:03:53 [p1] peers ativos conhecidos: 2
+2026/06/16 21:03:53 [p1] -> p1 127.0.0.1:5001 heartbeat=84 alive=true last_seen=1781654633
+2026/06/16 21:03:53 [p1] -> p2 127.0.0.1:5002 heartbeat=83 alive=true last_seen=1781654630
+2026/06/16 21:03:53 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:03:58 [p1] peers ativos conhecidos: 2
+2026/06/16 21:03:58 [p1] -> p1 127.0.0.1:5001 heartbeat=84 alive=true last_seen=1781654633
+2026/06/16 21:03:58 [p1] -> p2 127.0.0.1:5002 heartbeat=84 alive=true last_seen=1781654635
+2026/06/16 21:03:58 [p1][gossip] self heartbeat=85
+2026/06/16 21:03:58 [p1][gossip] targets=1
+2026/06/16 21:03:58 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=84
+2026/06/16 21:03:58 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:04:03 [p1] peers ativos conhecidos: 2
+2026/06/16 21:04:03 [p1] -> p1 127.0.0.1:5001 heartbeat=85 alive=true last_seen=1781654638
+2026/06/16 21:04:03 [p1] -> p2 127.0.0.1:5002 heartbeat=85 alive=true last_seen=1781654640
+2026/06/16 21:04:03 [p1][gossip] self heartbeat=86
+2026/06/16 21:04:03 [p1][gossip] targets=1
+2026/06/16 21:04:03 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=85
+2026/06/16 21:04:03 [p1][gossip] peer p2 (127.0.0.1:5002) indisponível: conexão recusada ou serviço não está ativo
+2026/06/16 21:04:03 [p1][gossip] detalhe técnico: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:5002: connect: connection refused"
+2026/06/16 21:04:09 gRPC server escutando em 127.0.0.1:5001
+2026/06/16 21:04:11 [p1] peer iniciado em 127.0.0.1:5001
+2026/06/16 21:04:16 [p1][gossip] self heartbeat=2
+2026/06/16 21:04:16 [p1][gossip] targets=0
+2026/06/16 21:04:16 [p1] peers ativos conhecidos: 1
+2026/06/16 21:04:16 [p1] -> p1 127.0.0.1:5001 heartbeat=2 alive=true last_seen=1781654656
+2026/06/16 21:04:21 [p1] peers ativos conhecidos: 1
+2026/06/16 21:04:21 [p1][gossip] self heartbeat=3
+2026/06/16 21:04:21 [p1][gossip] targets=0
+2026/06/16 21:04:21 [p1] -> p1 127.0.0.1:5001 heartbeat=2 alive=true last_seen=1781654656
+2026/06/16 21:04:26 [p1] peers ativos conhecidos: 1
+2026/06/16 21:04:26 [p1] -> p1 127.0.0.1:5001 heartbeat=3 alive=true last_seen=1781654661
+2026/06/16 21:04:26 [p1][gossip] self heartbeat=4
+2026/06/16 21:04:26 [p1][gossip] targets=0
+2026/06/16 21:04:31 [p1] peers ativos conhecidos: 2
+2026/06/16 21:04:31 [p1] -> p1 127.0.0.1:5001 heartbeat=4 alive=true last_seen=1781654666
+2026/06/16 21:04:31 [p1] -> p2 127.0.0.1:5002 heartbeat=1 alive=true last_seen=1781654670
+2026/06/16 21:04:31 [p1][gossip] self heartbeat=5
+2026/06/16 21:04:31 [p1][gossip] targets=1
+2026/06/16 21:04:31 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=1
+2026/06/16 21:04:31 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:04:36 [p1][gossip] self heartbeat=6
+2026/06/16 21:04:36 [p1][gossip] targets=1
+2026/06/16 21:04:36 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=2
+2026/06/16 21:04:36 [p1] peers ativos conhecidos: 2
+2026/06/16 21:04:36 [p1] -> p1 127.0.0.1:5001 heartbeat=6 alive=true last_seen=1781654676
+2026/06/16 21:04:36 [p1] -> p2 127.0.0.1:5002 heartbeat=2 alive=true last_seen=1781654675
+2026/06/16 21:04:36 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:04:41 [p1][gossip] self heartbeat=7
+2026/06/16 21:04:41 [p1][gossip] targets=1
+2026/06/16 21:04:41 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=3
+2026/06/16 21:04:41 [p1] peers ativos conhecidos: 2
+2026/06/16 21:04:41 [p1] -> p1 127.0.0.1:5001 heartbeat=7 alive=true last_seen=1781654681
+2026/06/16 21:04:41 [p1] -> p2 127.0.0.1:5002 heartbeat=3 alive=true last_seen=1781654680
+2026/06/16 21:04:41 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:04:46 [p1] peers ativos conhecidos: 2
+2026/06/16 21:04:46 [p1] -> p1 127.0.0.1:5001 heartbeat=7 alive=true last_seen=1781654681
+2026/06/16 21:04:46 [p1][gossip] self heartbeat=8
+2026/06/16 21:04:46 [p1][gossip] targets=1
+2026/06/16 21:04:46 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=4
+2026/06/16 21:04:46 [p1] -> p2 127.0.0.1:5002 heartbeat=4 alive=true last_seen=1781654685
+2026/06/16 21:04:46 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:04:51 [p1] peers ativos conhecidos: 2
+2026/06/16 21:04:51 [p1] -> p1 127.0.0.1:5001 heartbeat=8 alive=true last_seen=1781654686
+2026/06/16 21:04:51 [p1] -> p2 127.0.0.1:5002 heartbeat=5 alive=true last_seen=1781654690
+2026/06/16 21:04:51 [p1][gossip] self heartbeat=9
+2026/06/16 21:04:51 [p1][gossip] targets=1
+2026/06/16 21:04:51 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=5
+2026/06/16 21:04:51 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:04:56 [p1][gossip] self heartbeat=10
+2026/06/16 21:04:56 [p1][gossip] targets=1
+2026/06/16 21:04:56 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=6
+2026/06/16 21:04:56 [p1] peers ativos conhecidos: 2
+2026/06/16 21:04:56 [p1] -> p1 127.0.0.1:5001 heartbeat=10 alive=true last_seen=1781654696
+2026/06/16 21:04:56 [p1] -> p2 127.0.0.1:5002 heartbeat=6 alive=true last_seen=1781654695
+2026/06/16 21:04:56 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:05:01 [p1][gossip] self heartbeat=11
+2026/06/16 21:05:01 [p1] peers ativos conhecidos: 2
+2026/06/16 21:05:01 [p1] -> p1 127.0.0.1:5001 heartbeat=11 alive=true last_seen=1781654701
+2026/06/16 21:05:01 [p1] -> p2 127.0.0.1:5002 heartbeat=7 alive=true last_seen=1781654700
+2026/06/16 21:05:01 [p1][gossip] targets=1
+2026/06/16 21:05:01 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=7
+2026/06/16 21:05:01 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:05:26 gRPC server escutando em 127.0.0.1:5001
+2026/06/16 21:05:28 [p1] peer iniciado em 127.0.0.1:5001
+2026/06/16 21:05:33 [p1][gossip] self heartbeat=2
+2026/06/16 21:05:33 [p1][gossip] targets=0
+2026/06/16 21:05:33 [p1] peers ativos conhecidos: 1
+2026/06/16 21:05:33 [p1] -> p1 127.0.0.1:5001 heartbeat=2 alive=true last_seen=1781654733
+2026/06/16 21:05:38 [p1] peers ativos conhecidos: 1
+2026/06/16 21:05:38 [p1] -> p1 127.0.0.1:5001 heartbeat=2 alive=true last_seen=1781654733
+2026/06/16 21:05:38 [p1][gossip] self heartbeat=3
+2026/06/16 21:05:38 [p1][gossip] targets=0
+2026/06/16 21:05:43 [p1][gossip] self heartbeat=4
+2026/06/16 21:05:43 [p1] peers ativos conhecidos: 1
+2026/06/16 21:05:43 [p1] -> p1 127.0.0.1:5001 heartbeat=4 alive=true last_seen=1781654743
+2026/06/16 21:05:43 [p1][gossip] targets=0
+2026/06/16 21:05:48 [p1][gossip] self heartbeat=5
+2026/06/16 21:05:48 [p1] peers ativos conhecidos: 1
+2026/06/16 21:05:48 [p1] -> p1 127.0.0.1:5001 heartbeat=5 alive=true last_seen=1781654748
+2026/06/16 21:05:48 [p1][gossip] targets=0
+2026/06/16 21:05:53 [p1][gossip] self heartbeat=6
+2026/06/16 21:05:53 [p1][gossip] targets=0
+2026/06/16 21:05:53 [p1] peers ativos conhecidos: 1
+2026/06/16 21:05:53 [p1] -> p1 127.0.0.1:5001 heartbeat=6 alive=true last_seen=1781654753
+2026/06/16 21:05:58 [p1][gossip] self heartbeat=7
+2026/06/16 21:05:58 [p1][gossip] targets=0
+2026/06/16 21:05:58 [p1] peers ativos conhecidos: 1
+2026/06/16 21:05:58 [p1] -> p1 127.0.0.1:5001 heartbeat=7 alive=true last_seen=1781654758
+2026/06/16 21:06:15 gRPC server escutando em 127.0.0.1:5001
+2026/06/16 21:06:17 [p1] peer iniciado em 127.0.0.1:5001
+2026/06/16 21:06:22 [p1] peers ativos conhecidos: 2
+2026/06/16 21:06:22 [p1] -> p1 127.0.0.1:5001 heartbeat=1 alive=true last_seen=1781654775
+2026/06/16 21:06:22 [p1] -> p2 127.0.0.1:5002 heartbeat=1 alive=true last_seen=1781654780
+2026/06/16 21:06:22 [p1][gossip] self heartbeat=2
+2026/06/16 21:06:22 [p1][gossip] targets=1
+2026/06/16 21:06:22 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=1
+2026/06/16 21:06:22 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:06:27 [p1] peers ativos conhecidos: 2
+2026/06/16 21:06:27 [p1] -> p1 127.0.0.1:5001 heartbeat=2 alive=true last_seen=1781654782
+2026/06/16 21:06:27 [p1] -> p2 127.0.0.1:5002 heartbeat=2 alive=true last_seen=1781654785
+2026/06/16 21:06:27 [p1][gossip] self heartbeat=3
+2026/06/16 21:06:27 [p1][gossip] targets=1
+2026/06/16 21:06:27 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=2
+2026/06/16 21:06:27 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:06:32 [p1][gossip] self heartbeat=4
+2026/06/16 21:06:32 [p1] peers ativos conhecidos: 2
+2026/06/16 21:06:32 [p1] -> p1 127.0.0.1:5001 heartbeat=4 alive=true last_seen=1781654792
+2026/06/16 21:06:32 [p1] -> p2 127.0.0.1:5002 heartbeat=3 alive=true last_seen=1781654790
+2026/06/16 21:06:32 [p1][gossip] targets=1
+2026/06/16 21:06:32 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=3
+2026/06/16 21:06:32 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:06:37 [p1] peers ativos conhecidos: 2
+2026/06/16 21:06:37 [p1] -> p1 127.0.0.1:5001 heartbeat=4 alive=true last_seen=1781654792
+2026/06/16 21:06:37 [p1] -> p2 127.0.0.1:5002 heartbeat=4 alive=true last_seen=1781654795
+2026/06/16 21:06:37 [p1][gossip] self heartbeat=5
+2026/06/16 21:06:37 [p1][gossip] targets=1
+2026/06/16 21:06:37 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=4
+2026/06/16 21:06:37 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:06:42 [p1][gossip] self heartbeat=6
+2026/06/16 21:06:42 [p1][gossip] targets=1
+2026/06/16 21:06:42 [p1][gossip] consultando p2 (127.0.0.1:5002) hb=5
+2026/06/16 21:06:42 [p1] peers ativos conhecidos: 2
+2026/06/16 21:06:42 [p1] -> p1 127.0.0.1:5001 heartbeat=6 alive=true last_seen=1781654802
+2026/06/16 21:06:42 [p1] -> p2 127.0.0.1:5002 heartbeat=5 alive=true last_seen=1781654800
+2026/06/16 21:06:42 [p1][gossip] recebeu 1 peers de p2
+2026/06/16 21:06:47 [p1] peers ativos conhecidos: 4
+2026/06/16 21:06:47 [p1] -> p4 127.0.0.1:5004 heartbeat=1 alive=true last_seen=1781654804
+2026/06/16 21:06:47 [p1] -> p3 127.0.0.1:5003 heartbeat=1 alive=true last_seen=1781654806
+2026/06/16 21:06:47 [p1] -> p1 127.0.0.1:5001 heartbeat=6 alive=true last_seen=1781654802
+2026/06/16 21:06:47 [p1] -> p2 127.0.0.1:5002 heartbeat=6 alive=true last_seen=1781654805
+2026/06/16 21:06:47 [p1][gossip] self heartbeat=7
+2026/06/16 21:06:47 [p1][gossip] targets=2
+2026/06/16 21:06:47 [p1][gossip] consultando p4 (127.0.0.1:5004) hb=1
+2026/06/16 21:06:47 [p1][gossip] recebeu 2 peers de p4
+2026/06/16 21:06:47 [p1][gossip] merge peer=p2 hb=5 alive=true
+2026/06/16 21:06:47 [p1][gossip] consultando p3 (127.0.0.1:5003) hb=1
+2026/06/16 21:06:47 [p1][gossip] recebeu 3 peers de p3
+2026/06/16 21:06:47 [p1][gossip] merge peer=p2 hb=6 alive=true
+2026/06/16 21:06:47 [p1][gossip] merge peer=p4 hb=1 alive=true
+2026/06/16 21:06:52 [p1] peers ativos conhecidos: 4
+2026/06/16 21:06:52 [p1][gossip] self heartbeat=8
+2026/06/16 21:06:52 [p1] -> p1 127.0.0.1:5001 heartbeat=7 alive=true last_seen=1781654807
+2026/06/16 21:06:52 [p1][gossip] targets=2
+2026/06/16 21:06:52 [p1] -> p2 127.0.0.1:5002 heartbeat=7 alive=true last_seen=1781654810
+2026/06/16 21:06:52 [p1] -> p4 127.0.0.1:5004 heartbeat=2 alive=true last_seen=1781654809
+2026/06/16 21:06:52 [p1] -> p3 127.0.0.1:5003 heartbeat=2 alive=true last_seen=1781654811
+2026/06/16 21:06:52 [p1][gossip] consultando p3 (127.0.0.1:5003) hb=2
+2026/06/16 21:06:52 [p1][gossip] recebeu 3 peers de p3
+2026/06/16 21:06:52 [p1][gossip] merge peer=p2 hb=7 alive=true
+2026/06/16 21:06:52 [p1][gossip] merge peer=p4 hb=2 alive=true
+2026/06/16 21:06:52 [p1][gossip] consultando p4 (127.0.0.1:5004) hb=2
+2026/06/16 21:06:52 [p1][gossip] recebeu 3 peers de p4
+2026/06/16 21:06:52 [p1][gossip] merge peer=p2 hb=7 alive=true
+2026/06/16 21:06:52 [p1][gossip] merge peer=p3 hb=1 alive=true
